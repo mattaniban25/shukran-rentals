@@ -77,6 +77,7 @@
           }if($contact[0]!=="0" OR $contact[1]!=="9"){
             array_push($errors, "Contact number must start with 09.");
           }
+
           require_once "database.php";
           $sql = "SELECT * FROM customerAccount WHERE email = '$email'";
           $result = mysqli_query($conn, $sql);
