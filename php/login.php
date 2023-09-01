@@ -1,12 +1,8 @@
 <?php
     session_start();
-    if(isset($_SESSION["employeeuser"])){
-        header("Location: employee-index.php");
+    if(isset($_SESSION["user"])){
+        header("Location: index.php");
     }
-
-    if(isset($_SESSION["adminuser"])){
-      header("Location: admin-index.php");
-  }
 ?>
 
 <!DOCTYPE html>
@@ -16,91 +12,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="ANIBAN, MATTHEW EMMANUEL DJ." />
 
-    <!-- social links logo -->
-    <script src="https://kit.fontawesome.com/29a620f807.js" crossorigin="anonymous"></script>
-    
-    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Shukran Rentals - Login</title>
 
   </head>
 
   <body>
+    <!--
     <div class="header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-2 border-danger" style="box-shadow: black 0px 0px 10px 0px;">
-        <div class="container-fluid justify-content-center">
-            <a href="#" class="navbar-brand">
-                <img src="../IMAGES/Logo.png" height="75" alt="" class="">
-            </a>
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="../IMAGES/Logo.png" height="125" alt="" class="">
+          </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="default-index.php" class="nav-item nav-link">Home</a>
+                <a href="#" class="nav-item nav-link">About Us</a>
+                <a href="#" class="nav-item nav-link">Facilities & Amenities</a>
+                <a href="#" class="nav-item nav-link">Photo Gallery</a>
+                <a href="#" class="nav-item nav-link">Contact Us</a>
+                <a href="#" class="nav-item nav-link">Terms & Conditions</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+              <a href="register.php" class="nav-item nav-link">Register</a>
+              <a href="login.php" class="nav-item nav-link active">Login</a>
+            </div>
+          </div>
         </div>
       </nav>
     </div>
+    -->
 
-    <div class="content">
-        <div class="login-container rounded-3" align="center">
+    <div class="header bg-white">
+        <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                <img src="../IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="../default-index.php" class="nav-item nav-link">Home</a>
+                        <a href="#" class="nav-item nav-link">Accommodations</a>
+                        <a href="#" class="nav-item nav-link">Events</a>
+                        <a href="#" class="nav-item nav-link">Leisure</a>
+                        <a href="#" class="nav-item nav-link">Contact Us</a>
+                        <a href="#" class="nav-item nav-link">Terms & Conditions</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                    <a href="register.php" class="nav-item nav-link"><strong>Register</strong></a>
+                    <a href="login.php" class="nav-item nav-link"><strong>Login</strong></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content bg-body-secondary">
+        <div class="login-container rounded-3 bg-white" align="center">
             <?php
-                if(isset($_POST["employee-login"])){
+                if(isset($_POST["login"])){
                     require_once "database.php";
-                    $username = $_POST["username"];
+                    $email = $_POST["email"];
                     $password = $_POST["password"];
-                    $sql = "SELECT * FROM employeeaccount WHERE username = '$username'";
+                    $sql = "SELECT * FROM customeraccount WHERE email = '$email'";
                     $result = mysqli_query($conn, $sql);
-                    $employeeuser = mysqli_fetch_array($result, MYSQLI_ASSOC);
-                    if($employeeuser){
-                        if (password_verify($password, $employeeuser["password"])){
+                    $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+                    if($user){
+                        if (password_verify($password, $user["password"])){
                             session_start();
-                            $_SESSION["employeeuser"] = "yes"; 
-                            $_SESSION["username"] = $username;
-                            header("Location: employee-index.php");
+                            $_SESSION["user"] = "yes"; 
+                            $_SESSION["email"] = $email;
+                            header("Location: index.php");
                             die();
                         }else{
                             echo "<div class='alert alert-danger'>Password does not match</div>";
                         }
                     }else{
-                        echo "<div class='alert alert-danger'>Username does not match</div>";
+                        echo "<div class='alert alert-danger'>Email does not match</div>";
                     }
                 }
             ?>
-
-            <?php
-                if(isset($_POST["admin-login"])){
-                    require_once "database.php";
-                    $username = $_POST["username"];
-                    $password = $_POST["password"];
-                    $sql = "SELECT * FROM adminaccount WHERE username = '$username'";
-                    $result = mysqli_query($conn, $sql);
-                    $adminuser = mysqli_fetch_array($result, MYSQLI_ASSOC);
-                    if($adminuser){
-                        if (password_verify($password, $adminuser["password"])){
-                            session_start();
-                            $_SESSION["adminuser"] = "yes"; 
-                            $_SESSION["username"] = $username;
-                            header("Location: admin-index.php");
-                            die();
-                        }else{
-                            echo "<div class='alert alert-danger'>Password does not match</div>";
-                        }
-                    }else{
-                        echo "<div class='alert alert-danger'>Username does not match</div>";
-                    }
-                }
-            ?>
-            <form action="employee-login.php" method="post">
-              <p class="fs-5">EMPLOYEE LOGIN</p>
+            <form action="login.php" method="post">
+              <p class="fs-5">LOGIN</p>
 
               <div class="form-group">
-                  <input type="text" placeholder="Enter Username:" name="username" class="form-control">
+                  <input type="email" placeholder="Enter Email:" name="email" class="form-control">
               </div>
               <div class="form-group">
                   <input type="password" placeholder="Password:" name="password" class="form-control">
               </div>
               <div class="form-btn mb-3">
-                  <input type="submit" value="Employee" name="employee-login" class="btn btn-danger col-md-5 col-lg-5 col-xl-5" style="">
-                  <input type="submit" value="Admin" name="admin-login" class="btn btn-danger col-md-5 col-lg-5 col-xl-5" style="">
+                  <input type="submit" value="Login" name="login" class="btn btn-danger col-6">
               </div>
+              <div class="md-3">
+                  <p>Not Registered yet? <a href="register.php">Register Here</a></p>
+              </div>
+              
+                <p>Employee? <a href="employee-login.php">Login Here</a></p>
             </form>
             
         </div>

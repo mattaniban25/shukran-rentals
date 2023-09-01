@@ -1,65 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="ANIBAN, MATTHEW EMMANUEL DJ." />
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="ANIBAN, MATTHEW EMMANUEL DJ." />
 
-    <!-- social links logo -->
-    <script src="https://kit.fontawesome.com/29a620f807.js" crossorigin="anonymous"></script>
-    
-    <!-- bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/29a620f807.js" crossorigin="anonymous"></script>
+        
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-    <!-- CSS FILE -->
-    <link rel="stylesheet" href="style.css">
-
-
-    <title>Shukran Rentals - Login</title>
-
+      <link rel="stylesheet" href="css/style.css">
+      <title>Shukran Rentals - Index</title>
   </head>
 
   <body>
-    
     <div class="header">
-      <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <img src="../IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
-          </a>
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="responsive-homepage.php" class="nav-item nav-link">Home</a>
-                <a href="accommodations.php" class="nav-item nav-link">Accommodations</a>
-                <a href="eventsPage.php" class="nav-item nav-link">Events</a>
-                <a href="leisurePage.php" class="nav-item nav-link">Leisure</a>
-                <a href="#" class="nav-item nav-link">Contact Us</a>
-                <a href="#" class="nav-item nav-link">Terms & Conditions</a>
+        <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                <img src="images/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="default-index.php" class="nav-item nav-link">Home</a>
+                        <a href="#" class="nav-item nav-link">Accommodations</a>
+                        <a href="#" class="nav-item nav-link">Events</a>
+                        <a href="#" class="nav-item nav-link">Leisure</a>
+                        <a href="#" class="nav-item nav-link">Contact Us</a>
+                        <a href="#" class="nav-item nav-link">Terms & Conditions</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                    <a href="php/register.php" class="nav-item nav-link"><strong>Register</strong></a>
+                    <a href="php/login.php" class="nav-item nav-link"><strong>Login</strong></a>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-nav ms-auto">
-              <a href="register.php" class="nav-item nav-link"><strong>Register</strong></a>
-              <a href="login.php" class="nav-item nav-link"><strong>Login</strong></a>
+        </nav>
+
+        <nav class="navbar bg-body-tertiary shukran-navbar">
+            <div class="container-fluid" id="shukran-navbar">
+                <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
+                <div class="d-flex">
+                    <a href="#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
+                    <a href="" class="nav-link me-4" style="cursor:alias"><i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
+                </div>
             </div>
-        </div>
-        </div>
-      </nav>
-
-
-      <nav class="navbar bg-body-tertiary shukran-navbar">
-  <div class="container-fluid" id="shukran-navbar">
-    <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
-    <div class="d-flex">
-      <a href="#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
-
-      <a href="" class="nav-link me-4" style="cursor:alias">
-      <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
-</div>
-  </div>
-</nav>
+        </nav>
     </div>
 
 
@@ -68,7 +58,7 @@
           
             <div class="carousel-inner ">
             <div class="carousel-item active" data-bs-interval="5000">
-              <img src="../IMAGES/carousel-shukneneng.jpg" class="d-block w-100 " alt="...">
+              <img src="images/carousel-shukneneng.jpg" class="d-block w-100 " alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <!--
                 <h5>First slide label</h5>
@@ -77,7 +67,7 @@
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
-              <img src="../IMAGES/carousel-pool.jpg" class="d-block w-100" alt="...">
+              <img src="images/carousel-pool.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <!--
                 <h5>Second slide label</h5>
@@ -86,7 +76,7 @@
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
-              <img src="../IMAGES/carousel-side.JPG" class="d-block w-100" alt="...">
+              <img src="images/carousel-side.JPG" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <!--
                 <h5>Third slide label</h5>
@@ -120,7 +110,7 @@
   <div class="col-4">
     <div class="thumbnail">
       
-        <img src="../IMAGES/roomSample.jpg" alt="Lights" style="width:100%;" class="img-fluid mb-3">
+        <img src="images/roomSample.jpg" alt="Lights" style="width:100%;" class="img-fluid mb-3">
         
       </a>
     </div>
@@ -128,7 +118,7 @@
   <div class="col-4">
     <div class="thumbnail">
       
-        <img src="../IMAGES/roomSample2.jpg" alt="Nature" style="width:100%" class="mb-3">
+        <img src="images/roomSample2.jpg" alt="Nature" style="width:100%" class="mb-3">
         
       </a>
     </div>
@@ -136,7 +126,7 @@
   <div class="col-4">
     <div class="thumbnail">
       
-        <img src="../IMAGES/roomSample3.jpg" alt="Fjords" style="width:100%" >
+        <img src="images/roomSample3.jpg" alt="Fjords" style="width:100%" >
         
       </a>
     </div>
@@ -164,7 +154,7 @@
       <div class="row" >
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
           <div class="card shadow-lg p-2 bg-body-tertiary rounded" style="width:320px">
-            <img class="card-img-top" src="../IMAGES/promoSample.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="images/promoSample.jpg" alt="Card image" style="width:100%">
               <div class="card-body">
                 <h4 class="card-title">BOMBASTIC</h4>
                 <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
@@ -272,7 +262,7 @@
 
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
           <div class="card shadow-lg p-2 bg-body-tertiary rounded" style="width:320px">
-              <img class="card-img-top" src="../IMAGES/promoSample2.jpg" alt="Card image" style="width:100%">
+              <img class="card-img-top" src="images/promoSample2.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title">PALONCHAY</h4>
                   <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
@@ -381,7 +371,7 @@
 
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
         <div class="card shadow-lg p-2 bg-body-tertiary rounded" style="width:320px">
-              <img class="card-img-top" src="../IMAGES/promoSample3.jpg" alt="Card image" style="width:100%">
+              <img class="card-img-top" src="images/promoSample3.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title">GIL PANOT</h4>
                   <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
@@ -496,7 +486,7 @@
     <h2 align="center" class="mb-5 mt-3">Accommodations</h2>
     		<div class="row mb-5" align="center">
       			      <div class="col-lg-6 col-sm-12" >
-                  <img src="../IMAGES/accommodations.jpg" alt="" class="img-fluid imagess" style="width:85%">
+                  <img src="images/accommodations.jpg" alt="" class="img-fluid imagess" style="width:85%">
       			      </div>
 
       						<div class="col-lg-6 col-sm-12"  >
@@ -520,7 +510,7 @@
     <h2 align="center" class="mb-5 mt-3">Events & Celebrations</h2>
     		<div class="row mb-5" align="center">
       			      <div class="col-lg-6 col-sm-12" >
-                  <img src="../IMAGES/events.JPG" alt="" class="img-fluid imagess" style="width:85%">
+                  <img src="images/events.JPG" alt="" class="img-fluid imagess" style="width:85%">
         				    
       			      </div>
 
@@ -544,7 +534,7 @@
     <h2 align="center" class="mb-5 mt-3">Lifestyle & Leisure</h2>
     		<div class="row mb-5" align="center">
       			      <div class="col-lg-6 col-sm-12" >
-                  <img src="../IMAGES/billiards.jpg" alt="" class="img-fluid imagess" style="width:85%">
+                  <img src="images/billiards.jpg" alt="" class="img-fluid imagess" style="width:85%">
       			      </div>
 
       						<div class="col-lg-6 col-sm-12"  >
@@ -609,66 +599,64 @@
 
 
 
-<div class="footer">
-      <div class="bg-dark border-top border-2 text-light border-danger" style="box-shadow: black 0px 0px 10px 0px;">
-        <div class="container p-4 pb-0">
-          <section class="">
-            <div class="row">
-              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-center justify-content-center">
-                <img src="../IMAGES/logo.png" alt="" height="125">
-              </div>
+  <div class="footer">
+        <div class="bg-dark border-top border-2 text-light border-danger" style="box-shadow: black 0px 0px 10px 0px;">
+          <div class="container p-4 pb-0">
+            <section class="">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-center justify-content-center">
+                  <img src="images/logo.png" alt="" height="125">
+                </div>
 
-              <hr class="w-100 clearfix d-md-none" />
+                <hr class="w-100 clearfix d-md-none" />
 
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Useful Links</h6>
-                <p><a class="text-white" href="#">Home</a></p>
-                <p><a class="text-white" href="#">About Us</a></p>
-                <p><a class="text-white" href="#">Facilities & Amenities</a></p>
-              </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Useful Links</h6>
+                  <p><a class="text-white" href="#">Home</a></p>
+                  <p><a class="text-white" href="#">About Us</a></p>
+                  <p><a class="text-white" href="#">Facilities & Amenities</a></p>
+                </div>
 
-              <hr class="w-100 clearfix d-md-none" />
+                <hr class="w-100 clearfix d-md-none" />
 
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold"><p>&nbsp;</p></h6>
-                <p><a class="text-white" href="#">Photo Gallery</a></p>
-                <p><a class="text-white" href="#">Contact Us</a></p>
-                <p><a class="text-white" href="#">Terms & Conditions</a></p>
-              </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold"><p>&nbsp;</p></h6>
+                  <p><a class="text-white" href="#">Photo Gallery</a></p>
+                  <p><a class="text-white" href="#">Contact Us</a></p>
+                  <p><a class="text-white" href="#">Terms & Conditions</a></p>
+                </div>
 
-              <hr class="w-100 clearfix d-md-none" />
+                <hr class="w-100 clearfix d-md-none" />
 
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p><i class="fas fa-home mr-3"></i> 3384 Arias Compound, Parañaque, 1701 Metro Manila</p>
-                <p><i class="fas fa-phone mr-3"></i> +63 998 991 7073</p>
-                <p><i class="fas fa-envelope mr-3"></i> shukranrentalsopc@gmail.com	</p>
-              </div>
-            </div>
-          </section>
-
-          <hr class="my-3">
-
-          <section class="p-3 pt-0">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-7 col-lg-8 text-center text-md-start">
-                <div class="p-3">
-                  <p>© 2023 | Shukran Rentals OPC</p>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                  <p><i class="fas fa-home mr-3"></i> 3384 Arias Compound, Parañaque, 1701 Metro Manila</p>
+                  <p><i class="fas fa-phone mr-3"></i> +63 998 991 7073</p>
+                  <p><i class="fas fa-envelope mr-3"></i> shukranrentalsopc@gmail.com	</p>
                 </div>
               </div>
-              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-google"></i></a>
+            </section>
+
+            <hr class="my-3">
+
+            <section class="p-3 pt-0">
+              <div class="row d-flex align-items-center">
+                <div class="col-md-7 col-lg-8 text-center text-md-start">
+                  <div class="p-3">
+                    <p>© 2023 | Shukran Rentals OPC</p>
+                  </div>
+                </div>
+                <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                  <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i></a>
+                  <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-google"></i></a>
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
-      </div>
-    </div>    
-  </body>
-
-
+  </div>
+</body>
   <script>
  
   </script>
