@@ -13,8 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="sss.css">
-    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../javascript/app.js"></script>
 
     <title>Shukran Rentals - Login</title>
 
