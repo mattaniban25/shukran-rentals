@@ -161,86 +161,29 @@ a{
     transition: 0.2;
 }
 
-/* CSS NI MARTIN
+/* CSS NI MARTIN */
 
-.welcome-message
-{
-    font-family: 'Montserrat', sans-serif;
-}
-p
-{
-    font-family: 'Montserrat', sans-serif;
-}
 
-.shukran-experience
-{
-    padding-top: 50px;
-}
-h2
-{
-    font-family: 'Alegreya', serif;
-}
 
-.general-section1
-{
-    align-items: center;
-    height: fit-content;  
-    background-color:#f4f5f6;
-}
-.general-section2
-{
-    align-items: center;
-    height: fit-content;  
-    background-color:white;
-}
-.row
-{
-    
-    align-items: center;
-}
-.nav-item
-{
-    margin-right: 10px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: transparent;
-    font-size: 1.7vh;
-    color: black;
-}
-.navbar-brand
-{
-    font-family: 'Montserrat', sans-serif;
-    font-weight:600;
-    letter-spacing: 0.1vh;
-    word-spacing: 0.1vh;
-}
-.nav-item
-{
-    padding-top: 3px;
-    padding-bottom: 3px;  
-    color: black;
-    border: 1px solid white;
-    transition: 0.3s;
-    border-radius: 5px;
-}
-.nav-item:hover
-{
-    padding-top: 3px;
-    padding-bottom: 3px;
-    color: white;
-    border: 1px solid white;
-    background-color: #aa2400;
-    transition: 0.3s;
-    border-radius: 5px;
-}
-.imagess
-{
-    box-shadow: -40px -40px 0px -8px rgba(236, 236, 236, 1);
-}
- */
-/*.card
-{
-    margin-top:100px;
-}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (width < 500px){
     .staff-header{
         display:contents;
