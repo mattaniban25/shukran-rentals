@@ -165,22 +165,162 @@ a{
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li::before
+{
+    content: "> ";   
+}
+td,th,tr
+{
+   border: none;
+   /*  border: 1px solid black;*/
+}
+
+li
+{ 
+    letter-spacing: -1px;
+    word-spacing: 0.1px;
+    text-align: start;
+}
+ul li
+{
+    letter-spacing: -1px;
+    font-family: 'Montserrat', sans-serif;
+}
+.welcome-message, p
+{
+    letter-spacing: -1px;
+    font-family: 'Montserrat', sans-serif;
+}
+.shukran-experience
+{
+    padding-top: 50px;
+}
+h2
+{
+    font-family: 'Alegreya', serif;
+}
+.general-section1
+{
+    align-items: center;
+    height: fit-content;  
+    background-color:#f4f5f6;
+}
+.general-section2
+{
+    align-items: center;
+    height: fit-content;  
+    background-color:white;
+}
+
+.nav-item
+{
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    font-size: 1.7vh;
+    color: black;
+}
+.navbar-brand
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    letter-spacing: 0.1vh;
+    word-spacing: 0.1vh;
+}
+.nav-item
+{
+    padding-top: 3px;
+    padding-bottom: 3px;  
+    color: black;
+    border: 1px solid white;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.nav-item:hover
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border: 1px solid white;
+    background-color: #aa2400;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.imagess
+{
+    box-shadow: -40px -40px 0px -8px rgba(236, 236, 236, 1);
+}
+.container
+{  
+    height: fit-content; 
+    padding: 10px;
+}
+.home-description
+{
+    padding: 15px;
+}
+.welcome-div
+{
+    opacity:0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+    padding:10px;
+}
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.cards
+{
+    opacity:0;
+    filter: blur(3px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.cards:nth-child(1)
+{
+    transition-delay: 200ms;
+}
+.cards:nth-child(2)
+{
+    transition-delay: 600ms;
+}
+.cards:nth-child(3)
+{
+    transition-delay: 1000ms;
+}
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media(prefers-reduced-motion){
+    .welcome-div,.cards{
+        transition: none;
+    }
+}
 
 
 
