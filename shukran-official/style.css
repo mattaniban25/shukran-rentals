@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.content{
+    padding:50px;
+}
+
+.login-container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: black 0px 7px 29px 0px;
+}
+
+.register-container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: black 0px 7px 29px 0px;
+}
+
+.container-fluid{
+    margin:10px 25px;
+}
+
+.form-group{
+    margin-bottom: 30px;
+}
+
+.btn-danger{
+    background-color: #aa2400;
+}
+
+.btn-danger:hover{
+    color: #aa2400;
+    background-color: white;
+    transition: .8s;
+}
+
+
+.form-control{
+    border:none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0px;
+}
+
+.form-control:hover{
+    border:none;
+    border-bottom: 2px solid #aa2400;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.form-control:focus{
+    border-color: #aa2400;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+::-webkit-input-placeholder{
+    color: black;
+    opacity: 0.5;
+}
+
+:hover::-webkit-input-placeholder { 
+    color: #aa2400;
+    transition: .6s;
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+.border-end{
+    outline-color: #aa2400;
+}
+
+/* Sidebar for admin/employee */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 1px solid #aa2400;
+    transition: 0.3s;
+}
+
+.sidebar-header{
+    width: 100%;
+    margin-bottom: 44px;
+}
+
+.logo-icon{
+    display: none;
+    font-size: 28px;
+    height: 35px;
+    width: 51px;
+    text-align: center;
+}
+
+.logo-img{
+    margin-left: 14px;
+    height: 75px;
+}
+
+.sidebar button{
+    height: 60px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.sidebar button > span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 48px;
+    padding: 0 12px;
+    border-radius: 24px;
+    line-height: 1;
+}
+
+.sidebar button:hover > span{
+    background: #f2f2f2;
+}
+
+.sidebar button i{
+    position: relative;
+    font-size: 28px;
+    transition: 0.2s;
+}
+
+.sidebar button img{
+    width: 28px;
+    height: 28px;
+    transition: 0.2;
+}
+
+/* EMPLOYEE/ADMIN PROPERTIES */
+.staff-content{
+    padding: 25px 25px 25px 275px;
+}
+
+.staff-header{
+    display: none;
+    transition: 0.2;
+}
+
+/* CSS NI MARTIN
+
+.welcome-message
+{
+    font-family: 'Montserrat', sans-serif;
+}
+p
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.shukran-experience
+{
+    padding-top: 50px;
+}
+h2
+{
+    font-family: 'Alegreya', serif;
+}
+
+.general-section1
+{
+    align-items: center;
+    height: fit-content;  
+    background-color:#f4f5f6;
+}
+.general-section2
+{
+    align-items: center;
+    height: fit-content;  
+    background-color:white;
+}
+.row
+{
+    
+    align-items: center;
+}
+.nav-item
+{
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    font-size: 1.7vh;
+    color: black;
+}
+.navbar-brand
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    letter-spacing: 0.1vh;
+    word-spacing: 0.1vh;
+}
+.nav-item
+{
+    padding-top: 3px;
+    padding-bottom: 3px;  
+    color: black;
+    border: 1px solid white;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.nav-item:hover
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border: 1px solid white;
+    background-color: #aa2400;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.imagess
+{
+    box-shadow: -40px -40px 0px -8px rgba(236, 236, 236, 1);
+}
+ */
+/*.card
+{
+    margin-top:100px;
+}*/
+@media (width < 500px){
+    .staff-header{
+        display:contents;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .staff-content{
+        padding-left: 25px;
+    }
+
+    .logo-img{
+        display: none;
+    }
+
+    .logo-icon{
+        height: 35px;
+        display: block;
+    }
+
+    .sidebar{
+        width: 72px;
+    }
+
+    .sidebar button > span{
+        width: 50px;
+    }
+}
