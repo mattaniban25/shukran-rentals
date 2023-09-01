@@ -48,7 +48,7 @@
           <button>
             <span>
               <i class="fa-solid fa-peso-sign"></i>
-              <span>Payments</span>
+              <span>Payments hee hee michael jackson aye</span>
             </span>
           </button>
 
