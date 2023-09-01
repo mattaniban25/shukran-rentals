@@ -22,35 +22,35 @@
   </head>
 
   <body>
-    <div class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-2 border-danger" style="box-shadow: black 0px 0px 10px 0px;">
+    <div class="header bg-white">
+      <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
-            <img src="../IMAGES/Logo.png" height="125" alt="" class="">
+            <img src="../IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
           </a>
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="../default-index" class="nav-item nav-link">Home</a>
-                <a href="#" class="nav-item nav-link">About Us</a>
-                <a href="#" class="nav-item nav-link">Facilities & Amenities</a>
-                <a href="#" class="nav-item nav-link">Photo Gallery</a>
-                <a href="#" class="nav-item nav-link">Contact Us</a>
-                <a href="#" class="nav-item nav-link">Terms & Conditions</a>
+              <a href="../default-index.php" class="nav-item nav-link">Home</a>
+              <a href="#" class="nav-item nav-link">Accommodations</a>
+              <a href="#" class="nav-item nav-link">Events</a>
+              <a href="#" class="nav-item nav-link">Leisure</a>
+              <a href="#" class="nav-item nav-link">Contact Us</a>
+              <a href="#" class="nav-item nav-link">Terms & Conditions</a>
             </div>
             <div class="navbar-nav ms-auto">
-              <a href="register.php" class="nav-item nav-link active">Register</a>
-              <a href="login.php" class="nav-item nav-link">Login</a>
+              <a href="register.php" class="nav-item nav-link"><strong>Register</strong></a>
+              <a href="login.php" class="nav-item nav-link"><strong>Login</strong></a>
             </div>
           </div>
         </div>
       </nav>
     </div>
 
-    <div class="content">
-      <div class="register-container rounded-3" align="center">
+    <div class="content bg-body-secondary">
+      <div class="register-container rounded-3 bg-white" align="center">
       <?php
         if(isset($_POST["submit"])) {
           $firstName = $_POST["firstName"];
@@ -72,6 +72,10 @@
             array_push($errors, "Password must be at least 8 characters long.");
           }if($password!==$confirmPassword){
             array_push($errors, "Password does not match");
+          }if($contact<11 OR $contact>11){
+            array_push($errors, "Contact number must be 11 digits long.");
+          }if($contact[0]!=="0" OR $contact[1]!=="9"){
+            array_push($errors, "Contact number must start with 09.");
           }
           require_once "database.php";
           $sql = "SELECT * FROM customerAccount WHERE email = '$email'";

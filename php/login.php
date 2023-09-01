@@ -23,35 +23,6 @@
   </head>
 
   <body>
-    <!--
-    <div class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-2 border-danger" style="box-shadow: black 0px 0px 10px 0px;">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <img src="../IMAGES/Logo.png" height="125" alt="" class="">
-          </a>
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="default-index.php" class="nav-item nav-link">Home</a>
-                <a href="#" class="nav-item nav-link">About Us</a>
-                <a href="#" class="nav-item nav-link">Facilities & Amenities</a>
-                <a href="#" class="nav-item nav-link">Photo Gallery</a>
-                <a href="#" class="nav-item nav-link">Contact Us</a>
-                <a href="#" class="nav-item nav-link">Terms & Conditions</a>
-            </div>
-            <div class="navbar-nav ms-auto">
-              <a href="register.php" class="nav-item nav-link">Register</a>
-              <a href="login.php" class="nav-item nav-link active">Login</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-    -->
-
     <div class="header bg-white">
         <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
             <div class="container-fluid">
@@ -108,10 +79,10 @@
               <p class="fs-5">LOGIN</p>
 
               <div class="form-group">
-                  <input type="email" placeholder="Enter Email:" name="email" class="form-control">
+                  <input type="email" placeholder="Enter Email" name="email" class="form-control">
               </div>
               <div class="form-group">
-                  <input type="password" placeholder="Password:" name="password" class="form-control">
+                  <input type="password" placeholder="Password" name="password" class="form-control">
               </div>
               <div class="form-btn mb-3">
                   <input type="submit" value="Login" name="login" class="btn btn-danger col-6">
