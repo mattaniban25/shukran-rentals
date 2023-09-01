@@ -147,13 +147,13 @@
     </div>
     
 
-    <div class="welcome-div" align="center">
+<div class="welcome-div" align="center">
     <div class="welcome-description">
                   <div class="shukran-experience">
                     <h3 class="welcome-message h2">Want the Shukran experience?</h3>
                     <p>Create an account now to start booking with us!</p>
 
-                        <a class="btn btn-danger pe-5 ps-5"href="register.php">REGISTER</a>
+                    <a class="btn btn-danger pe-5 ps-5"href="register.php">REGISTER</a>
                   </div>
 </div>
 </div>
