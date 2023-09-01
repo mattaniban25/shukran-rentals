@@ -162,14 +162,6 @@ a{
 }
 
 /* CSS NI MARTIN */
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
-
 html
 {
     scroll-behavior: smooth;
