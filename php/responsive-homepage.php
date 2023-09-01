@@ -6,21 +6,23 @@
     <meta name="author" content="ANIBAN, MATTHEW EMMANUEL DJ." />
 
     <!-- social links logo -->
-    <script src="https://kit.fontawesome.com/29a620f807.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     
-    <!-- bootstrap link -->
+    <!-- bootleg -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="sss.css">
+    <script defer src="app.js"></script>
 
     <title>Shukran Rentals - Login</title>
 
   </head>
 
   <body>
+
+  
     
     <div class="header">
       <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
@@ -103,8 +105,8 @@
               
   <div class="welcome-div" align="center">
                 <p class="welcome-message h4 fs-4 mt-5 mb-3">WELCOME TO SHUKRAN RENTALS OPC</h4>
-                  <div class="welcome-description mb-5">
-                    <p align="center" class="fs-6">Experience churvanes in our Unfussy budget hotel located in an accessible and strategic place in the locality of Paranque City.
+                  <div class="welcome-description mb-5 col-lg-8 col-md-8 col-sm-8">
+                    <p align="justify" class="fs-6">Experience churvanes in our Unfussy budget hotel located in an accessible and strategic place in the locality of Paranque City.
                       Long weekend staycations, Holiday breaks, Unwinding with your family or just Celebrating with your friends? We've got it 
                       covered! </p>
                   </div>
@@ -117,32 +119,33 @@
 
 
     <div class="row">
-  <div class="col-4">
+  <div class="col-lg-4 col-sm-12">
     <div class="thumbnail">
       
-        <img src="../IMAGES/roomSample.jpg" alt="Lights" style="width:100%;" class="img-fluid mb-3">
+        <img src="../IMAGES/roomSample.jpg"  style="width:100%;" class="img-fluid mb-3">
         
       </a>
     </div>
   </div>
-  <div class="col-4">
+  <div class="col-lg-4 col-sm-12">
     <div class="thumbnail">
       
-        <img src="../IMAGES/roomSample2.jpg" alt="Nature" style="width:100%" class="mb-3">
+        <img src="../IMAGES/roomSample2.jpg"  style="width:100%" class="img-fluid mb-3">
         
       </a>
     </div>
   </div>
-  <div class="col-4">
+  <div class="col-lg-4 col-sm-12">
     <div class="thumbnail">
       
-        <img src="../IMAGES/roomSample3.jpg" alt="Fjords" style="width:100%" >
+        <img src="../IMAGES/roomSample3.jpg"  style="width:100%" class="img-fluid mb-3">
         
       </a>
     </div>
   </div>
 </div>
     </div>
+    
 
     <div class="welcome-div" align="center">
     <div class="welcome-description">
@@ -163,7 +166,7 @@
     <div class="container" align="center">
       <div class="row" >
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-          <div class="card shadow-lg p-2 bg-body-tertiary rounded" style="width:320px">
+          <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width:320px">
             <img class="card-img-top" src="../IMAGES/promoSample.jpg" alt="Card image" style="width:100%">
               <div class="card-body">
                 <h4 class="card-title">BOMBASTIC</h4>
@@ -176,7 +179,7 @@
               <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Terms & Conditions</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body" > 
+            <div class="modal-body" align="justify"> 
               <ol>
                 <li>Pay as you Ckeck-in and Strictly</li>
                 <li>Pay as you Order - Please pay food bill.</li>
@@ -271,7 +274,7 @@
         </div>
 
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-          <div class="card shadow-lg p-2 bg-body-tertiary rounded" style="width:320px">
+          <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width:320px">
               <img class="card-img-top" src="../IMAGES/promoSample2.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title">PALONCHAY</h4>
@@ -284,7 +287,7 @@
               <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Terms & Conditions</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body" > 
+            <div class="modal-body" align="justify"> 
               <ol >
                 <li>Pay as you Ckeck-in and Strictly</li>
                 <li>Pay as you Order - Please pay food bill.</li>
@@ -380,7 +383,7 @@
         
 
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-        <div class="card shadow-lg p-2 bg-body-tertiary rounded" style="width:320px">
+        <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width:320px">
               <img class="card-img-top" src="../IMAGES/promoSample3.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title">GIL PANOT</h4>
@@ -393,7 +396,7 @@
               <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Terms & Conditions</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body" > 
+            <div class="modal-body" align="justify"> 
               <ol>
                 <li>Pay as you Ckeck-in and Strictly</li>
                 <li>Pay as you Order - Please pay food bill.</li>
@@ -493,7 +496,7 @@
 <div class="general-section1">
     <div class="container">
   	
-    <h2 align="center" class="mb-5 mt-3">Accommodations</h2>
+    <p align="center" class="mb-5 mt-3 fs-2">Accommodations</p>
     		<div class="row mb-5" align="center">
       			      <div class="col-lg-6 col-sm-12" >
                   <img src="../IMAGES/accommodations.jpg" alt="" class="img-fluid imagess" style="width:85%">
@@ -501,13 +504,13 @@
 
       						<div class="col-lg-6 col-sm-12"  >
         							
-                      <div>
-                      <h3 class="pt-4 pb-2">Have your cozy staycation with us!</h3>
+                      <div class="home-description">
+                      <p class="pt-4 pb-2 fs-3 fw-bold">Have your cozy staycation with us!</p>
                         <p align="justify" class="fs-6">Discover and explore the ideal space for your stay, explore the range of accommodations, 
                         each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
                         find the perfect room to make your stay memorable and one for the books.</p>
             						
-                          <a class="btn btn-danger ps-5 pe-5 mt-3"href="">EXPLORE</a>
+                          <a class="btn btn-danger ps-5 pe-5 mt-3"href="accommodations.php">EXPLORE</a>
         				    </div>     
                   </div>
 		    </div>
@@ -517,7 +520,7 @@
 <div class="general-section2">
     <div class="container">
   	
-    <h2 align="center" class="mb-5 mt-3">Events & Celebrations</h2>
+    <p align="center" class="mb-5 mt-3 fs-2">Events & Celebrations</p>
     		<div class="row mb-5" align="center">
       			      <div class="col-lg-6 col-sm-12" >
                   <img src="../IMAGES/events.JPG" alt="" class="img-fluid imagess" style="width:85%">
@@ -525,8 +528,8 @@
       			      </div>
 
       						<div class="col-lg-6 col-sm-12"  >
-                    <div>
-                        <h3 class="pt-4 pb-2">Venues and Spaces for your celebrations</h3>
+                    <div class="home-description">
+                        <p class="pt-4 pb-2 fs-3 fw-bold">Venues and Spaces for your celebrations</p>
                           <p align="justify" class="fs-6">Level up your special moments with Shukran, whether it’s a wedding reception, 
                         business meeting, or a personal celebration, Shukran offers a versatile and modern events and 
                         celebrations venue. With ideal spaces, modern amenities, and a cooperative team, we ensure your 
@@ -541,7 +544,7 @@
 <div class="general-section1">
     <div class="container">
   	
-    <h2 align="center" class="mb-5 mt-3">Lifestyle & Leisure</h2>
+    <p align="center" class="mb-5 mt-3 fs-2">Lifestyle & Leisure</p>
     		<div class="row mb-5" align="center">
       			      <div class="col-lg-6 col-sm-12" >
                   <img src="../IMAGES/billiards.jpg" alt="" class="img-fluid imagess" style="width:85%">
@@ -549,9 +552,8 @@
 
       						<div class="col-lg-6 col-sm-12"  >
         							
-                      
-                        <h3 class="pt-4 pb-2">Fitness, Chill, Drink, Watch & Play!</h3>
-                        <div>
+                      <div class="home-description">
+                        <p class="pt-4 pb-2 fs-3 fw-bold">Fitness, Chill, Drink, Watch & Play!</p>
                         <p align="justify" class="fs-6">Experience lifestyle and leisure, unwind and rejuvenate with Shukran’s array of facilities. 
                         From a serene jacuzzi experience to fitness facilities, our hotel invites you to immerse yourself 
                         in relaxation and enjoy the finer aspects of life.</p>
@@ -570,7 +572,7 @@
 <div class="general-section2" id="location">
     <div class="container">
   	
-    <h2 align="center" class="mb-5 mt-3">Find us here</h2>
+    <p align="center" class="mb-5 mt-3 fs-2">Find us here</p>
     		<div class="row">
       			      <div class="col-lg-6 col-sm-12" >
                   <iframe
@@ -586,9 +588,9 @@
                  
       			      </div>
 
-      						<div class="col-lg-6 col-sm-12 ps-5">
-                  <h3 class="pb-3">Destinations near us:</h3>
-          						<ul class="list-group" >
+      						<div class="col-lg-6 col-sm-12" align="center">
+                  <p class="pb-3 ">Destinations near us:</p>
+          						<ul class="list-group w-75">
                         <li class="list-group-item">SM Mall Of Asia: <strong>approx 3.08km</strong></li>
                         <li class="list-group-item">NAIA Terminals 1-4: <strong>approx 1.21km - 2.54km</strong></li>
                         <li class="list-group-item">Paranaque Integrated Terminal Exchange(PITX): <strong>approx 0.24km</strong></li>
