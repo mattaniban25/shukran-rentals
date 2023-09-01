@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="ssss.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 
     <title>Shukran Rentals - Login</title>
@@ -33,10 +33,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="responsive-homepage.php" class="nav-item nav-link">Home</a>
-                <a href="accommodations.php" class="nav-item nav-link">Accommodations</a>
-                <a href="eventsPage.php" class="nav-item nav-link">Events</a>
-                <a href="leisurePage.php" class="nav-item nav-link">Leisure</a>
+                <a href="../default-index.php" class="nav-item nav-link">Home</a>
+                <a href="default-accommodations.php" class="nav-item nav-link">Accommodations</a>
+                <a href="default-events.php" class="nav-item nav-link">Events</a>
+                <a href="#" class="nav-item nav-link">Leisure</a>
                 <a href="#" class="nav-item nav-link">Contact Us</a>
                 <a href="#" class="nav-item nav-link">Terms & Conditions</a>
             </div>
@@ -66,7 +66,7 @@
           
             <div class="carousel-inner ">
             <div class="carousel-item active">
-              <img src="../IMAGES/accommodationsHeader.jpg" class="d-block w-100 " alt="...">
+              <img src="../IMAGES/accommodations.jpg" class="d-block w-100 " alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <!--
                 <h5>First slide label</h5>

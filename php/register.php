@@ -34,8 +34,8 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
               <a href="../default-index.php" class="nav-item nav-link">Home</a>
-              <a href="#" class="nav-item nav-link">Accommodations</a>
-              <a href="#" class="nav-item nav-link">Events</a>
+              <a href="default-accommodations.php" class="nav-item nav-link">Accommodations</a>
+              <a href="default-events.php" class="nav-item nav-link">Events</a>
               <a href="#" class="nav-item nav-link">Leisure</a>
               <a href="#" class="nav-item nav-link">Contact Us</a>
               <a href="#" class="nav-item nav-link">Terms & Conditions</a>

@@ -98,7 +98,7 @@
         </div>
 
         <div class="col-lg-3 col-md-6 mb-3" style="">
-          <div class="border-start border-4 border-danger shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'London')">
+          <div class="border-start border-4 border-danger shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'Manila')">
             <b class="text-danger">ALL<br></b>
             <b class="fs-2">50</b>
           </div>
@@ -120,6 +120,11 @@
       <div id="Tokyo" class="tabcontent bg-success">
         <h3>Tokyo</h3>
         <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+      <div id="Manila" class="tabcontent bg-danger">
+        <h3>Manila</h3>
+        <p>Manila is the capital of The Philippines.</p>
       </div>
 
       <script>

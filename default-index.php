@@ -13,8 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="sss.css">
-    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="javascript/app.js"></script>
 
     <title>Shukran Rentals - Login</title>
 
@@ -28,23 +28,23 @@
       <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
-            <img src="../IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
+            <img src="IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
           </a>
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="responsive-homepage.php" class="nav-item nav-link">Home</a>
-                <a href="accommodations.php" class="nav-item nav-link">Accommodations</a>
-                <a href="eventsPage.php" class="nav-item nav-link">Events</a>
-                <a href="leisurePage.php" class="nav-item nav-link">Leisure</a>
+                <a href="default-index.php" class="nav-item nav-link">Home</a>
+                <a href="php/default-accommodations.php" class="nav-item nav-link">Accommodations</a>
+                <a href="php/default-events.php" class="nav-item nav-link">Events</a>
+                <a href="#" class="nav-item nav-link">Leisure</a>
                 <a href="#" class="nav-item nav-link">Contact Us</a>
                 <a href="#" class="nav-item nav-link">Terms & Conditions</a>
             </div>
             <div class="navbar-nav ms-auto">
-              <a href="register.php" class="nav-item nav-link"><strong>Register</strong></a>
-              <a href="login.php" class="nav-item nav-link"><strong>Login</strong></a>
+              <a href="php/register.php" class="nav-item nav-link"><strong>Register</strong></a>
+              <a href="php/login.php" class="nav-item nav-link"><strong>Login</strong></a>
             </div>
         </div>
         </div>
@@ -70,7 +70,7 @@
           
             <div class="carousel-inner ">
             <div class="carousel-item active" data-bs-interval="5000">
-              <img src="../IMAGES/carousel-shukneneng.jpg" class="d-block w-100 " alt="...">
+              <img src="IMAGES/carousel-shukneneng.jpg" class="d-block w-100 " alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <!--
                 <h5>First slide label</h5>
@@ -79,7 +79,7 @@
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
-              <img src="../IMAGES/carousel-pool.jpg" class="d-block w-100" alt="...">
+              <img src="IMAGES/carousel-pool.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <!--
                 <h5>Second slide label</h5>
@@ -88,7 +88,7 @@
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
-              <img src="../IMAGES/carousel-side.JPG" class="d-block w-100" alt="...">
+              <img src="IMAGES/carousel-side.JPG" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <!--
                 <h5>Third slide label</h5>
@@ -122,7 +122,7 @@
   <div class="col-lg-4 col-sm-12">
     <div class="thumbnail">
       
-        <img src="../IMAGES/roomSample.jpg"  style="width:100%;" class="img-fluid mb-3">
+        <img src="IMAGES/roomSample.jpg"  style="width:100%;" class="img-fluid mb-3">
         
       </a>
     </div>
@@ -130,7 +130,7 @@
   <div class="col-lg-4 col-sm-12">
     <div class="thumbnail">
       
-        <img src="../IMAGES/roomSample2.jpg"  style="width:100%" class="img-fluid mb-3">
+        <img src="IMAGES/roomSample2.jpg"  style="width:100%" class="img-fluid mb-3">
         
       </a>
     </div>
@@ -138,7 +138,7 @@
   <div class="col-lg-4 col-sm-12">
     <div class="thumbnail">
       
-        <img src="../IMAGES/roomSample3.jpg"  style="width:100%" class="img-fluid mb-3">
+        <img src="IMAGES/roomSample3.jpg"  style="width:100%" class="img-fluid mb-3">
         
       </a>
     </div>
@@ -167,7 +167,7 @@
       <div class="row" >
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
           <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width:320px">
-            <img class="card-img-top" src="../IMAGES/promoSample.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="IMAGES/promoSample.jpg" alt="Card image" style="width:100%">
               <div class="card-body">
                 <h4 class="card-title">BOMBASTIC</h4>
                 <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
@@ -275,7 +275,7 @@
 
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
           <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width:320px">
-              <img class="card-img-top" src="../IMAGES/promoSample2.jpg" alt="Card image" style="width:100%">
+              <img class="card-img-top" src="IMAGES/promoSample2.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title">PALONCHAY</h4>
                   <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
@@ -384,7 +384,7 @@
 
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
         <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width:320px">
-              <img class="card-img-top" src="../IMAGES/promoSample3.jpg" alt="Card image" style="width:100%">
+              <img class="card-img-top" src="..IMAGES/promoSample3.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title">GIL PANOT</h4>
                   <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
@@ -499,7 +499,7 @@
     <p align="center" class="mb-5 mt-3 fs-2">Accommodations</p>
     		<div class="row mb-5" align="center">
       			      <div class="col-lg-6 col-sm-12" >
-                  <img src="../IMAGES/accommodations.jpg" alt="" class="img-fluid imagess" style="width:85%">
+                  <img src="IMAGES/accommodations.jpg" alt="" class="img-fluid imagess" style="width:85%">
       			      </div>
 
       						<div class="col-lg-6 col-sm-12"  >
@@ -523,7 +523,7 @@
     <p align="center" class="mb-5 mt-3 fs-2">Events & Celebrations</p>
     		<div class="row mb-5" align="center">
       			      <div class="col-lg-6 col-sm-12" >
-                  <img src="../IMAGES/events.JPG" alt="" class="img-fluid imagess" style="width:85%">
+                  <img src="IMAGES/events.JPG" alt="" class="img-fluid imagess" style="width:85%">
         				    
       			      </div>
 
@@ -547,7 +547,7 @@
     <p align="center" class="mb-5 mt-3 fs-2">Lifestyle & Leisure</p>
     		<div class="row mb-5" align="center">
       			      <div class="col-lg-6 col-sm-12" >
-                  <img src="../IMAGES/billiards.jpg" alt="" class="img-fluid imagess" style="width:85%">
+                  <img src="IMAGES/billiards.jpg" alt="" class="img-fluid imagess" style="width:85%">
       			      </div>
 
       						<div class="col-lg-6 col-sm-12"  >
@@ -617,7 +617,7 @@
           <section class="">
             <div class="row">
               <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-center justify-content-center">
-                <img src="../IMAGES/logo.png" alt="" height="125">
+                <img src="IMAGES/logo.png" alt="" height="125">
               </div>
 
               <hr class="w-100 clearfix d-md-none" />

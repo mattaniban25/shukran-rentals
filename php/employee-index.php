@@ -55,7 +55,7 @@
                     <div class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i></a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="logout.php">Logout tangina</a></li>
+                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                       </ul>
                     </div>
                   </div>
@@ -106,11 +106,11 @@
               <img src="../Images/Employee.jfif" alt="">
               <div class="navbar-nav ms-auto">
                 <div class="navbar-nav">
-                  <div class="nav-item dropdown">
+                  <div class="nav-item dropdown bg-white">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><span>Account</span></a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                    </ul>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="logout.php">Logout</a>
+                    </div>
                   </div>
                 </div>
               </div>
