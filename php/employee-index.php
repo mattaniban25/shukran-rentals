@@ -54,9 +54,9 @@
                   <div class="navbar-nav">
                     <div class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i></a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="logout.php">Logout</a>
-                      </div>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="logout.php">Logout tangina</a></li>
+                      </ul>
                     </div>
                   </div>
                 </div>
