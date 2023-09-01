@@ -66,16 +66,20 @@
 
           if(empty($firstName) OR empty($lastName) OR empty($email) OR empty($contact) OR empty($password) OR empty($confirmPassword)){
             array_push($errors, "All fields are required");
+          }if (!preg_match("/^[a-zA-Z-' ]*$/",$firstName) OR !preg_match("/^[a-zA-Z-' ]*$/",$lastName)) {
+            array_push($errors, "First name and last name must not contain numbers and special characters.");
           }if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
             array_push($errors, "Email is not valid.");
           }if (strlen($password)<8){
             array_push($errors, "Password must be at least 8 characters long.");
           }if($password!==$confirmPassword){
             array_push($errors, "Password does not match");
-          }if($contact<11 OR $contact>11){
+          }if($contact==" "){
+            array_push($errors, "Contact number must not contain spaces.");
+          }if(strlen($contact)<=10 OR strlen($contact)>=12){
             array_push($errors, "Contact number must be 11 digits long.");
-          }if($contact[0]!=="0" OR $contact[1]!=="9"){
-            array_push($errors, "Contact number must start with 09.");
+          }if(!preg_match("/^[0-9]*$/",$contact)){
+            array_push($errors, "Contact number must not contain letters and special characters.");
           }
 
           require_once "database.php";
