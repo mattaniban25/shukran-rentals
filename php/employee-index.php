@@ -106,8 +106,8 @@
               <img src="../Images/Employee.jfif" alt="">
               <div class="navbar-nav ms-auto">
                 <div class="navbar-nav">
-                  <div class="nav-item dropdown bg-white">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><span>Account</span></a>
+                  <div class="dropdown">
+                    <a class="dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"><span>Account</span></a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="logout.php">Logout</a>
                     </div>
@@ -126,42 +126,80 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-3" style="">
-          <div class="border-start border-4 border-primary shadow-sm rounded p-4  bg-white">
+          <div class="border-start border-4 border-primary shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'pending')">
             <b class="text-primary">PENDING<br></b>
             <b class="fs-2">15</b>
           </div>
         </div>
 
         <div class=" col-lg-3 col-md-6 mb-3" style="">
-          <div class="border-start border-4 border-warning shadow-sm rounded p-4  bg-white">
+          <div class="border-start border-4 border-warning shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'confirmed')">
             <b class="text-warning ">CONFIRMED<br></b>
             <b class="fs-2">10</b>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-3" style="">
-          <div class="border-start border-4 border-success shadow-sm rounded p-4  bg-white">
+          <div class="border-start border-4 border-success shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'checkin')">
             <b class="text-success">CHECKED-IN<br></b>
             <b class="fs-2">25</b>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-3" style="">
-          <div class="border-start border-4 border-danger shadow-sm rounded p-4  bg-white">
+          <div class="border-start border-4 border-danger shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'alldata')">
             <b class="text-danger">ALL<br></b>
             <b class="fs-2">50</b>
           </div>
         </div>
       </div>
-      
-      <div class="mt-4">
-        <b class="fs-5">Pending Reservations</b>
+
+      <div id="pending" class="tabcontent">
+        <div class="mt-4">
+          <b class="fs-5">Pending Reservations</b>
+        </div>
       </div>
 
-     
+      <div id="confirmed" class="tabcontent">
+        <div class="mt-4">
+          <b class="fs-5">Confirmed</b>
+        </div>
+      </div>
+
+      <div id="checkin" class="tabcontent">
+        <div class="mt-4">
+          <b class="fs-5">Checked-in</b>
+        </div>
+      </div>
+
+      <div id="alldata" class="tabcontent">
+        <div class="mt-4">
+          <b class="fs-5">ALL</b>
+        </div>
+      </div>
+
     </div>
     
     <div class="footer">
     </div>
+
+    <script>
+        function openCity(evt, dashboardCard) {
+          var i, tabcontent, tablinks;
+
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+
+          document.getElementById(dashboardCard).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>
   </body>
 </html>

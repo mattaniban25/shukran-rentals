@@ -161,17 +161,65 @@ a{
     transition: 0.2;
 }
 
-/* CSS NI MARTIN
+/* Style the tab */
+.tab {
+    overflow: hidden;
+  }
 
-.welcome-message
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+/* CSS NI MARTIN */
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
 {
     font-family: 'Montserrat', sans-serif;
 }
-p
+
+ul li::before
 {
-    font-family: 'Montserrat', sans-serif;
+    content: "> ";   
+}
+td,th,tr
+{
+   border: none;
+   /*  border: 1px solid black;*/
 }
 
+li
+{ 
+    letter-spacing: -1px;
+    word-spacing: 0.1px;
+    text-align: start;
+}
+ul li
+{
+    letter-spacing: -1px;
+    font-family: 'Montserrat', sans-serif;
+}
+.welcome-message, p
+{
+    letter-spacing: -1px;
+    font-family: 'Montserrat', sans-serif;
+}
 .shukran-experience
 {
     padding-top: 50px;
@@ -180,7 +228,6 @@ h2
 {
     font-family: 'Alegreya', serif;
 }
-
 .general-section1
 {
     align-items: center;
@@ -193,11 +240,7 @@ h2
     height: fit-content;  
     background-color:white;
 }
-.row
-{
-    
-    align-items: center;
-}
+
 .nav-item
 {
     margin-right: 10px;
@@ -236,13 +279,64 @@ h2
 {
     box-shadow: -40px -40px 0px -8px rgba(236, 236, 236, 1);
 }
-*/
-
-
-/*.card
+.container
+{  
+    height: fit-content; 
+    padding: 10px;
+}
+.home-description
 {
-    margin-top:100px;
-}*/
+    padding: 15px;
+}
+.welcome-div
+{
+    opacity:0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+    padding:10px;
+}
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.cards
+{
+    opacity:0;
+    filter: blur(3px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.cards:nth-child(1)
+{
+    transition-delay: 200ms;
+}
+.cards:nth-child(2)
+{
+    transition-delay: 600ms;
+}
+.cards:nth-child(3)
+{
+    transition-delay: 1000ms;
+}
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+@media(prefers-reduced-motion){
+    .welcome-div,.cards{
+        transition: none;
+    }
+}
+
+
 
 @media (width < 500px){
     .staff-header{
@@ -274,25 +368,3 @@ h2
         width: 50px;
     }
 }
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-  }
-
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
-  }
-
-  @-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }

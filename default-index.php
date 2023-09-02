@@ -153,7 +153,7 @@
                     <h3 class="welcome-message h2">Want the Shukran experience?</h3>
                     <p>Create an account now to start booking with us!</p>
 
-                    <a class="btn btn-danger pe-5 ps-5"href="register.php">REGISTER</a>
+                    <a class="btn btn-danger pe-5 ps-5"href="php/register.php">REGISTER</a>
                   </div>
 </div>
 </div>
@@ -384,7 +384,7 @@
 
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
         <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width:320px">
-              <img class="card-img-top" src="..IMAGES/promoSample3.jpg" alt="Card image" style="width:100%">
+              <img class="card-img-top" src="IMAGES/promoSample3.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title">GIL PANOT</h4>
                   <p class="card-text">Use the voucher code above to get 50% off from your tite</p>

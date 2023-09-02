@@ -59,9 +59,10 @@
                 <div class="navbar-nav">
                   <div class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><span>Account</span></a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                    </ul>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="logout.php">Logout</a>
+
+                    </div>
                   </div>
                 </div>
               </div>
