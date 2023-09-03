@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <div class="header bg-white">
+    <div class="header">
       <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
@@ -33,18 +33,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-              <a href="../default-index.php" class="nav-item nav-link">Home</a>
-              <a href="default-accommodations.php" class="nav-item nav-link">Accommodations</a>
-              <a href="default-events.php" class="nav-item nav-link">Events</a>
-              <a href="#" class="nav-item nav-link">Leisure</a>
-              <a href="#" class="nav-item nav-link">Contact Us</a>
-              <a href="#" class="nav-item nav-link">Terms & Conditions</a>
+                <a href="../default-index.php" class="nav-item page-header nav-link">Home</a>
+                <a href="default-accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
+                <a href="default-events.php" class="nav-item page-header nav-link">Events</a>
+                <a href="#" class="nav-item page-header nav-link">Leisure</a>
+                <a href="#" class="nav-item page-header nav-link">Contact Us</a>
+                <a href="#" class="nav-item page-header nav-link">Terms & Conditions</a>
             </div>
             <div class="navbar-nav ms-auto">
-              <a href="register.php" class="nav-item nav-link"><strong>Register</strong></a>
-              <a href="login.php" class="nav-item nav-link"><strong>Login</strong></a>
+              <a href="register.php" class="nav-item page-header nav-link"><strong>Register</strong></a>
+              <a href="login.php" class="nav-item page-header nav-link"><strong>Login</strong></a>
             </div>
-          </div>
+        </div>
         </div>
       </nav>
     </div>

@@ -24,30 +24,30 @@
 
   <body>
     <div class="header">
-        <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand">
-                <img src="../IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
-                </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="../default-index.php" class="nav-item nav-link">Home</a>
-                        <a href="default-accommodations.php" class="nav-item nav-link">Accommodations</a>
-                        <a href="default-events.php" class="nav-item nav-link">Events</a>
-                        <a href="#" class="nav-item nav-link">Leisure</a>
-                        <a href="#" class="nav-item nav-link">Contact Us</a>
-                        <a href="#" class="nav-item nav-link">Terms & Conditions</a>
-                    </div>
-                    <div class="navbar-nav ms-auto">
-                    <a href="register.php" class="nav-item nav-link"><strong>Register</strong></a>
-                    <a href="login.php" class="nav-item nav-link"><strong>Login</strong></a>
-                    </div>
-                </div>
+      <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="../IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
+          </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="../default-index.php" class="nav-item page-header nav-link">Home</a>
+                <a href="default-accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
+                <a href="default-events.php" class="nav-item page-header nav-link">Events</a>
+                <a href="#" class="nav-item page-header nav-link">Leisure</a>
+                <a href="#" class="nav-item page-header nav-link">Contact Us</a>
+                <a href="#" class="nav-item page-header nav-link">Terms & Conditions</a>
             </div>
-        </nav>
+            <div class="navbar-nav ms-auto">
+              <a href="register.php" class="nav-item page-header nav-link"><strong>Register</strong></a>
+              <a href="login.php" class="nav-item page-header nav-link"><strong>Login</strong></a>
+            </div>
+        </div>
+        </div>
+      </nav>
     </div>
 
     <div class="content bg-body-secondary">
