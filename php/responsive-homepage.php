@@ -27,7 +27,6 @@
     <div class="header">
       <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand">
             <img src="../IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
           </a>
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -35,12 +34,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="responsive-homepage.php" class="nav-item nav-link">Home</a>
-                <a href="accommodations.php" class="nav-item nav-link">Accommodations</a>
-                <a href="eventsPage.php" class="nav-item nav-link">Events</a>
-                <a href="leisurePage.php" class="nav-item nav-link">Leisure</a>
-                <a href="#" class="nav-item nav-link">Contact Us</a>
-                <a href="#" class="nav-item nav-link">Terms & Conditions</a>
+                <a href="responsive-homepage.php" class="page-header nav-item nav-link">Home</a>
+                <a href="php/default-accommodations.php" class="page-header nav-item nav-link">Accommodations</a>
+                <a href="eventsPage.php" class=" page-header nav-item nav-link">Events</a>
+                <a href="leisurePage.php" class=" page-header nav-item nav-link">Leisure</a>
+                <a href="#" class="page-header nav-item nav-link">Contact Us</a>
+                <a href="#" class=" page-headernav-item nav-link">Terms & Conditions</a>
             </div>
             <div class="navbar-nav ms-auto">
               <a href="register.php" class="nav-item nav-link"><strong>Register</strong></a>

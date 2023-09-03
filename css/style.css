@@ -331,7 +331,7 @@ h2
 
 
 @media(prefers-reduced-motion){
-    .welcome-div,.cards{
+    .welcome-div{
         transition: none;
     }
 }
