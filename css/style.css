@@ -241,7 +241,7 @@ h2
     background-color:white;
 }
 
-.nav-item
+.page-header
 {
     margin-right: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -256,7 +256,7 @@ h2
     letter-spacing: 0.1vh;
     word-spacing: 0.1vh;
 }
-.nav-item
+.page-header
 {
     padding-top: 3px;
     padding-bottom: 3px;  
@@ -265,7 +265,7 @@ h2
     transition: 0.3s;
     border-radius: 5px;
 }
-.nav-item:hover
+.page-header:hover
 {
     padding-top: 3px;
     padding-bottom: 3px;
@@ -338,7 +338,7 @@ h2
 
 
 
-@media (width < 500px){
+@media (width < 750px){
     .staff-header{
         display:contents;
     }

@@ -33,16 +33,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="../default-index.php" class="nav-item nav-link">Home</a>
-                <a href="default-accommodations.php" class="nav-item nav-link">Accommodations</a>
-                <a href="default-events.php" class="nav-item nav-link">Events</a>
-                <a href="#" class="nav-item nav-link">Leisure</a>
-                <a href="#" class="nav-item nav-link">Contact Us</a>
-                <a href="#" class="nav-item nav-link">Terms & Conditions</a>
+                <a href="../default-index.php" class="nav-item page-header nav-link">Home</a>
+                <a href="default-accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
+                <a href="default-events.php" class="nav-item page-header nav-link">Events</a>
+                <a href="#" class="nav-item page-header nav-link">Leisure</a>
+                <a href="#" class="nav-item page-header nav-link">Contact Us</a>
+                <a href="#" class="nav-item page-header nav-link">Terms & Conditions</a>
             </div>
             <div class="navbar-nav ms-auto">
-              <a href="register.php" class="nav-item nav-link"><strong>Register</strong></a>
-              <a href="login.php" class="nav-item nav-link"><strong>Login</strong></a>
+              <a href="register.php" class="nav-item page-header nav-link"><strong>Register</strong></a>
+              <a href="login.php" class="nav-item page-header nav-link"><strong>Login</strong></a>
             </div>
         </div>
         </div>
@@ -50,361 +50,335 @@
 
 
       <nav class="navbar bg-body-tertiary shukran-navbar">
-  <div class="container-fluid" id="shukran-navbar">
-    <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
-    <div class="d-flex">
-      <a href="#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
+        <div class="container-fluid" id="shukran-navbar">
+          <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
+          <div class="d-flex">
+            <a href="#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
 
-      <a href="" class="nav-link me-4" style="cursor:alias">
-      <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
-</div>
-  </div>
-</nav>
-    </div>
-    
-    <div id="carouselExampleCaptions" class="carousel" data-bs-ride="carousel">
-          
-            <div class="carousel-inner ">
-            <div class="carousel-item active">
-              <img src="../IMAGES/accommodations.jpg" class="d-block w-100 " alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <!--
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-                -->
-              </div>
-            </div>
+            <a href="" class="nav-link me-4" style="cursor:alias">
+            <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
           </div>
-    
-
-
-          
-    <div class="container">
-    <p class="mb-5 mt-5 fs-2" align="center">ALL TYPES OF ROOM APPLIES TO THIS</p>
-      <div class="row" align="" >
-        
-        <div class="col-lg-6 ">
-          
-          
-          <p class="fs-4 fw-bold">INCLUSIONS</p>
-          <table class="table w-100">
-            <ul>
-              <tbody>
-                <tr>
-                  <td>
-                    <li><i class="fa-solid fa-bed fa-lg" style="color: #aa2400;"></i> Bed & Pillows</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-blender-phone fa-lg" style="color: #aa2400;"></i> Water Kettle</li>
-                  </td>
-                  
-                </tr>
-                <tr>
-                  
-                  <td>
-                    <li><i class="fa-solid fa-shower fa-lg" style="color: #aa2400;"></i> Hot & Cold Shower</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-toolbox fa-lg" style="color: #aa2400;"></i> Guest Kit</li>
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td>
-                    <li><i class="fa-solid fa-tv fa-lg" style="color: #aa2400;"></i> Cable TV or Android TV</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-toilet-paper fa-lg" style="color: #aa2400;"></i> Tissue</li>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <li><i class="fa-solid fa-utensils fa-lg" style="color: #aa2400;"></i> Microwave</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-person-shelter fa-lg" style="color: #aa2400;"></i> Spacious</li>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <li><i class="fa-solid fa-bowl-rice fa-lg" style="color: #aa2400;"></i> Rice Cooker</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-temperature-arrow-down fa-lg" style="color: #aa2400;"></i> Airconditioned</li>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <li><i class="fa-solid fa-wifi fa-lg" style="color: #aa2400;"></i> WiFi</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-rug fa-lg" style="color: #aa2400;"></i> Towels</li>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <li><i class="fa-regular fa-snowflake fa-lg" style="color: #aa2400;"></i> Mini Fridge</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-chair fa-lg" style="color: #aa2400;"></i> Tables & Chairs</li>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <li><i class="fa-solid fa-bottle-water ms-1 fa-lg" style="color: #aa2400;"></i> Complimentary Water</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-trash fa-lg" style="color: #aa2400;"></i> Trash Bin</li>
-                  </td>
-                </tr>
-
-
-              </tbody>
-            </ul>
-          </table>
         </div>
+      </nav>
+    </div>
 
-
-        <div class="col-lg-6">
-          <p class="fs-4 fw-bold">AMENITIES</p>
-          <table class="table w-100">
-            <ul>
-              <tbody>
-                <tr>
-                  <td>
-                    <li><i class="fa-solid fa-dumbbell fa-lg fs-6" style="color: #aa2400;"></i> Gym</li>
-                    
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-couch fa-lg fs-6" style="color: #aa2400;"></i> Lounge</li>
-                  </td>
-                </tr>
-                <tr>
-                  
-                  <td>
-                    <li><i class="fa-solid fa-hot-tub-person fa-lg fs-6" style="color: #aa2400;"></i> Roof deck view & Jacuzzi Area</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-dice-five fa-lg" style="color: #aa2400;"></i> Billiard Table, Beer Pong & Mini Bar</li>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <li><i class="fa-solid fa-person-swimming fa-lg" style="color: #aa2400;"></i> Indoor Swimming pool</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-basketball fa-lg" style="color: #aa2400;"></i> Basketball Court & Playground</li>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <li><i class="fa-solid fa-store fa-lg" style="color: #aa2400;"></i> Convenience Store</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-pizza-slice fa-lg" style="color: #aa2400;"></i> Room service food & beverage</li>
-                  </td>
-                </tr>
-              </tbody>
-            </ul>
-          </table>
-
-          <p class="fs-4 fw-bold">OTHERS</p>
-          <table class="table w-100">
-            <ul>
-              <tbody>
-                <tr>
-                  <td>
-                    <li><i class="fa-solid fa-phone-volume fa-lg" style="color: #aa2400;"></i> Room service telephone</li> 
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-eye fa-lg" style="color: #aa2400;"></i> 24 hours surveillance system</li>
-                  </td>
-                </tr>  
-                <tr>
-                  <td>
-                    <li><i class="fa-solid fa-car-side fa-lg" style="color: #aa2400;"></i> Free parking</li>
-                  </td>
-                  <td>
-                    <li><i class="fa-solid fa-person-military-pointing fa-lg" style="color: #aa2400;"></i> 24 hours security service</li>
-                  </td>
-                </tr>
-              </tbody>
-            </ul>
-          </table>
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <img src="../IMAGES/accommodations.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <!--
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            -->
+          </div>
         </div>
       </div>
-    </div>
+           
+      <div class="container">
+        <p class="mb-5 mt-5 fs-2" align="center">ALL TYPES OF ROOM APPLIES TO THIS</p>
+        <div class="row" align="" >
+          <div class="col-lg-6 ">
+            <p class="fs-4 fw-bold">INCLUSIONS</p>
+            <table class="table w-100">
+              <ul>
+                <tbody>
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-bed fa-lg" style="color: #aa2400;"></i> Bed & Pillows</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-blender-phone fa-lg" style="color: #aa2400;"></i> Water Kettle</li>
+                    </td>
+                  </tr>
 
-<div class="general-section1">
-    <div class="container">
-  	
-    <h2 align="center" class="mb-5 mt-3"></h2>
-    		<div class="row mb-5" align="center">
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-shower fa-lg" style="color: #aa2400;"></i> Hot & Cold Shower</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-toolbox fa-lg" style="color: #aa2400;"></i> Guest Kit</li>
+                    </td>
+                  </tr>
 
-      			      <div class="col-lg-6 col-sm-12" >
-                        <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
-      			      </div>
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-tv fa-lg" style="color: #aa2400;"></i> Cable TV or Android TV</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-toilet-paper fa-lg" style="color: #aa2400;"></i> Tissue</li>
+                    </td>
+                  </tr>
 
-      				<div class="col-lg-6 col-sm-12"  >
-        							
-                      <div>
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-utensils fa-lg" style="color: #aa2400;"></i> Microwave</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-person-shelter fa-lg" style="color: #aa2400;"></i> Spacious</li>
+                    </td>
+                  </tr>
 
-                        <p class="pt-4 pb-2 fs-3 fw-bold">PWD Room</p>
-                        
-                        <div class="container">
-                        <ol class="list-group w-75 " >
-                          <li class="list-group-item bg-transparent fs-5 "><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
-                          <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
-                        </ol>
-                        </div>
-            						
-                        <a class="btn btn-danger ps-5 pe-5 mt-5"href="">BOOK NOW</a>
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-bowl-rice fa-lg" style="color: #aa2400;"></i> Rice Cooker</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-temperature-arrow-down fa-lg" style="color: #aa2400;"></i> Airconditioned</li>
+                    </td>
+                  </tr>
 
-        			  </div>     
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-wifi fa-lg" style="color: #aa2400;"></i> WiFi</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-rug fa-lg" style="color: #aa2400;"></i> Towels</li>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <li><i class="fa-regular fa-snowflake fa-lg" style="color: #aa2400;"></i> Mini Fridge</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-chair fa-lg" style="color: #aa2400;"></i> Tables & Chairs</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-bottle-water ms-1 fa-lg" style="color: #aa2400;"></i> Complimentary Water</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-trash fa-lg" style="color: #aa2400;"></i> Trash Bin</li>
+                    </td>
+                  </tr>
+                </tbody>
+              </ul>
+            </table>
+          </div>
+
+          <div class="col-lg-6">
+            <p class="fs-4 fw-bold">AMENITIES</p>
+            <table class="table w-100">
+              <ul>
+                <tbody>
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-dumbbell fa-lg fs-6" style="color: #aa2400;"></i> Gym</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-couch fa-lg fs-6" style="color: #aa2400;"></i> Lounge</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-hot-tub-person fa-lg fs-6" style="color: #aa2400;"></i> Roof deck view & Jacuzzi Area</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-dice-five fa-lg" style="color: #aa2400;"></i> Billiard Table, Beer Pong & Mini Bar</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-person-swimming fa-lg" style="color: #aa2400;"></i> Indoor Swimming pool</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-basketball fa-lg" style="color: #aa2400;"></i> Basketball Court & Playground</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-store fa-lg" style="color: #aa2400;"></i> Convenience Store</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-pizza-slice fa-lg" style="color: #aa2400;"></i> Room service food & beverage</li>
+                    </td>
+                  </tr>
+                </tbody>
+              </ul>
+            </table>
+
+            <p class="fs-4 fw-bold">OTHERS</p>
+            <table class="table w-100">
+              <ul>
+                <tbody>
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-phone-volume fa-lg" style="color: #aa2400;"></i> Room service telephone</li> 
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-eye fa-lg" style="color: #aa2400;"></i> 24 hours surveillance system</li>
+                    </td>
+                  </tr>  
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-car-side fa-lg" style="color: #aa2400;"></i> Free parking</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-person-military-pointing fa-lg" style="color: #aa2400;"></i> 24 hours security service</li>
+                    </td>
+                  </tr>
+                </tbody>
+              </ul>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="general-section1">
+        <div class="container">
+          <h2 align="center" class="mb-5 mt-3"></h2>
+          <div class="row mb-5" align="center">
+            <div class="col-lg-6 col-sm-12" >
+              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <div>
+                  <p class="pt-4 pb-2 fs-3 fw-bold">PWD Room</p>
+                  <div class="container">
+                    <ol class="list-group w-75 " >
+                      <li class="list-group-item bg-transparent fs-5 "><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
+                      <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
+                      <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
+                      <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
+                      <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
+                    </ol>
                   </div>
-		    </div>
-    </div>
-</div>
+                  <a class="btn btn-danger ps-5 pe-5 mt-5"href="">BOOK NOW</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="general-section2">
-<div class="container">
-  	
-    <h2 align="center" class="mb-5 mt-3"></h2>
-    		<div class="row mb-5" align="center">
+      <div class="general-section2">
+        <div class="container">
+          <h2 align="center" class="mb-5 mt-3"></h2>
+          <div class="row mb-5" align="center">
+            <div class="col-lg-6 col-sm-12" >
+              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
+            </div>
+            <div class="col-lg-6 col-sm-12"  >
+              <div>
+                <p class="pt-4 pb-2 fs-3 fw-bold">Deluxe Room</p>
+                <div class="">
+                  <ol class="list-group w-75" align="justify">
+                    <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
+                    <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
+                    <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
+                    <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
+                    <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
+                  </ol>
+                </div>
+                <a class="btn btn-danger ps-5 pe-5 mt-5"href="">BOOK NOW</a>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div>
 
-      			      <div class="col-lg-6 col-sm-12" >
-                        <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
-      			      </div>
+      <div class="general-section1">
+      <div class="container">
+          
+          <h2 align="center" class="mb-5 mt-3"></h2>
+              <div class="row mb-5" align="center">
 
-      				<div class="col-lg-6 col-sm-12"  >
-        							
-                      <div>
+                        <div class="col-lg-6 col-sm-12" >
+                              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
+                        </div>
 
-                        <p class="pt-4 pb-2 fs-3 fw-bold">Deluxe Room</p>
-                        
-                        <div class="">
-                        <ol class="list-group w-75" align="justify">
+                    <div class="col-lg-6 col-sm-12"  >
+                            
+                            <div>
+
+                              <p class="pt-4 pb-2 fs-3 fw-bold">Twin Room</p>
+                              
+                              <div class="">
+                              <ol class="list-group w-75" align="justify">
+                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
+                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
+                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
+                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
+                                <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
+                              </ol>
+                              </div>
+                              
+                              <a class="btn btn-danger ps-5 pe-5 mt-5"href="">BOOK NOW</a>
+
+                      </div>     
+                        </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="general-section2">
+      <div class="container">
+          
+          <h2 align="center" class="mb-5 mt-3"></h2>
+              <div class="row mb-5" align="center">
+
+                        <div class="col-lg-6 col-sm-12" >
+                              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
+                        </div>
+
+                    <div class="col-lg-6 col-sm-12"  >
+                            
+                            <div>
+
+                              <p class="pt-4 pb-2 fs-3 fw-bold">Standard Double Room</p>
+                              
+                              <div class="">
+                              <ol class="list-group w-75" align="justify">
+                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
+                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
+                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
+                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
+                                <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
+                              </ol>
+                              </div>
+                              
+                              <a class="btn btn-danger ps-5 pe-5 mt-5"href="">BOOK NOW</a>
+
+                      </div>     
+                        </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="general-section1">
+        <div class="container">
+          <h2 align="center" class="mb-5 mt-3"></h2>
+          <div class="row mb-5" align="center">
+            <div class="col-lg-6 col-sm-12" >
+              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
+            </div>
+
+            <div class="col-lg-6 col-sm-12"  >           
+              <div>
+                    <p class="pt-4 pb-2 fs-3 fw-bold">Family Room</p>       
+                    <div class="">
+                      <ol class="list-group w-75" align="justify">
                           <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
                           <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
                           <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
                           <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
                           <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
-                        </ol>
-                        </div>
-            						
-                        <a class="btn btn-danger ps-5 pe-5 mt-5"href="">BOOK NOW</a>
+                      </ol>
+                    </div>      
+                    <a class="btn btn-danger ps-5 pe-5 mt-5"href="">BOOK NOW</a>
+              </div>     
+            </div>
+          </div>
+        </div>
+      </div>
 
-        			  </div>     
-                  </div>
-		    </div>
-    </div>
-</div>
-<div class="general-section1">
-<div class="container">
-  	
-    <h2 align="center" class="mb-5 mt-3"></h2>
-    		<div class="row mb-5" align="center">
-
-      			      <div class="col-lg-6 col-sm-12" >
-                        <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
-      			      </div>
-
-      				<div class="col-lg-6 col-sm-12"  >
-        							
-                      <div>
-
-                        <p class="pt-4 pb-2 fs-3 fw-bold">Twin Room</p>
-                        
-                        <div class="">
-                        <ol class="list-group w-75" align="justify">
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
-                          <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
-                        </ol>
-                        </div>
-            						
-                        <a class="btn btn-danger ps-5 pe-5 mt-5"href="">BOOK NOW</a>
-
-        			  </div>     
-                  </div>
-		    </div>
-    </div>
-</div>
-
-<div class="general-section2">
-<div class="container">
-  	
-    <h2 align="center" class="mb-5 mt-3"></h2>
-    		<div class="row mb-5" align="center">
-
-      			      <div class="col-lg-6 col-sm-12" >
-                        <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
-      			      </div>
-
-      				<div class="col-lg-6 col-sm-12"  >
-        							
-                      <div>
-
-                        <p class="pt-4 pb-2 fs-3 fw-bold">Standard Double Room</p>
-                        
-                        <div class="">
-                        <ol class="list-group w-75" align="justify">
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
-                          <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
-                        </ol>
-                        </div>
-            						
-                        <a class="btn btn-danger ps-5 pe-5 mt-5"href="">BOOK NOW</a>
-
-        			  </div>     
-                  </div>
-		    </div>
-    </div>
-</div>
-<div class="general-section1">
-<div class="container">
-  	
-    <h2 align="center" class="mb-5 mt-3"></h2>
-    		<div class="row mb-5" align="center">
-
-      			      <div class="col-lg-6 col-sm-12" >
-                        <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
-      			      </div>
-
-      				<div class="col-lg-6 col-sm-12"  >
-        							
-                      <div>
-
-                        <p class="pt-4 pb-2 fs-3 fw-bold">Family Room</p>
-                        
-                        <div class="">
-                        <ol class="list-group w-75" align="justify">
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
-                          <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
-                        </ol>
-                        </div>
-            						
-                        <a class="btn btn-danger ps-5 pe-5 mt-5"href="">BOOK NOW</a>
-
-        			  </div>     
-                  </div>
-		    </div>
-    </div>
-</div>
-
-
-<div class="footer">
+    <div class="footer">
       <div class="bg-dark border-top border-2 text-light border-danger" style="box-shadow: black 0px 0px 10px 0px;">
         <div class="container p-4 pb-0">
           <section class="">
@@ -462,9 +436,4 @@
       </div>
     </div>    
   </body>
-
-
-  <script>
- 
-  </script>
 </html>

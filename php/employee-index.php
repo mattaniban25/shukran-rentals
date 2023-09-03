@@ -158,6 +158,7 @@
         <div class="mt-4">
           <b class="fs-5">Pending Reservations</b>
         </div>
+        
       </div>
 
       <div id="confirmed" class="tabcontent">

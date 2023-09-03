@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <div class="header bg-white">
+    <div class="header">
         <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand">
