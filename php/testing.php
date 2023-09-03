@@ -27,8 +27,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Shukran Rentals - Index</title>
+    <link rel="stylesheet" href="../css/testing.css">
+    <title>Shukran Rentals - Employee Index</title>
 
   </head>
 
@@ -126,7 +126,7 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-3" style="">
-          <div class="border-start border-4 border-primary shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'pending')">
+          <div class="border-start border-4 border-primary shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'pending')" id="defaultOpen">
             <b class="text-primary">PENDING<br></b>
             <b class="fs-2">15</b>
           </div>
@@ -154,7 +154,7 @@
         </div>
       </div>
 
-      <div id="pending" class="tabcontent">
+      <div id="pending" class="tabcontent active">
         <div class="mt-4">
           <b class="fs-5">Pending Reservations</b>
         </div>
@@ -185,22 +185,24 @@
     </div>
 
     <script>
-        function openCity(evt, dashboardCard) {
-          var i, tabcontent, tablinks;
+      function openCity(evt, dashboardCard) {
+        var i, tabcontent, tablinks;
 
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-
-          document.getElementById(dashboardCard).style.display = "block";
-          evt.currentTarget.className += " active";
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
         }
-      </script>
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(dashboardCard).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      document.getElementById("defaultOpen").click();
+    </script>
   </body>
 </html>
