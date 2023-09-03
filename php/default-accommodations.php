@@ -15,7 +15,6 @@
     <!-- CSS FILE -->
     <link rel="stylesheet" href="../css/style.css">
 
-
     <title>Shukran Rentals - Login</title>
 
   </head>
@@ -235,7 +234,7 @@
           <h2 align="center" class="mb-5 mt-3"></h2>
           <div class="row mb-5" align="center">
             <div class="col-lg-6 col-sm-12" >
-              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
+              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess " style="width:85%">
             </div>
 
             <div class="col-lg-6 col-sm-12">

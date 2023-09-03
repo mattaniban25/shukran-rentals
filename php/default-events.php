@@ -15,7 +15,6 @@
     <!-- CSS FILE -->
     <link rel="stylesheet" href="../css/style.css">
 
-
     <title>Shukran Rentals - Login</title>
 
   </head>
@@ -66,7 +65,7 @@
           
             <div class="carousel-inner ">
             <div class="carousel-item active">
-              <img src="../IMAGES/events.jpg" class="d-block w-100 " alt="...">
+              <img src="../IMAGES/eventsHeader.jpg" class="d-block w-100 " alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <!--
                 <h5>First slide label</h5>
