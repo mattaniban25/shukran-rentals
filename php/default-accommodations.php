@@ -73,7 +73,7 @@
         </div>
       </div>
            
-      <div class="container">
+      <div class="container pb-5">
         <p class="mb-5 mt-5 fs-2" align="center">ALL TYPES OF ROOM APPLIES TO THIS</p>
         <div class="row" align="" >
           <div class="col-lg-6 ">
@@ -235,194 +235,66 @@
         </div>
       </div>
 
-      <div class="general-section1">
-        <div class="container">
-          <h2 align="center" class="mb-5 mt-3"></h2>
-          <div class="row mb-5" align="center">
-            <div class="col-lg-6 col-sm-12" >
-              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess " style="width:85%">
-            </div>
-
-            <div class="col-lg-6 col-sm-12">
-                <div>
-                  <p class="pt-4 pb-2 fs-3 fw-bold">Standard Room</p>
-                  <div class="container">
-                    <ol class="list-group w-75" >
-                      <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
-                      <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
-                      <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
-                      <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
-                      <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
-                    </ol>
-                  </div>
-                  <a class="btn btn-danger ps-4 pe-4 mt-5"href="">VIEW DETAILS</a>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+     
+      <p class="mb-5 mt-5 fs-2" align="center">ROOMS</p>
 
       <div class="container" align="center">
-      <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
-    <div class="card w-75">
-      <img src="../IMAGES/yeah.jpg" class="card-img-top" alt="...">
+    <div class="card w-75 h-100">
+      <img src="../IMAGES/roomOne.jpg" class="card-img-top" alt="..." >
       <div class="card-body">
         <h5 class="card-title">Standard Room</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card w-75">
-      <img src="../IMAGES/roomOne.jpg" class="card-img-top" alt="...">
+    <div class="card w-75 h-100">
+      <img src="../IMAGES/accommodations.jpg" class="card-img-top" alt="..." >
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Deluxe Room</h5>
+        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+    <div class="card w-75 .h-100">
+      <img src="../IMAGES/roomSample.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">Twin Room</h5>
+        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+    <div class="card w-75 .h-100">
+      <img src="../IMAGES/roomSample2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Jacuzzi Room</h5>
+        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card w-75 .h-100">
+      <img src="../IMAGES/roomSample3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Game Room</h5>
+        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card w-75 .h-100">
+      <img src="../IMAGES/living-room.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Family Room</h5>
+        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
       </div>
     </div>
   </div>
 </div>
-      </div>
-
-      <div class="general-section2">
-        <div class="container">
-          <h2 align="center" class="mb-5 mt-3"></h2>
-          <div class="row mb-5" align="center">
-            <div class="col-lg-6 col-sm-12" >
-              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
-            </div>
-            <div class="col-lg-6 col-sm-12"  >
-              <div>
-                <p class="pt-4 pb-2 fs-3 fw-bold">Deluxe Room</p>
-                <div class="">
-                  <ol class="list-group w-75" align="justify">
-                    <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
-                    <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
-                    <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
-                    <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
-                    <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
-                  </ol>
-                </div>
-                <a class="btn btn-danger ps-4 pe-4 mt-5 "href="">VIEW DETAILS</a>
-              </div>   
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="general-section1">
-      <div class="container">
-          
-          <h2 align="center" class="mb-5 mt-3"></h2>
-              <div class="row mb-5" align="center">
-
-                        <div class="col-lg-6 col-sm-12" >
-                              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
-                        </div>
-
-                    <div class="col-lg-6 col-sm-12"  >
-                            
-                            <div>
-
-                              <p class="pt-4 pb-2 fs-3 fw-bold">Twin Room</p>
-                              
-                              <div class="">
-                              <ol class="list-group w-75" align="justify">
-                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
-                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
-                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
-                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
-                                <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
-                              </ol>
-                              </div>
-                              
-                              <a class="btn btn-danger ps-4 pe-4 mt-5"href="">VIEW DETAILS</a>
-
-                      </div>     
-                        </div>
-              </div>
-          </div>
-      </div>
-
-      <div class="general-section2">
-      <div class="container">
-          
-          <h2 align="center" class="mb-5 mt-3"></h2>
-              <div class="row mb-5" align="center">
-
-                        <div class="col-lg-6 col-sm-12" >
-                              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
-                        </div>
-
-                    <div class="col-lg-6 col-sm-12"  >
-                            
-                            <div>
-
-                              <p class="pt-4 pb-2 fs-3 fw-bold">Standard Double Room</p>
-                              
-                              <div class="">
-                              <ol class="list-group w-75" align="justify">
-                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
-                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
-                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
-                                <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
-                                <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
-                              </ol>
-                              </div>
-                              
-                              <a class="btn btn-danger ps-4 pe-4 mt-5"href="">VIEW DETAILS</a>
-
-                      </div>     
-                        </div>
-              </div>
-          </div>
-      </div>
-
-      <div class="general-section1">
-        <div class="container">
-          <h2 align="center" class="mb-5 mt-3"></h2>
-          <div class="row mb-5" align="center">
-            <div class="col-lg-6 col-sm-12" >
-              <img src="../IMAGES/roomSample.jpg" alt="" class="img-fluid imagess" style="width:85%">
-            </div>
-
-            <div class="col-lg-6 col-sm-12"  >           
-              <div>
-                    <p class="pt-4 pb-2 fs-3 fw-bold">Family Room</p>       
-                    <div class="">
-                      <ol class="list-group w-75" align="justify">
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-user-group" style="color: #aa2400;"></i> Persons: 5 pax </li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-door-open" style="color: #aa2400;"></i> Bedrooms: 2 bedrooms</li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-bed" style="color: #aa2400;"></i> Beds: 1 queen bed, 1 bunk bed</li>
-                          <li class="list-group-item bg-transparent fs-5"><i class="fa-solid fa-ban-smoking" style="color: #aa2400;"></i> No smoking</li>
-                          <li class="list-group-item bg-transparent fs-5">may konti alikabok pero oks lang</li>
-                      </ol>
-                    </div>      
-                    <a class="btn btn-danger ps-4 pe-4 mt-5"href="">VIEW DETAILS</a>
-              </div>     
-            </div>
-          </div>
-        </div>
       </div>
 
     <div class="footer">
