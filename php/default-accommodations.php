@@ -245,7 +245,7 @@
       <img src="../IMAGES/roomOne.jpg" class="card-img-top" alt="..." >
       <div class="card-body">
         <h5 class="card-title">Standard Room</h5>
-        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
+        <a class="btn btn-danger ps-4 pe-4 mt-3"href="standard-room.php">VIEW DETAILS</a>
       </div>
     </div>
   </div>
