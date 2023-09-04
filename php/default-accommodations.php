@@ -237,62 +237,75 @@
 
      
       <p class="mb-5 mt-5 fs-2" align="center">ROOMS</p>
+      <div align="center">
+        <hr class="border border-danger opacity-100 w-25">
+      </div>
 
       <div class="container" align="center">
       <div class="row row-cols-1 row-cols-md-3 g-4">
+
   <div class="col">
-    <div class="card w-75 h-100">
+    <a href="standard-room.php">
+    <div class="card w-100 h-100 border-0">
       <img src="../IMAGES/roomOne.jpg" class="card-img-top" alt="..." >
       <div class="card-body">
-        <h5 class="card-title">Standard Room</h5>
-        <a class="btn btn-danger ps-4 pe-4 mt-3"href="standard-room.php">VIEW DETAILS</a>
+        <h5 class="card-title" style="text-align:left;">Standard Room</h5>
+        
       </div>
     </div>
+    </a>
   </div>
+
   <div class="col">
-    <div class="card w-75 h-100">
+    <a href="">
+    <div class="card w-100 h-100 border-0">
       <img src="../IMAGES/accommodations.jpg" class="card-img-top" alt="..." >
       <div class="card-body">
-        <h5 class="card-title">Deluxe Room</h5>
-        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
+        <h5 class="card-title" style="text-align:left;">Deluxe Room</h5>
+        
       </div>
     </div>
+    </a>
   </div>
   <div class="col">
-    <div class="card w-75 .h-100">
+    <a href="">
+    <div class="card w-100 .h-100 border-0">
       <img src="../IMAGES/roomSample.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Twin Room</h5>
-        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
+        <h5 class="card-title" style="text-align:left;">Twin Room</h5>
       </div>
     </div>
+    </a>
   </div>
   <div class="col">
-    <div class="card w-75 .h-100">
+    <a href="">
+    <div class="card w-100 .h-100 border-0">
       <img src="../IMAGES/roomSample2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Jacuzzi Room</h5>
-        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
+        <h5 class="card-title" style="text-align:left;">Jacuzzi Room</h5>
       </div>
     </div>
+    </a>
   </div>
   <div class="col">
-    <div class="card w-75 .h-100">
+    <a href="">
+    <div class="card w-100 .h-100 border-0">
       <img src="../IMAGES/roomSample3.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Game Room</h5>
-        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
+        <h5 class="card-title" style="text-align:left;">Game Room</h5>
       </div>
     </div>
+    </a>
   </div>
   <div class="col">
-    <div class="card w-75 .h-100">
+    <a href="">
+    <div class="card w-100 .h-100 border-0">
       <img src="../IMAGES/living-room.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Family Room</h5>
-        <a class="btn btn-danger ps-4 pe-4 mt-3"href="">VIEW DETAILS</a>
+        <h5 class="card-title" style="text-align:left;">Family Room</h5>
       </div>
     </div>
+    </a>
   </div>
 </div>
       </div>

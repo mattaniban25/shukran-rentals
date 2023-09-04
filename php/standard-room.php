@@ -111,7 +111,8 @@
                 </ol>
 
                 <br>
-                <p class="fs-6"><i>Note: Additional items such as pillows, mattresses, etc. are available upon request in the receptionist area.</i></p>
+                <p class="fs-6"><i>Note: Additional items such as pillows, mattresses, etc. are available upon request in the receptionist area 
+                  or through the room service telephone.</i></p>
                <!-- <div class="row">
                     <div class="col-6">
                     <p class="fs-2">500 SQM</p>
@@ -132,24 +133,47 @@
     </div>
 
     
-     <div class="container">
+     <div class="container" align="center">
         <div class="row">
-            <div class="col-3">
-                <p class="fs-2">500 SQM</p>
+            <div class="col-lg-3 col-sm-6">
+                <p class="fs-4">500 SQM</p>
+                <hr class="border border-danger opacity-75 w-25">
             </div>
-            <div class="col-3">
-                <p class="fs-2">4 Max Guests</p>
+            <div class="col-lg-3 col-sm-6">
+                <p class="fs-4">4 Max Guests</p>
+                <hr class="border border-danger opacity-75 w-25">
             </div>
-            <div class="col-3">
-                <p class="fs-2">2 Beds</p>
+            <div class="col-lg-3 col-sm-6">
+                <p class="fs-4">2 Beds</p>
+                <hr class="border border-danger opacity-75 w-25">
             </div>
-            <div class="col-3">
-                <p class="fs-2">1 Bedroom</p>
+            <div class="col-lg-3 col-sm-6">
+                <p class="fs-4">1 Bedroom</p>
+                <hr class="border border-danger opacity-75 w-25">
             </div>
         </div>
      </div>
               
-    
+     <div align="center" class="text-secondary">
+     <hr class="border opacity-50 w-75">
+     </div>
+     <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <p class="fs-5">Price: ₱5,000</p>
+                <p class="fs-5">Check In: 2 PM</p>
+                <p class="fs-5">Check Out: 12 PM</p>
+                <a class="btn btn-danger ps-4 pe-4 mt-3"href="">Book Now</a>
+
+                
+            </div>
+            
+        </div>
+     </div>
+
+     <div align="center" class="text-secondary">
+        <hr class="border opacity-100 w-75">
+      </div>
 
     <div class="footer">
       <div class="bg-dark border-top border-2 text-light border-danger" style="box-shadow: black 0px 0px 10px 0px;">
