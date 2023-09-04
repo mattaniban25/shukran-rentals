@@ -157,6 +157,48 @@
       <div id="pending" class="tabcontent active">
         <div class="mt-4">
           <b class="fs-5">Pending Reservations</b>
+
+          <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered border border-2 border-primary">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Booking Code</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Contact Info</th>
+                            <th>Room Number</th>
+                            <th>Check-In</th>
+                            <th>Check-Out</th>
+                            <th>Amount To Pay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                        if ($pendingresult->num_rows > 0) {
+                          while ($row = $pendingresult->fetch_assoc()) {
+                              echo "<tr>";
+                              echo "<td>" . $row["id"] . "</td>";
+                              echo "<td>" . $row["bookingCode"] . "</td>";
+                              echo "<td>" . $row["firstName"] . "</td>";
+                              echo "<td>" . $row["lastName"] . "</td>";
+                              echo "<td>" . $row["contactInfo"] . "</td>";
+                              echo "<td>" . $row["roomNumber"] . "</td>";
+                              echo "<td>" . $row["checkIn"] . "</td>";
+                              echo "<td>" . $row["checkOut"] . "</td>";
+                              echo "<td>" . $row["amountToPay"] . "</td>";
+                              echo "</tr>";
+                          }
+                      } else {
+                          echo "No pending reservations found.";
+                      }
+                      ?>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+
         </div>
         
       </div>
@@ -164,18 +206,144 @@
       <div id="confirmed" class="tabcontent">
         <div class="mt-4">
           <b class="fs-5">Confirmed</b>
+
+          <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered border border-2 border-warning">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Booking Code</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Contact Info</th>
+                            <th>Room Number</th>
+                            <th>Check-In</th>
+                            <th>Check-Out</th>
+                            <th>Amount To Pay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                        if ($pendingresult->num_rows > 0) {
+                          while ($row = $pendingresult->fetch_assoc()) {
+                              echo "<tr>";
+                              echo "<td>" . $row["id"] . "</td>";
+                              echo "<td>" . $row["bookingCode"] . "</td>";
+                              echo "<td>" . $row["firstName"] . "</td>";
+                              echo "<td>" . $row["lastName"] . "</td>";
+                              echo "<td>" . $row["contactInfo"] . "</td>";
+                              echo "<td>" . $row["roomNumber"] . "</td>";
+                              echo "<td>" . $row["checkIn"] . "</td>";
+                              echo "<td>" . $row["checkOut"] . "</td>";
+                              echo "<td>" . $row["amountToPay"] . "</td>";
+                              echo "</tr>";
+                          }
+                      } else {
+                          echo "No pending reservations found.";
+                      }
+                      ?>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <div id="checkin" class="tabcontent">
         <div class="mt-4">
           <b class="fs-5">Checked-in</b>
+
+          <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered border border-2 border-success">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Booking Code</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Contact Info</th>
+                            <th>Room Number</th>
+                            <th>Check-In</th>
+                            <th>Check-Out</th>
+                            <th>Amount To Pay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                        if ($pendingresult->num_rows > 0) {
+                          while ($row = $pendingresult->fetch_assoc()) {
+                              echo "<tr>";
+                              echo "<td>" . $row["id"] . "</td>";
+                              echo "<td>" . $row["bookingCode"] . "</td>";
+                              echo "<td>" . $row["firstName"] . "</td>";
+                              echo "<td>" . $row["lastName"] . "</td>";
+                              echo "<td>" . $row["contactInfo"] . "</td>";
+                              echo "<td>" . $row["roomNumber"] . "</td>";
+                              echo "<td>" . $row["checkIn"] . "</td>";
+                              echo "<td>" . $row["checkOut"] . "</td>";
+                              echo "<td>" . $row["amountToPay"] . "</td>";
+                              echo "</tr>";
+                          }
+                      } else {
+                          echo "No pending reservations found.";
+                      }
+                      ?>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <div id="alldata" class="tabcontent">
         <div class="mt-4">
           <b class="fs-5">ALL</b>
+
+          <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered border border-2 border-danger">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Booking Code</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Contact Info</th>
+                            <th>Room Number</th>
+                            <th>Check-In</th>
+                            <th>Check-Out</th>
+                            <th>Amount To Pay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                        if ($pendingresult->num_rows > 0) {
+                          while ($row = $pendingresult->fetch_assoc()) {
+                              echo "<tr>";
+                              echo "<td>" . $row["id"] . "</td>";
+                              echo "<td>" . $row["bookingCode"] . "</td>";
+                              echo "<td>" . $row["firstName"] . "</td>";
+                              echo "<td>" . $row["lastName"] . "</td>";
+                              echo "<td>" . $row["contactInfo"] . "</td>";
+                              echo "<td>" . $row["roomNumber"] . "</td>";
+                              echo "<td>" . $row["checkIn"] . "</td>";
+                              echo "<td>" . $row["checkOut"] . "</td>";
+                              echo "<td>" . $row["amountToPay"] . "</td>";
+                              echo "</tr>";
+                          }
+                      } else {
+                          echo "No pending reservations found.";
+                      }
+                      ?>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+          
         </div>
       </div>
 
