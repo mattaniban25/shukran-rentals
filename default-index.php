@@ -166,120 +166,29 @@
     <div class="container" align="center">
       <div class="row" >
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-          <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width:320px">
-            <img class="card-img-top" src="IMAGES/promoSample.jpg" alt="Card image" style="width:100%">
+          <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
+            <img class="card-img-top" src="IMAGES/promoSample.jpg" alt="Card image">
               <div class="card-body">
                 <h4 class="card-title">BOMBASTIC</h4>
                 <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
-                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#" class="btn btn-danger">View Details</a></button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Terms & Conditions</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" align="justify"> 
-              <ol>
-                <li>Pay as you Ckeck-in and Strictly</li>
-                <li>Pay as you Order - Please pay food bill.</li>
-                <li>Head Counts is being implemented.</li>
-                <li>
-                  The Management is Not Responsible for the safekeeping of any
-                  personal belongings or valuables.
-                </li>
-                <li>
-                  Banning of illegal drugs, illegal gambling and other illegal
-                  activities are strictly observed. Firearms and ammunition
-                  are Not Allowed.
-                </li>
-                <li>
-                  All units are presented in Good Condition. Please
-                  immediately upon check-in, for any other issues. Rooms and
-                  Facilities are provided as is. Any damages that may occur,
-                  will be CHARGED ACCORDINGLY.
-                </li>
-                <li>
-                  Please do not bring materials not limited to decors and
-                  equipment that are owned by the property. Otherwise, it is
-                  right to consider such item as sold and must be Paid by the
-                  Guest.
-                </li>
-                <li>
-                  Violence and Misconduct of any sort will not be tolerated.
-                </li>
-                <li>
-                  Security Guard on Duty, reserves the RIGHT TO INSPECT any
-                  container, or closed packages that are visibly unique or
-                  deem suspicious which are being brought in and out of the
-                  building premises.
-                </li>
-                <li>
-                  Keeping the noise at minimum to avoid disturbing other
-                  Guests is at everyone's interests.
-                </li>
-                <li>
-                  The Management will not be liable for any damage or loss of
-                  a vehicle.
-                </li>
-                <li>
-                  Loitering in hallways (especially for children) and
-                  Vandalism within the premises are not allowed and offenders
-                  of such acts will be given proper sanctions.
-                </li>
-                <li>
-                  Tampering of Equipment's is considered a Criminal Act and
-                  will not be taken lightly by the Management.
-                </li>
-                <li>
-                  Strictly NO SMOKING inside the Rooms and triggering of Smoke
-                  Detector Alarm will result to a P 500.00 FINE or more. There
-                  is a Smoking Area specifically provided by the Management.
-                </li>
-                <li>
-                  Disposal of waste must be properly stowed in the provided
-                  Trash Bins.
-                </li>
-                <li>
-                  The Management reserves the Right to Vacate Rooms that
-                  exceeds reservation period.
-                </li>
-                <li>
-                  Room Keys are to be surrendered to Lobby Personnel or
-                  Security Guard on Duty upon Checking out. Lost Keys are
-                  charged for P 500.00 without exemption
-                </li>
-                <li>
-                  Occasional Events, Parties and other Celebratory Gatherings
-                  must follow the permissible 10:00 PM Barangay ordinance.
-                </li>
-                <li>
-                  For other Terms & Conditions apply. You can ask the Front
-                  desk Clerk for the full list.
-                </li>
-              </ol>
-      
-      
-             
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              
-            </div>
-          </div>
-        </div>
-      </div>
+                  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoOne"><a href="#promoOne" class="btn btn-danger">View Details</a></button>
               </div>
           </div>
         </div>
 
+       
+        
+
+      
+
+
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-          <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width:320px">
-              <img class="card-img-top" src="IMAGES/promoSample2.jpg" alt="Card image" style="width:100%">
+          <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
+              <img class="card-img-top" src="IMAGES/promoSample2.jpg" alt="Card image">
                 <div class="card-body">
                   <h4 class="card-title">PALONCHAY</h4>
                   <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
-                  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#" class="btn btn-danger">View Details</a></button>
+                  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoTwo"><a href="#promoTwo" class="btn btn-danger">View Details</a></button>
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
           <div class="modal-content">
@@ -380,15 +289,16 @@
                 </div>
             </div>
           </div>
-        
+      
 
+          
         <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-        <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width:320px">
-              <img class="card-img-top" src="IMAGES/promoSample3.jpg" alt="Card image" style="width:100%">
+        <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
+              <img class="card-img-top" src="IMAGES/promoSample3.jpg" alt="Card image">
                 <div class="card-body">
                   <h4 class="card-title">GIL PANOT</h4>
                   <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
-                  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#" class="btn btn-danger">View Details</a></button>
+                  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoThree"><a href="#promoThree" class="btn btn-danger">View Details</a></button>
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
           <div class="modal-content">
@@ -493,7 +403,314 @@
  </div>
  
 
-<div class="general-section1">
+
+
+    <!--Modal for promo one-->
+
+    <div class="modal fade" id="promoOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Promo Details - Valid until January 56, 1987</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" > 
+              <ol>
+                <li>Pay as you Ckeck-in and Strictly</li>
+                <li>Pay as you Order - Please pay food bill.</li>
+                <li>Head Counts is being implemented.</li>
+                <li>
+                  The Management is Not Responsible for the safekeeping of any
+                  personal belongings or valuables.
+                </li>
+                <li>
+                  Banning of illegal drugs, illegal gambling and other illegal
+                  activities are strictly observed. Firearms and ammunition
+                  are Not Allowed.
+                </li>
+                <li>
+                  All units are presented in Good Condition. Please
+                  immediately upon check-in, for any other issues. Rooms and
+                  Facilities are provided as is. Any damages that may occur,
+                  will be CHARGED ACCORDINGLY.
+                </li>
+                <li>
+                  Please do not bring materials not limited to decors and
+                  equipment that are owned by the property. Otherwise, it is
+                  right to consider such item as sold and must be Paid by the
+                  Guest.
+                </li>
+                <li>
+                  Violence and Misconduct of any sort will not be tolerated.
+                </li>
+                <li>
+                  Security Guard on Duty, reserves the RIGHT TO INSPECT any
+                  container, or closed packages that are visibly unique or
+                  deem suspicious which are being brought in and out of the
+                  building premises.
+                </li>
+                <li>
+                  Keeping the noise at minimum to avoid disturbing other
+                  Guests is at everyone's interests.
+                </li>
+                <li>
+                  The Management will not be liable for any damage or loss of
+                  a vehicle.
+                </li>
+                <li>
+                  Loitering in hallways (especially for children) and
+                  Vandalism within the premises are not allowed and offenders
+                  of such acts will be given proper sanctions.
+                </li>
+                <li>
+                  Tampering of Equipment's is considered a Criminal Act and
+                  will not be taken lightly by the Management.
+                </li>
+                <li>
+                  Strictly NO SMOKING inside the Rooms and triggering of Smoke
+                  Detector Alarm will result to a P 500.00 FINE or more. There
+                  is a Smoking Area specifically provided by the Management.
+                </li>
+                <li>
+                  Disposal of waste must be properly stowed in the provided
+                  Trash Bins.
+                </li>
+                <li>
+                  The Management reserves the Right to Vacate Rooms that
+                  exceeds reservation period.
+                </li>
+                <li>
+                  Room Keys are to be surrendered to Lobby Personnel or
+                  Security Guard on Duty upon Checking out. Lost Keys are
+                  charged for P 500.00 without exemption
+                </li>
+                <li>
+                  Occasional Events, Parties and other Celebratory Gatherings
+                  must follow the permissible 10:00 PM Barangay ordinance.
+                </li>
+                <li>
+                  For other Terms & Conditions apply. You can ask the Front
+                  desk Clerk for the full list.
+                </li>
+              </ol>
+      
+      
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal for promo two-->
+    <div class="modal fade" id="promoTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Promo Details - Valid until January 56, 1987</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" > 
+              <ol>
+                <li>Pay as you Ckeck-in and Strictly</li>
+                <li>Pay as you Order - Please pay food bill.</li>
+                <li>Head Counts is being implemented.</li>
+                <li>
+                  The Management is Not Responsible for the safekeeping of any
+                  personal belongings or valuables.
+                </li>
+                <li>
+                  Banning of illegal drugs, illegal gambling and other illegal
+                  activities are strictly observed. Firearms and ammunition
+                  are Not Allowed.
+                </li>
+                <li>
+                  All units are presented in Good Condition. Please
+                  immediately upon check-in, for any other issues. Rooms and
+                  Facilities are provided as is. Any damages that may occur,
+                  will be CHARGED ACCORDINGLY.
+                </li>
+                <li>
+                  Please do not bring materials not limited to decors and
+                  equipment that are owned by the property. Otherwise, it is
+                  right to consider such item as sold and must be Paid by the
+                  Guest.
+                </li>
+                <li>
+                  Violence and Misconduct of any sort will not be tolerated.
+                </li>
+                <li>
+                  Security Guard on Duty, reserves the RIGHT TO INSPECT any
+                  container, or closed packages that are visibly unique or
+                  deem suspicious which are being brought in and out of the
+                  building premises.
+                </li>
+                <li>
+                  Keeping the noise at minimum to avoid disturbing other
+                  Guests is at everyone's interests.
+                </li>
+                <li>
+                  The Management will not be liable for any damage or loss of
+                  a vehicle.
+                </li>
+                <li>
+                  Loitering in hallways (especially for children) and
+                  Vandalism within the premises are not allowed and offenders
+                  of such acts will be given proper sanctions.
+                </li>
+                <li>
+                  Tampering of Equipment's is considered a Criminal Act and
+                  will not be taken lightly by the Management.
+                </li>
+                <li>
+                  Strictly NO SMOKING inside the Rooms and triggering of Smoke
+                  Detector Alarm will result to a P 500.00 FINE or more. There
+                  is a Smoking Area specifically provided by the Management.
+                </li>
+                <li>
+                  Disposal of waste must be properly stowed in the provided
+                  Trash Bins.
+                </li>
+                <li>
+                  The Management reserves the Right to Vacate Rooms that
+                  exceeds reservation period.
+                </li>
+                <li>
+                  Room Keys are to be surrendered to Lobby Personnel or
+                  Security Guard on Duty upon Checking out. Lost Keys are
+                  charged for P 500.00 without exemption
+                </li>
+                <li>
+                  Occasional Events, Parties and other Celebratory Gatherings
+                  must follow the permissible 10:00 PM Barangay ordinance.
+                </li>
+                <li>
+                  For other Terms & Conditions apply. You can ask the Front
+                  desk Clerk for the full list.
+                </li>
+              </ol>
+      
+      
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal for promo three-->
+    <div class="modal fade" id="promoThree" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Promo Details - Valid until January 56, 1987</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" > 
+              <ol>
+                <li>Pay as you Ckeck-in and Strictly</li>
+                <li>Pay as you Order - Please pay food bill.</li>
+                <li>Head Counts is being implemented.</li>
+                <li>
+                  The Management is Not Responsible for the safekeeping of any
+                  personal belongings or valuables.
+                </li>
+                <li>
+                  Banning of illegal drugs, illegal gambling and other illegal
+                  activities are strictly observed. Firearms and ammunition
+                  are Not Allowed.
+                </li>
+                <li>
+                  All units are presented in Good Condition. Please
+                  immediately upon check-in, for any other issues. Rooms and
+                  Facilities are provided as is. Any damages that may occur,
+                  will be CHARGED ACCORDINGLY.
+                </li>
+                <li>
+                  Please do not bring materials not limited to decors and
+                  equipment that are owned by the property. Otherwise, it is
+                  right to consider such item as sold and must be Paid by the
+                  Guest.
+                </li>
+                <li>
+                  Violence and Misconduct of any sort will not be tolerated.
+                </li>
+                <li>
+                  Security Guard on Duty, reserves the RIGHT TO INSPECT any
+                  container, or closed packages that are visibly unique or
+                  deem suspicious which are being brought in and out of the
+                  building premises.
+                </li>
+                <li>
+                  Keeping the noise at minimum to avoid disturbing other
+                  Guests is at everyone's interests.
+                </li>
+                <li>
+                  The Management will not be liable for any damage or loss of
+                  a vehicle.
+                </li>
+                <li>
+                  Loitering in hallways (especially for children) and
+                  Vandalism within the premises are not allowed and offenders
+                  of such acts will be given proper sanctions.
+                </li>
+                <li>
+                  Tampering of Equipment's is considered a Criminal Act and
+                  will not be taken lightly by the Management.
+                </li>
+                <li>
+                  Strictly NO SMOKING inside the Rooms and triggering of Smoke
+                  Detector Alarm will result to a P 500.00 FINE or more. There
+                  is a Smoking Area specifically provided by the Management.
+                </li>
+                <li>
+                  Disposal of waste must be properly stowed in the provided
+                  Trash Bins.
+                </li>
+                <li>
+                  The Management reserves the Right to Vacate Rooms that
+                  exceeds reservation period.
+                </li>
+                <li>
+                  Room Keys are to be surrendered to Lobby Personnel or
+                  Security Guard on Duty upon Checking out. Lost Keys are
+                  charged for P 500.00 without exemption
+                </li>
+                <li>
+                  Occasional Events, Parties and other Celebratory Gatherings
+                  must follow the permissible 10:00 PM Barangay ordinance.
+                </li>
+                <li>
+                  For other Terms & Conditions apply. You can ask the Front
+                  desk Clerk for the full list.
+                </li>
+              </ol>
+      
+      
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  
+
+
+ <div class="general-section1">
     <div class="container">
   	
     <p align="center" class="mb-5 mt-3 fs-2">Accommodations</p>
@@ -510,7 +727,7 @@
                         each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
                         find the perfect room to make your stay memorable and one for the books.</p>
             						
-                          <a class="btn btn-danger ps-5 pe-5 mt-3"href="accommodations.php">EXPLORE</a>
+                          <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/default-accommodations.php">EXPLORE</a>
         				    </div>     
                   </div>
 		    </div>
@@ -535,7 +752,7 @@
                         celebrations venue. With ideal spaces, modern amenities, and a cooperative team, we ensure your 
                         events are elevated to extraordinary experiences.</p>
                           
-                            <a class="btn btn-danger ps-5 pe-5 mt-3"href="">EXPLORE</a>
+                            <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/default-events.php">EXPLORE</a>
                       </div>      
                   </div>
 		    </div>

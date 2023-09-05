@@ -159,7 +159,7 @@
      </div>
      <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-lg-3 col-sm-6">
                 <p class="fs-5">Price: ₱5,000</p>
                 <p class="fs-5">Check In: 2 PM</p>
                 <p class="fs-5">Check Out: 12 PM</p>
