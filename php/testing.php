@@ -70,7 +70,6 @@
       <aside>
         <header class="sidebar-header">
           <img class="logo-img" src="../IMAGES/employeeLogo.png" alt="">
-          <img class="logo-icon" src="../IMAGES/smallLogo.png" alt="">
         </header>
         <nav>
           <button>
@@ -128,7 +127,7 @@
         <div class="col-lg-3 col-md-6 mb-3" style="">
           <div class="border-start border-4 border-primary shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'pending')" id="defaultOpen">
             <b class="text-primary">PENDING<br></b>
-            <b class="fs-2">15</b>
+            <b class="fs-2"><?php echo $pendingresult-> num_rows ?></b>
           </div>
         </div>
 
@@ -159,27 +158,26 @@
           <b class="fs-5">Pending Reservations</b>
 
           <div class="container">
-            <div class="table-responsive">
-                <table class="table table-bordered border border-2 border-primary">
+            <div class="table-responsive border border-2 border-primary">
+                <table class="table table-bordered">
                     <thead class="thead-dark">
-                        <tr>
-                            <th>ID</th>
-                            <th>Booking Code</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Contact Info</th>
-                            <th>Room Number</th>
-                            <th>Check-In</th>
-                            <th>Check-Out</th>
-                            <th>Amount To Pay</th>
+                        <tr class="border">
+                            <th class="border">Booking Code</th>
+                            <th class="border">First Name</th>
+                            <th class="border">Last Name</th>
+                            <th class="border">Contact Info</th>
+                            <th class="border">Room Number</th>
+                            <th class="border">Check-In</th>
+                            <th class="border">Check-Out</th>
+                            <th class="border">Amount To Pay</th>
+                            <th class="border">EDIT</th>
                         </tr>
                     </thead>
                     <tbody>
                       <?php
-                        if ($pendingresult->num_rows > 0) {
+                        if ($pendingresult-> num_rows > 0) {
                           while ($row = $pendingresult->fetch_assoc()) {
                               echo "<tr>";
-                              echo "<td>" . $row["id"] . "</td>";
                               echo "<td>" . $row["bookingCode"] . "</td>";
                               echo "<td>" . $row["firstName"] . "</td>";
                               echo "<td>" . $row["lastName"] . "</td>";
@@ -188,6 +186,7 @@
                               echo "<td>" . $row["checkIn"] . "</td>";
                               echo "<td>" . $row["checkOut"] . "</td>";
                               echo "<td>" . $row["amountToPay"] . "</td>";
+                              echo "<td>" . "<button class='fa-solid fa-pen-to-square'></button>" . "</td>";
                               echo "</tr>";
                           }
                       } else {

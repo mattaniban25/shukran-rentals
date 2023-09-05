@@ -105,7 +105,7 @@ a{
 .logo-icon{
     display: none;
     font-size: 28px;
-    height: 35px;
+    height: 51px;
     width: 51px;
     text-align: center;
 }
@@ -356,7 +356,6 @@ h2
     }
 
     .logo-icon{
-        height: 35px;
         display: block;
     }
 
