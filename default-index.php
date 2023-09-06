@@ -116,8 +116,6 @@
 
 
     <div class="container" align="center">
-
-
     <div class="row">
   <div class="col-lg-4 col-sm-12">
     <div class="thumbnail">
@@ -708,6 +706,39 @@
 
 
   
+
+    <div class="container " align="center">
+    <div class="row gap-0">
+  <div class="col-lg-4">
+    <div class="card h-100" style="width: 18rem;">
+      <div class="card-body">
+        <i class="fa-solid fa-house-circle-check fa-2xl mb-4" style="color: #000000;"></i>
+        <h5 class="card-title mb-4">Accommodations</h5>
+        <p class="card-text">Have your cozy staycation with us! Explore our wide selection of rooms.</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card h-100" style="width: 18rem;">
+      <div class="card-body">
+        <i class="fa-solid fa-champagne-glasses fa-2xl mb-4" style="color: #000000;"></i>
+        <h5 class="card-title mb-4">Events & Celebrations</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card h-100" style="width: 18rem;">
+      <div class="card-body">
+      <i class="fa-solid fa-dumbbell fa-2xl mb-4" style="color: #000000;"></i>
+        <h5 class="card-title mb-4">Lifestyle & Leisure</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
 
 
  <div class="general-section1">
