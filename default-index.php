@@ -145,11 +145,90 @@
       <div class="shukran-experience">
         <h3 class="welcome-message h2">Want the Shukran experience?</h3>
         <p>Create an account now to start booking with us!</p>
-        <a class="btn btn-danger pe-5 ps-5"href="php/register.php">REGISTER</a>
+        <a class="btn btn-danger pe-5 ps-5 mb-5"href="php/register.php">REGISTER</a>
       </div>
     </div>
   </div>
 
+
+  <div class="general-section1" style="padding:50px 0px 50px 0px;">
+
+      <div class="container " align="center">
+        <div class="row gap-0">
+          <div class="col-lg-4 pb-2">
+            <div class="card h-100" style="width: 18rem;">
+              <div class="card-body">
+                <i class="fa-solid fa-house-circle-check fa-2xl mb-4" style="color: #000000;"></i>
+                <h5 class="card-title mb-4">Accommodations</h5>
+                <p class="card-text">Have your cozy staycation with us! Explore our wide selection of rooms.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 pb-2">
+            <div class="card h-100" style="width: 18rem;">
+              <div class="card-body">
+                <i class="fa-solid fa-champagne-glasses fa-2xl mb-4" style="color: #000000;"></i>
+                <h5 class="card-title mb-4">Events & Celebrations</h5>
+                <p class="card-text">Venues and Spaces for your celebrations</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 pb-2">
+            <div class="card h-100" style="width: 18rem;">
+              <div class="card-body">
+                <i class="fa-solid fa-dumbbell fa-2xl mb-4" style="color: #000000;"></i>
+                <h5 class="card-title mb-4">Lifestyle & Leisure</h5>
+                <p class="card-text">Fitness, Chill, Drink, Watch & Play!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+          
+            <div class="col-lg-3 mb-2" style="text-align:left;">
+              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Cozy rooms
+            </div>
+
+            <div class="col-lg-3 mb-2" style="text-align:left;">
+              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Free WiFi
+            </div>
+
+            <div class="col-lg-3 mb-2" style="text-align:left;">
+              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> No cancellation policy
+            </div>
+
+            <div class="col-lg-3 mb-2" style="text-align:left;">
+              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> No cancellation policy
+            </div>
+        </div>
+
+        <div class="row" >
+
+            <div class="col-lg-3 mb-2" style="text-align:left;">
+              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Affordable
+            </div>
+          
+            <div class="col-lg-3 mb-2" style="text-align:left;">
+              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Accessible
+            </div>
+
+            <div class="col-lg-3 mb-2" style="text-align:left;">
+              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Monthly Promos
+            </div>
+
+            <div class="col-lg-3 mb-2" style="text-align:left;">
+              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Monthly Promos
+            </div>    
+        </div>
+</div>
+  </div>
+  
 
   <!-- DEALS AND OFFERS SECTION -->
   
@@ -501,40 +580,7 @@
 
   <!--Main content section-->
 
-  <div class="container " align="center">
-    <div class="row gap-0">
-      <div class="col-lg-4">
-        <div class="card h-100" style="width: 18rem;">
-          <div class="card-body">
-            <i class="fa-solid fa-house-circle-check fa-2xl mb-4" style="color: #000000;"></i>
-            <h5 class="card-title mb-4">Accommodations</h5>
-            <p class="card-text">Have your cozy staycation with us! Explore our wide selection of rooms.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="card h-100" style="width: 18rem;">
-          <div class="card-body">
-            <i class="fa-solid fa-champagne-glasses fa-2xl mb-4" style="color: #000000;"></i>
-            <h5 class="card-title mb-4">Events & Celebrations</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-4">
-        <div class="card h-100" style="width: 18rem;">
-          <div class="card-body">
-            <i class="fa-solid fa-dumbbell fa-2xl mb-4" style="color: #000000;"></i>
-            <h5 class="card-title mb-4">Lifestyle & Leisure</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
 
   <!--Main content section (Accommodations)-->
@@ -543,22 +589,21 @@
     <div class="container">
   	  <p align="center" class="mb-5 mt-3 fs-2">Accommodations</p>
     	  <div class="row mb-5" align="center">
-      	  <div class="col-lg-6 col-sm-12" >
-            <img src="IMAGES/accommodations.jpg" alt="" class="img-fluid imagess" style="width:85%">
-      		</div>
-
-      		<div class="col-lg-6 col-sm-12"  >
-        		<div class="home-description">
-              <p class="pt-4 pb-2 fs-3 fw-bold">Have your cozy staycation with us!</p>
-              <p align="justify" class="fs-6">Discover and explore the ideal space for your stay, explore the range of accommodations, 
-              each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
-              find the perfect room to make your stay memorable and one for the books.</p>
-            	
-              <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/default-accommodations.php">EXPLORE</a>
-
-        		</div>     
+          <div class="col-lg-6 col-sm-12" >
+              <img src="IMAGES/accommodations.jpg" alt="" class="img-fluid imagess" style="width:85%; vertical-align:middle;">
           </div>
-		    </div>
+
+          <div class="col-lg-6 col-sm-12 align-self-center">
+              <div class="home-description ">
+                <p align="justify" class="fs-6 ">Discover and explore the ideal space for your stay, explore the range of accommodations, 
+                each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
+                find the perfect room to make your stay memorable and one for the books.</p>
+                
+                <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/default-accommodations.php">EXPLORE</a>
+
+              </div>     
+            </div>
+          </div>
     </div>
   </div>
 
@@ -573,9 +618,8 @@
             <img src="IMAGES/events.JPG" alt="" class="img-fluid imagess" style="width:85%">
           </div>
 
-          <div class="col-lg-6 col-sm-12"  >
+          <div class="col-lg-6 col-sm-12 align-self-center"  >
             <div class="home-description">
-              <p class="pt-4 pb-2 fs-3 fw-bold">Venues and Spaces for your celebrations</p>
               <p align="justify" class="fs-6">Level up your special moments with Shukran, whether it’s a wedding reception, 
               business meeting, or a personal celebration, Shukran offers a versatile and modern events and 
               celebrations venue. With ideal spaces, modern amenities, and a cooperative team, we ensure your 
@@ -599,9 +643,8 @@
             <img src="IMAGES/billiards.jpg" alt="" class="img-fluid imagess" style="width:85%">
       		</div>
 
-      	  <div class="col-lg-6 col-sm-12"  >
+      	  <div class="col-lg-6 col-sm-12 align-self-center"  >
         	  <div class="home-description">
-              <p class="pt-4 pb-2 fs-3 fw-bold">Fitness, Chill, Drink, Watch & Play!</p>
               <p align="justify" class="fs-6">Experience lifestyle and leisure, unwind and rejuvenate with Shukran’s array of facilities. 
               From a serene jacuzzi experience to fitness facilities, our hotel invites you to immerse yourself 
               in relaxation and enjoy the finer aspects of life.</p>

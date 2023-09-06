@@ -20,65 +20,73 @@
   </head>
 
   <body>
+
+  <!-- NAVBAR -->
     
-    <div class="header">
-      <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <img src="../IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
-          </a>
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="../default-index.php" class="nav-item page-header nav-link">Home</a>
-                <a href="default-accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
-                <a href="default-events.php" class="nav-item page-header nav-link">Events</a>
-                <a href="#" class="nav-item page-header nav-link">Leisure</a>
-                <a href="#" class="nav-item page-header nav-link">Contact Us</a>
-                <a href="#" class="nav-item page-header nav-link">Terms & Conditions</a>
-            </div>
-            <div class="navbar-nav ms-auto">
-              <a href="register.php" class="nav-item page-header nav-link"><strong>Register</strong></a>
-              <a href="login.php" class="nav-item page-header nav-link"><strong>Login</strong></a>
-            </div>
-        </div>
-        </div>
-      </nav>
-
-
-      <nav class="navbar bg-body-tertiary shukran-navbar">
-        <div class="container-fluid" id="shukran-navbar">
-          <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
-          <div class="d-flex">
-            <a href="#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
-
-            <a href="" class="nav-link me-4" style="cursor:alias">
-            <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+          <img src="../IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="../default-index.php" class="nav-item page-header nav-link">Home</a>
+            <a href="default-accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
+            <a href="default-events.php" class="nav-item page-header nav-link">Events</a>
+            <a href="#" class="nav-item page-header nav-link">Leisure</a>
+            <a href="#" class="nav-item page-header nav-link">Contact Us</a>
+            <a href="#" class="nav-item page-header nav-link">Terms & Conditions</a>
+          </div>
+          <div class="navbar-nav ms-auto">
+            <a href="register.php" class="nav-item page-header nav-link"><strong>Register</strong></a>
+            <a href="login.php" class="nav-item page-header nav-link"><strong>Login</strong></a>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
 
-      <div class="carousel-inner ">
-        <div class="carousel-item active">
-          <img src="../IMAGES/accommodationsHeader.jpg" class="d-block w-100 " alt="...">
-          <div class="carousel-caption d-none d-md-block">
+    <!-- BOTTOM NAVBAR -->
+
+    <nav class="navbar bg-body-tertiary shukran-navbar">
+      <div class="container-fluid" id="shukran-navbar">
+        <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
+        <div class="d-flex">
+          <a href="#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
+          <a href="" class="nav-link me-4" style="cursor:alias">
+          <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- IMAGE HEADER -->
+
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img src="../IMAGES/accommodationsHeader.jpg" class="d-block w-100 " alt="...">
+      
+      <div class="carousel-caption d-none d-md-block">
             <!--
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
             -->
-          </div>
-        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- ROOM INCLUSIONS SECTION -->
            
-      <div class="container pb-5">
-        <p class="mb-5 mt-5 fs-2" align="center">ALL TYPES OF ROOM APPLIES TO THIS</p>
-        <div class="row" align="" >
-          <div class="col-lg-6 ">
-            <p class="fs-4 fw-bold">INCLUSIONS</p>
-            <table class="table w-100">
+  <div class="container pb-5">
+    <p class="mb-5 mt-5 fs-2" align="center">ALL TYPES OF ROOM APPLIES TO THIS</p>
+      <div class="row" align="" >
+        <div class="col-lg-6 ">
+          <p class="fs-4 fw-bold">INCLUSIONS</p>
+          <table class="table w-100">
               <ul>
                 <tbody>
                   <tr>
@@ -155,11 +163,11 @@
                 </tbody>
               </ul>
             </table>
-          </div>
+        </div>
 
-          <div class="col-lg-6">
-            <p class="fs-4 fw-bold">AMENITIES</p>
-            <table class="table w-100">
+        <div class="col-lg-6">
+          <p class="fs-4 fw-bold">AMENITIES</p>
+          <table class="table w-100">
               <ul>
                 <tbody>
                   <tr>
@@ -231,84 +239,93 @@
                 </tbody>
               </ul>
             </table>
-          </div>
         </div>
       </div>
+  </div>
 
+  <!-- ROOMS SECTION -->
      
-      <p class="mb-5 mt-5 fs-2" align="center">ROOMS</p>
-      <div align="center">
-        <hr class="border border-danger opacity-100 w-25">
-      </div>
+  <p class="mb-5 mt-5 fs-2" align="center">ROOMS</p>
+  
+  <div align="center">
+    <hr class="border border-danger opacity-100 w-25">
+  </div>
 
-      <div class="container" align="center">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-
-  <div class="col">
-    <a href="standard-room.php">
-    <div class="card w-100 h-100 border-0">
-      <img src="../IMAGES/roomOne.jpg" class="card-img-top" alt="..." >
-      <div class="card-body">
-        <h5 class="card-title" style="text-align:left;">Standard Room</h5>
+  <div class="container" align="center">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+     <div class="col">
+        <a href="standard-room.php">
         
+          <div class="card w-100 h-100 border-0">
+            <img src="../IMAGES/roomOne.jpg" class="card-img-top" alt="..." >
+              <div class="card-body">
+                <h5 class="card-title" style="text-align:left;">Standard Room</h5>
+              </div>
+          </div>
+        </a>
       </div>
-    </div>
-    </a>
-  </div>
 
-  <div class="col">
-    <a href="">
-    <div class="card w-100 h-100 border-0">
-      <img src="../IMAGES/accommodations.jpg" class="card-img-top" alt="..." >
-      <div class="card-body">
-        <h5 class="card-title" style="text-align:left;">Deluxe Room</h5>
-        
+      <div class="col">
+        <a href="">
+
+          <div class="card w-100 h-100 border-0">
+            <img src="../IMAGES/accommodations.jpg" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title" style="text-align:left;">Deluxe Room</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="">
+    
+          <div class="card w-100 .h-100 border-0">
+            <img src="../IMAGES/roomSample.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align:left;">Twin Room</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="">
+
+          <div class="card w-100 .h-100 border-0">
+            <img src="../IMAGES/roomSample2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align:left;">Jacuzzi Room</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="">
+    
+          <div class="card w-100 .h-100 border-0">
+            <img src="../IMAGES/roomSample3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align:left;">Game Room</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="">
+
+          <div class="card w-100 .h-100 border-0">
+            <img src="../IMAGES/living-room.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align:left;">Family Room</h5>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
-    </a>
   </div>
-  <div class="col">
-    <a href="">
-    <div class="card w-100 .h-100 border-0">
-      <img src="../IMAGES/roomSample.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title" style="text-align:left;">Twin Room</h5>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="">
-    <div class="card w-100 .h-100 border-0">
-      <img src="../IMAGES/roomSample2.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title" style="text-align:left;">Jacuzzi Room</h5>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="">
-    <div class="card w-100 .h-100 border-0">
-      <img src="../IMAGES/roomSample3.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title" style="text-align:left;">Game Room</h5>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="">
-    <div class="card w-100 .h-100 border-0">
-      <img src="../IMAGES/living-room.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title" style="text-align:left;">Family Room</h5>
-      </div>
-    </div>
-    </a>
-  </div>
-</div>
-      </div>
 
     <div class="footer">
       <div class="bg-dark border-top border-2 text-light border-danger" style="box-shadow: black 0px 0px 10px 0px;">
