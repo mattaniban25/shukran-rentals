@@ -39,7 +39,7 @@
             <a href="php/default-accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
             <a href="php/default-events.php" class="nav-item page-header nav-link">Events</a>
             <a href="#" class="nav-item page-header nav-link">Leisure</a>
-            <a href="#" class="nav-item page-header nav-link">Contact Us</a>
+            <a href="php/about-us.php" class="nav-item page-header nav-link">About Us</a>
             <a href="#" class="nav-item page-header nav-link">Terms & Conditions</a>     
           </div>
           <div class="navbar-nav ms-auto">
@@ -101,7 +101,7 @@
       
   <!-- WELCOME CONTENT -->
               
-  <div class="welcome-div" align="center">
+  <div class="welcome-div data-aos-once=true" align="center">
     <p class="welcome-message h4 fs-4 mt-5 mb-3">WELCOME TO SHUKRAN RENTALS OPC</h4>
       <div class="welcome-description mb-5 col-lg-8 col-md-8 col-sm-8">
         <p align="justify" class="fs-6">Experience churvanes in our Unfussy budget hotel located in an accessible and strategic place in the locality of Paranque City.
@@ -189,7 +189,7 @@
       </div>
 
       <div class="container mt-5">
-        <div class="row">
+        <div class="row" >
           
             <div class="col-lg-3 mb-2" style="text-align:left;">
               <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Cozy rooms
@@ -585,7 +585,7 @@
 
   <!--Main content section (Accommodations)-->
 
-  <div class="general-section1">
+  <div class="general-section1" data-aos-once="true">
     <div class="container">
   	  <p align="center" class="mb-5 mt-3 fs-2">Accommodations</p>
     	  <div class="row mb-5" align="center">
@@ -595,7 +595,7 @@
 
           <div class="col-lg-6 col-sm-12 align-self-center">
               <div class="home-description ">
-                <p align="justify" class="fs-6 ">Discover and explore the ideal space for your stay, explore the range of accommodations, 
+                <p align="justify" class="fs-5 ">Discover and explore the ideal space for your stay, explore the range of accommodations, 
                 each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
                 find the perfect room to make your stay memorable and one for the books.</p>
                 
@@ -620,7 +620,7 @@
 
           <div class="col-lg-6 col-sm-12 align-self-center"  >
             <div class="home-description">
-              <p align="justify" class="fs-6">Level up your special moments with Shukran, whether it’s a wedding reception, 
+              <p align="justify" class="fs-5">Level up your special moments with Shukran, whether it’s a wedding reception, 
               business meeting, or a personal celebration, Shukran offers a versatile and modern events and 
               celebrations venue. With ideal spaces, modern amenities, and a cooperative team, we ensure your 
               events are elevated to extraordinary experiences.</p>
@@ -645,7 +645,7 @@
 
       	  <div class="col-lg-6 col-sm-12 align-self-center"  >
         	  <div class="home-description">
-              <p align="justify" class="fs-6">Experience lifestyle and leisure, unwind and rejuvenate with Shukran’s array of facilities. 
+              <p align="justify" class="fs-5">Experience lifestyle and leisure, unwind and rejuvenate with Shukran’s array of facilities. 
               From a serene jacuzzi experience to fitness facilities, our hotel invites you to immerse yourself 
               in relaxation and enjoy the finer aspects of life.</p>
 

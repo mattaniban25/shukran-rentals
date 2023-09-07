@@ -38,7 +38,7 @@
             <a href="default-accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
             <a href="default-events.php" class="nav-item page-header nav-link">Events</a>
             <a href="#" class="nav-item page-header nav-link">Leisure</a>
-            <a href="#" class="nav-item page-header nav-link">Contact Us</a>
+            <a href="about-us.php" class="nav-item page-header nav-link">About Us</a>
             <a href="#" class="nav-item page-header nav-link">Terms & Conditions</a>
           </div>
           <div class="navbar-nav ms-auto">
