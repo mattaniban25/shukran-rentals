@@ -200,7 +200,7 @@
             </div>
 
             <div class="col-lg-3 mb-2" style="text-align:left;">
-              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> No cancellation policy
+              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Extended stays
             </div>
 
             <div class="col-lg-3 mb-2" style="text-align:left;">
@@ -219,7 +219,7 @@
             </div>
 
             <div class="col-lg-3 mb-2" style="text-align:left;">
-              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Monthly Promos
+              <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Stay now, Pay later
             </div>
 
             <div class="col-lg-3 mb-2" style="text-align:left;">
@@ -585,23 +585,25 @@
 
   <!--Main content section (Accommodations)-->
 
-  <div class="general-section1" data-aos-once="true">
+  <div class="general-section1">
     <div class="container">
-  	  <p align="center" class="mb-5 mt-3 fs-2">Accommodations</p>
-    	  <div class="row mb-5" align="center">
+  	  
+    	  <div class="row align-self-center"" align="center">
           <div class="col-lg-6 col-sm-12" >
               <img src="IMAGES/accommodations.jpg" alt="" class="img-fluid imagess" style="width:85%; vertical-align:middle;">
           </div>
 
           <div class="col-lg-6 col-sm-12 align-self-center">
-              <div class="home-description ">
-                <p align="justify" class="fs-5 ">Discover and explore the ideal space for your stay, explore the range of accommodations, 
+              <div class="home-description" style="width:80%;">
+              <p class="fs-2" style="text-align:left">Accommodations</p>
+              <div style="text-align:left">
+                <hr class="border border-danger opacity-100 w-50 mb-3">
+              </div>
+                <p align="justify" class="">Discover and explore the ideal space for your stay, explore the range of accommodations, 
                 each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
                 find the perfect room to make your stay memorable and one for the books.</p>
-                
-                <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/default-accommodations.php">EXPLORE</a>
-
-              </div>     
+              </div>    
+              <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/default-accommodations.php">EXPLORE</a> 
             </div>
           </div>
     </div>
@@ -612,22 +614,23 @@
 
   <div class="general-section2">
     <div class="container">
-      <p align="center" class="mb-5 mt-3 fs-2">Events & Celebrations</p>
-        <div class="row mb-5" align="center">
+        <div class="row" align="center">
           <div class="col-lg-6 col-sm-12" >
             <img src="IMAGES/events.JPG" alt="" class="img-fluid imagess" style="width:85%">
           </div>
 
           <div class="col-lg-6 col-sm-12 align-self-center"  >
-            <div class="home-description">
-              <p align="justify" class="fs-5">Level up your special moments with Shukran, whether it’s a wedding reception, 
+            <div class="home-description" style="width:80%;">
+            <p class="fs-2" style="text-align:left">Events & Celebrations</p>
+            <div style="text-align:left">
+              <hr class="border border-danger opacity-100 w-50 mb-3">
+            </div>
+              <p align="justify">Level up your special moments with Shukran, whether it’s a wedding reception, 
               business meeting, or a personal celebration, Shukran offers a versatile and modern events and 
               celebrations venue. With ideal spaces, modern amenities, and a cooperative team, we ensure your 
               events are elevated to extraordinary experiences.</p>
-                            
-              <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/default-events.php">EXPLORE</a>
-
-            </div>      
+            </div>   
+            <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/default-events.php">EXPLORE</a>   
           </div>
         </div>
     </div>
@@ -637,21 +640,22 @@
 
   <div class="general-section1">
     <div class="container">
-  	  <p align="center" class="mb-5 mt-3 fs-2">Lifestyle & Leisure</p>
-    		<div class="row mb-5" align="center">
+  	  <div class="row" align="center">
       		<div class="col-lg-6 col-sm-12" >
             <img src="IMAGES/billiards.jpg" alt="" class="img-fluid imagess" style="width:85%">
       		</div>
 
       	  <div class="col-lg-6 col-sm-12 align-self-center"  >
-        	  <div class="home-description">
-              <p align="justify" class="fs-5">Experience lifestyle and leisure, unwind and rejuvenate with Shukran’s array of facilities. 
+        	  <div class="home-description" style="width:80%;">
+            <p class="fs-2" style="text-align:left">Lifestyle & Leisure</p>
+            <div style="text-align:left">
+              <hr class="border border-danger opacity-100 w-50 mb-3">
+            </div>
+              <p align="justify">Experience lifestyle and leisure, unwind and rejuvenate with Shukran’s array of facilities. 
               From a serene jacuzzi experience to fitness facilities, our hotel invites you to immerse yourself 
               in relaxation and enjoy the finer aspects of life.</p>
-
-              <a class="btn btn-danger ps-5 pe-5 mt-3"href="">EXPLORE</a>
-
-            </div> 	         
+            </div> 	      
+            <a class="btn btn-danger ps-5 pe-5 mt-3"href="">EXPLORE</a>   
           </div>
 		    </div>
     </div>
