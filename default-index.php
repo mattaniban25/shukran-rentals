@@ -16,16 +16,24 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="javascript/app.js"></script>
 
+
+    <!-- Animate On Scroll links -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+
     <title>Shukran Rentals - Login</title>
 
   </head>
 
   <body>
-
+<script>
+  AOS.init();
+</script>
   <!-- NAVBAR -->
 
-  <div class="header">
-    <nav class="navbar navbar-expand-lg" style="box-shadow: black 0px 0px 10px 0px;">
+  
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container-fluid">
         <a href="#" class="navbar-brand">
           <img src="IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
@@ -49,8 +57,10 @@
         </div>
       </div>
     </nav>
+    
+    
   <!-- BOTTOM NAVBAR -->
-    <nav class="navbar bg-body-tertiary shukran-navbar">
+    <nav class="navbar bg-body-tertiary shukran-navbar" style="background-color:green;">
       <div class="container-fluid" id="shukran-navbar">
         <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
           <div class="d-flex">
@@ -60,7 +70,7 @@
           </div>
       </div>
     </nav>
-  </div>
+  
 
 
   <!-- CAROUSEL -->
@@ -98,10 +108,9 @@
       </div>
   </div>
     
-      
   <!-- WELCOME CONTENT -->
               
-  <div class="welcome-div data-aos-once=true" align="center">
+  <div class="welcome-div" align="center">
     <p class="welcome-message h4 fs-4 mt-5 mb-3">WELCOME TO SHUKRAN RENTALS OPC</h4>
       <div class="welcome-description mb-5 col-lg-8 col-md-8 col-sm-8">
         <p align="justify" class="fs-6">Experience churvanes in our Unfussy budget hotel located in an accessible and strategic place in the locality of Paranque City.
@@ -118,19 +127,19 @@
 
       <div class="col-lg-4 col-sm-12">
         <div class="thumbnail">
-          <img src="IMAGES/roomSample.jpg"  style="width:100%;" class="img-fluid mb-3">
+          <img src="IMAGES/roomSample.jpg"  style="width:100%;" class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
         </div>
       </div>
 
       <div class="col-lg-4 col-sm-12">
         <div class="thumbnail">
-          <img src="IMAGES/roomSample2.jpg"  style="width:100%" class="img-fluid mb-3">
+          <img src="IMAGES/roomSample2.jpg"  style="width:100%" class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
         </div>
       </div>
 
       <div class="col-lg-4 col-sm-12">
         <div class="thumbnail">
-          <img src="IMAGES/roomSample3.jpg"  style="width:100%" class="img-fluid mb-3">
+          <img src="IMAGES/roomSample3.jpg"  style="width:100%" class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
         </div>
       </div>
 
@@ -188,7 +197,7 @@
         </div>
       </div>
 
-      <div class="container mt-5">
+      <div class="container" >
         <div class="row" >
           
             <div class="col-lg-3 mb-2" style="text-align:left;">
@@ -232,7 +241,8 @@
 
   <!-- DEALS AND OFFERS SECTION -->
   
-  <h2 style="padding-top:130px" align="center">Deals and offers this month</h2>
+  <div class="general-section2">
+  <h2 align="center" >Deals and offers this month</h2>
   <p class="" align="center">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum</p>
 
   <div class="container" align="center">
@@ -260,7 +270,7 @@
       </div>
                 
 
-      <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
+      <div class="col-lg-4 col-sm-12 col-md-12">
         <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
           <img class="card-img-top" src="IMAGES/promoSample3.jpg" alt="Card image">
             <div class="card-body">
@@ -272,12 +282,11 @@
       </div>
     </div>
   </div>
- 
+</div>
 
 
 
     <!--Modal for promo one-->
-
     <div class="modal fade" id="promoOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
           <div class="modal-content">
@@ -588,17 +597,17 @@
   <div class="general-section1">
     <div class="container">
   	  
-    	  <div class="row align-self-center"" align="center">
-          <div class="col-lg-6 col-sm-12" >
-              <img src="IMAGES/accommodations.jpg" alt="" class="img-fluid imagess" style="width:85%; vertical-align:middle;">
+    	  <div class="row align-self-center" align="center">
+          <div class="col-lg-6 col-sm-12">
+              <img src="IMAGES/accommodations.jpg" alt="" class="img-fluid main-content-img" style="width:85%; vertical-align:middle;" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
           </div>
 
           <div class="col-lg-6 col-sm-12 align-self-center">
               <div class="home-description" style="width:80%;">
-              <p class="fs-2" style="text-align:left">Accommodations</p>
-              <div style="text-align:left">
-                <hr class="border border-danger opacity-100 w-50 mb-3">
-              </div>
+                <p class="fs-2" style="text-align:left">Accommodations</p>
+                <div style="text-align:left">
+                  <hr class="border border-danger opacity-100 w-50 mb-3">
+                </div>
                 <p align="justify" class="">Discover and explore the ideal space for your stay, explore the range of accommodations, 
                 each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
                 find the perfect room to make your stay memorable and one for the books.</p>
@@ -616,7 +625,7 @@
     <div class="container">
         <div class="row" align="center">
           <div class="col-lg-6 col-sm-12" >
-            <img src="IMAGES/events.JPG" alt="" class="img-fluid imagess" style="width:85%">
+            <img src="IMAGES/events.JPG" alt="" class="img-fluid main-content-img" style="width:85%" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">
           </div>
 
           <div class="col-lg-6 col-sm-12 align-self-center"  >
@@ -642,7 +651,7 @@
     <div class="container">
   	  <div class="row" align="center">
       		<div class="col-lg-6 col-sm-12" >
-            <img src="IMAGES/billiards.jpg" alt="" class="img-fluid imagess" style="width:85%">
+            <img src="IMAGES/billiards.jpg" alt="" class="img-fluid main-content-img" style="width:85%" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
       		</div>
 
       	  <div class="col-lg-6 col-sm-12 align-self-center"  >
@@ -665,7 +674,7 @@
   <!--Main content section (Location)-->
 
   <div class="general-section2" id="location">
-    <div class="container">
+    <div class="container mb-3">
       <p align="center" class="mb-5 mt-3 fs-2">Find us here</p>
     	
       <div class="row">
