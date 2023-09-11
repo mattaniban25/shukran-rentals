@@ -33,7 +33,7 @@
   <!-- NAVBAR -->
 
   
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
       <div class="container-fluid">
         <a href="#" class="navbar-brand">
           <img src="IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
@@ -60,8 +60,8 @@
     
     
   <!-- BOTTOM NAVBAR -->
-    <nav class="navbar bg-body-tertiary shukran-navbar" style="background-color:green;">
-      <div class="container-fluid" id="shukran-navbar">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
         <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
           <div class="d-flex">
             <a href="#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
