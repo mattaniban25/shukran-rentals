@@ -113,6 +113,7 @@
                 <br>
                 <p class="fs-6"><i>Note: Additional items such as pillows, mattresses, etc. are available upon request in the receptionist area 
                   or through the room service telephone.</i></p>
+                  <a href="#RoomInclusions"  class="btn btn-link" data-bs-toggle="modal" data-bs-target="#RoomInclusions">View room inclusions</a>
                <!-- <div class="row">
                     <div class="col-6">
                     <p class="fs-2">500 SQM</p>
@@ -130,6 +131,187 @@
 
             </div>
         </div>
+    </div>
+
+
+    <div class="modal fade" id="RoomInclusions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ROOM INCLUSIONS</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" > 
+            <div class="container pb-5">
+    <p class="mb-5 mt-5 fs-2" align="center">ALL TYPES OF ROOM APPLIES TO THIS</p>
+      <div class="row" align="" >
+        <div class="col-lg-6 ">
+          <p class="fs-4 fw-bold">INCLUSIONS</p>
+          <table class="table w-100">
+              <ul>
+                <tbody>
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-bed fa-lg" style="color: #aa2400;"></i> Bed & Pillows</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-blender-phone fa-lg" style="color: #aa2400;"></i> Water Kettle</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-shower fa-lg" style="color: #aa2400;"></i> Hot & Cold Shower</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-toolbox fa-lg" style="color: #aa2400;"></i> Guest Kit</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-tv fa-lg" style="color: #aa2400;"></i> Cable TV or Android TV</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-toilet-paper fa-lg" style="color: #aa2400;"></i> Tissue</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-utensils fa-lg" style="color: #aa2400;"></i> Microwave</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-person-shelter fa-lg" style="color: #aa2400;"></i> Spacious</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-bowl-rice fa-lg" style="color: #aa2400;"></i> Rice Cooker</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-temperature-arrow-down fa-lg" style="color: #aa2400;"></i> Airconditioned</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-wifi fa-lg" style="color: #aa2400;"></i> WiFi</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-rug fa-lg" style="color: #aa2400;"></i> Towels</li>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <li><i class="fa-regular fa-snowflake fa-lg" style="color: #aa2400;"></i> Mini Fridge</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-chair fa-lg" style="color: #aa2400;"></i> Tables & Chairs</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-bottle-water ms-1 fa-lg" style="color: #aa2400;"></i> Complimentary Water</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-trash fa-lg" style="color: #aa2400;"></i> Trash Bin</li>
+                    </td>
+                  </tr>
+                </tbody>
+              </ul>
+            </table>
+        </div>
+
+        <div class="col-lg-6">
+          <p class="fs-4 fw-bold">AMENITIES</p>
+          <table class="table w-100">
+              <ul>
+                <tbody>
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-dumbbell fa-lg fs-6" style="color: #aa2400;"></i> Gym</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-couch fa-lg fs-6" style="color: #aa2400;"></i> Lounge</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-hot-tub-person fa-lg fs-6" style="color: #aa2400;"></i> Roof deck view & Jacuzzi Area</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-dice-five fa-lg" style="color: #aa2400;"></i> Billiard Table, Beer Pong & Mini Bar</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-person-swimming fa-lg" style="color: #aa2400;"></i> Indoor Swimming pool</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-basketball fa-lg" style="color: #aa2400;"></i> Basketball Court & Playground</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-store fa-lg" style="color: #aa2400;"></i> Convenience Store</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-pizza-slice fa-lg" style="color: #aa2400;"></i> Room service food & beverage</li>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                    <li><i class="fa-solid fa-smoking fa-lg fa-flip-horizontal" style="color: #aa2400;"></i> Smoking Area</li>
+                    </td>
+                  </tr>
+                </tbody>
+              </ul>
+            </table>
+
+            <p class="fs-4 fw-bold">OTHERS</p>
+            <table class="table w-100">
+              <ul>
+                <tbody>
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-phone-volume fa-lg fa-flip-horizontal" style="color: #aa2400;"></i> Room service telephone</li> 
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-eye fa-lg" style="color: #aa2400;"></i> 24 hours surveillance system</li>
+                    </td>
+                  </tr>  
+
+                  <tr>
+                    <td>
+                      <li><i class="fa-solid fa-car-side fa-lg" style="color: #aa2400;"></i> Free parking</li>
+                    </td>
+                    <td>
+                      <li><i class="fa-solid fa-person-military-pointing fa-lg" style="color: #aa2400;"></i> 24 hours security service</li>
+                    </td>
+                  </tr>
+                </tbody>
+              </ul>
+            </table>
+        </div>
+      </div>
+  </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     
