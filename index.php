@@ -43,7 +43,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
-            <a href="default-index.php" class="nav-item page-header nav-link">Home</a>
+            <a href="index.php" class="nav-item page-header nav-link">Home</a>
             <a href="php/default-accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
             <a href="php/default-events.php" class="nav-item page-header nav-link">Events</a>
             <a href="#" class="nav-item page-header nav-link">Leisure</a>
