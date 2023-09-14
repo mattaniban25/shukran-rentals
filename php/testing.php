@@ -176,18 +176,21 @@
                     <tbody>
                       <?php
                         if ($pendingresult-> num_rows > 0) {
+                          $i = 0;
                           while ($row = $pendingresult->fetch_assoc()) {
-                              echo "<tr>";
-                              echo "<td>" . $row["bookingCode"] . "</td>";
-                              echo "<td>" . $row["firstName"] . "</td>";
-                              echo "<td>" . $row["lastName"] . "</td>";
-                              echo "<td>" . $row["contactInfo"] . "</td>";
-                              echo "<td>" . $row["roomNumber"] . "</td>";
-                              echo "<td>" . $row["checkIn"] . "</td>";
-                              echo "<td>" . $row["checkOut"] . "</td>";
-                              echo "<td>" . $row["amountToPay"] . "</td>";
-                              echo "<td>" . "<button class='fa-solid fa-pen-to-square'></button>" . "</td>";
-                              echo "</tr>";
+                            $i++;
+                            $class = $i % 2 == 0 ? '' : 'table-secondary';
+                            echo "<tr class=". $class .">";
+                            echo "<td>" . $row["bookingCode"] . "</td>";
+                            echo "<td>" . $row["firstName"] . "</td>";
+                            echo "<td>" . $row["lastName"] . "</td>";
+                            echo "<td>" . $row["contactInfo"] . "</td>";
+                            echo "<td>" . $row["roomNumber"] . "</td>";
+                            echo "<td>" . $row["checkIn"] . "</td>";
+                            echo "<td>" . $row["checkOut"] . "</td>";
+                            echo "<td>" . $row["amountToPay"] . "</td>";
+                            echo "<td>" . "<button class='fa-solid fa-pen-to-square'></button>" . "</td>";
+                            echo "</tr>";
                           }
                       } else {
                           echo "No pending reservations found.";
