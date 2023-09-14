@@ -15,11 +15,18 @@
     <!-- CSS FILE -->
     <link rel="stylesheet" href="../css/style.css">
 
+    <!-- Animate On Scroll links -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
     <title>Shukran Rentals - Login</title>
 
   </head>
 
   <body>
+  <script>
+    AOS.init();
+  </script>
 
   <!-- NAVBAR -->
     
@@ -253,7 +260,7 @@
 
   <div class="container" align="center">
     <div class="row row-cols-1 row-cols-md-3 g-4">
-     <div class="col">
+     <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
         <a href="standard-room.php">
         
           <div class="card w-100 h-100 border-0">
@@ -265,7 +272,7 @@
         </a>
       </div>
 
-      <div class="col">
+      <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
         <a href="">
 
           <div class="card w-100 h-100 border-0">
@@ -277,7 +284,7 @@
         </a>
       </div>
 
-      <div class="col">
+      <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
         <a href="">
     
           <div class="card w-100 .h-100 border-0">
@@ -289,7 +296,7 @@
         </a>
       </div>
 
-      <div class="col">
+      <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
         <a href="">
 
           <div class="card w-100 .h-100 border-0">
@@ -301,7 +308,7 @@
         </a>
       </div>
 
-      <div class="col">
+      <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
         <a href="">
     
           <div class="card w-100 .h-100 border-0">
@@ -313,7 +320,7 @@
         </a>
       </div>
 
-      <div class="col">
+      <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
         <a href="">
 
           <div class="card w-100 .h-100 border-0">
