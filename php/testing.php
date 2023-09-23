@@ -11,6 +11,15 @@
 
     $pendingsql = "SELECT * FROM pendingreservations";
     $pendingresult = mysqli_query($conn, $pendingsql);
+
+    $confirmedsql = "SELECT * FROM confirmedreservations";
+    $confirmedresult = mysqli_query($conn, $confirmedsql);
+
+    $checkedinsql = "SELECT * FROM checkedinreservations";
+    $checkedinresult = mysqli_query($conn, $checkedinsql);
+
+    $overallsql = "SELECT * FROM pendingreservations, confirmedreservations, checkedinreservations";
+    $overallresult = mysqli_query($conn, $overallsql);
 ?>
 
 <!DOCTYPE html>
@@ -134,21 +143,21 @@
         <div class=" col-lg-3 col-md-6 mb-3" style="">
           <div class="border-start border-4 border-warning shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'confirmed')">
             <b class="text-warning ">CONFIRMED<br></b>
-            <b class="fs-2">10</b>
+            <b class="fs-2"><?php echo $confirmedresult-> num_rows ?></b>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-3" style="">
           <div class="border-start border-4 border-success shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'checkin')">
             <b class="text-success">CHECKED-IN<br></b>
-            <b class="fs-2">25</b>
+            <b class="fs-2"><?php echo $checkedinresult-> num_rows ?></b>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-3" style="">
           <div class="border-start border-4 border-danger shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'alldata')">
             <b class="text-danger">ALL<br></b>
-            <b class="fs-2">50</b>
+            <b class="fs-2"><?php echo $overallresult-> num_rows ?></b>
           </div>
         </div>
       </div>
@@ -227,8 +236,11 @@
                     </thead>
                     <tbody>
                       <?php
-                        if ($pendingresult->num_rows > 0) {
-                          while ($row = $pendingresult->fetch_assoc()) {
+                        if ($confirmedresult->num_rows > 0) {
+                          $i = 0;
+                          while ($row = $confirmedresult->fetch_assoc()) {
+                            $i++;
+                            $class = $i % 2 == 0 ? '' : 'table-secondary';
                               echo "<tr>";
                               echo "<td>" . $row["id"] . "</td>";
                               echo "<td>" . $row["bookingCode"] . "</td>";
@@ -274,9 +286,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                      <?php
-                        if ($pendingresult->num_rows > 0) {
-                          while ($row = $pendingresult->fetch_assoc()) {
+                    <?php
+                        if ($checkedinresult->num_rows > 0) {
+                          $i = 0;
+                          while ($row = $checkedinresult->fetch_assoc()) {
+                            $i++;
+                            $class = $i % 2 == 0 ? '' : 'table-secondary';
                               echo "<tr>";
                               echo "<td>" . $row["id"] . "</td>";
                               echo "<td>" . $row["bookingCode"] . "</td>";
@@ -322,9 +337,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                      <?php
-                        if ($pendingresult->num_rows > 0) {
-                          while ($row = $pendingresult->fetch_assoc()) {
+                    <?php
+                        if ($overallresult->num_rows > 0) {
+                          $i = 0;
+                          while ($row = $overallresult->fetch_assoc()) {
+                            $i++;
+                            $class = $i % 2 == 0 ? '' : 'table-secondary';
                               echo "<tr>";
                               echo "<td>" . $row["id"] . "</td>";
                               echo "<td>" . $row["bookingCode"] . "</td>";

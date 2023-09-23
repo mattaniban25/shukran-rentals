@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+div.border-start:hover {
+    cursor: pointer;
+}
+
 .content{
     padding:50px;
 }
@@ -366,4 +370,5 @@ h2
     .sidebar button > span{
         width: 50px;
     }
+    
 }
