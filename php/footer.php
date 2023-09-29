@@ -1,6 +1,5 @@
 <?php
-
-    echo '
+  echo '
     <div class="footer">
       <div class="bg-dark border-top border-2 text-light border-danger" style="box-shadow: black 0px 0px 10px 0px;">
         <div class="container p-4 pb-0">
@@ -58,5 +57,5 @@
         </div>
       </div>
     </div>  
-    ';
+  ';
 ?>
