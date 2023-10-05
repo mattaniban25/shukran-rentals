@@ -33,7 +33,6 @@
 
             <div class="col-lg-4 col-sm-12 ps-5">
                 <h1 class="mb-5">The Unfussy Budget Hotel</h1>
-
                 <h5 style="text-align:left;">Who we are</h5>
 
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

@@ -13,17 +13,17 @@
 
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Useful Links</h6>
-                <p><a class="text-white" href="#">Home</a></p>
-                <p><a class="text-white" href="#">About Us</a></p>
-                <p><a class="text-white" href="#">Facilities & Amenities</a></p>
+                <p><a class="text-white" href="../index.php">Home</a></p>
+                <p><a class="text-white" href="events.php">Events</a></p>
+                <p><a class="text-white" href="about-us.php">About us</a></p>
               </div>
 
               <hr class="w-100 clearfix d-md-none" />
 
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold"><p>&nbsp;</p></h6>
-                <p><a class="text-white" href="#">Photo Gallery</a></p>
-                <p><a class="text-white" href="#">Contact Us</a></p>
+                <p><a class="text-white" href="#">Accommodations</a></p>
+                <p><a class="text-white" href="#">Leisure</a></p>
                 <p><a class="text-white" href="#">Terms & Conditions</a></p>
               </div>
 
@@ -48,9 +48,9 @@
                 </div>
               </div>
               <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-google"></i></a>
+                <a target="_blank" href="https://www.facebook.com/shukranrentalsopc/" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.instagram.com/shukranrentalsopc/" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://bit.ly/GSHUKRAN" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-google"></i></a>
               </div>
             </div>
           </section>
