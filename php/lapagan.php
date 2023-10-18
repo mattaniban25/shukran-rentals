@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar Reservation Interface</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -315,5 +314,79 @@
 
       
 
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link btn btn-light" id="#pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
+                <img src="../IMAGES/bankTransfer.png" alt="" style="width:100px"><p>Bank Transfer</p>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link btn btn-light" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <img src="../IMAGES/digitalWallet.png" alt="" style="width:100px"><p>Digital Wallet</p>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link btn btn-light" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                <img src="../IMAGES/overTheCounter.png" alt="" style="width:100px"><p>Over the counter</p>
+            </button>
+        </li>
+      </ul>
+
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link btn btn-light" id="#bdo" data-bs-toggle="pill" data-bs-target="#pills-burat-tab" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
+                            <img src="../IMAGES/bdo.png" alt="" style="width:60px"><p>BDO</p>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link btn btn-light" id="bpi" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                            <img src="../IMAGES/bpi.png" alt="" style="width:60px"><p>BPI</p>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link btn btn-light" id="securitybank" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                            <img src="../IMAGES/securityBank.png" alt="" style="width:60px"><p>Security Bank</p>
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+
+            
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><p>tite</p></div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+            
+            
+            <div class="tab-pane fade" id="pills-burat-tab" role="tabpanel" aria-labelledby="pills-burat" tabindex="0">
+                                
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
+                                            </div>
+
+                                            <div class="col-lg-8">
+                                                <p>Account Name: Shukran Rentals OPC</p>
+                                                <p>Account Number: 09999999999</p>
+                                                <input type="button" value="Attach File" class="btn btn-danger">
+                                                <input type="button" value="Submit" class="btn btn-danger">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+
+            </div>
+            
+
+
+
+
+
+            
+        </div>
 </body>
 </html>
