@@ -286,7 +286,11 @@ h2
     transition: 0.5s;
     box-shadow: 0px 10px 31px 20px rgba(0,0,0,0.1);
 }
-
+.payment-container
+        {
+            border:1px solid black;
+            padding: 20px;
+        }
 @media (width < 750px){
     .staff-header{
         display:contents;
