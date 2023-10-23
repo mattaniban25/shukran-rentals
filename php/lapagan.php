@@ -132,169 +132,209 @@
 </div>
     -->
 
+
+
+
+
+
+       
+
+
+
+        <!-- Nav tabs -->
 <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-sm-12" align="center ">
+    <div class="row">
+        <div class="col-lg-8">
             <div class="container w-75 payment-container">
-                    <h1>Choose payment method</h1>
+                <h1>Choose Payment Method</h1>
+                <br><br>
+
+                <ul class="nav nav-tabs justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#banktransfer">
+                            <img src="../IMAGES/bankTransfer.png" alt="" style="width:100px"><p>Bank Transfer</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#digitalwallet">
+                            <img src="../IMAGES/digitalWallet.png" alt="" style="width:100px"><p>Digital Wallet</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#counter">  
+                            <img src="../IMAGES/overTheCounter.png" alt="" style="width:100px"><p>Over the counter</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                <div class="tab-pane container fade" id="banktransfer">
+
                     <br><br>
-
-
+                    <h2>Available banks</h2>
+                    <br>
                     <ul class="nav nav-tabs justify-content-center">
-                        <li><a data-toggle="tab" href="#banktransfer"><img src="../IMAGES/bankTransfer.png" alt="" style="width:100px"><p>Bank Transfer</p></a></li>
-                        <li><a data-toggle="tab" href="#digitalwallet"><img src="../IMAGES/digitalWallet.png" alt="" style="width:100px"><p>Digital Wallet</p></a></li>
-                        <li><a data-toggle="tab" href="#counter"><img src="../IMAGES/overTheCounter.png" alt="" style="width:100px"><p>Over the counter</p></a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#bdo">
+                                <img src="../IMAGES/bdo.png" alt="" style="width:60px"><p>BDO</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#bpi">
+                                <img src="../IMAGES/bpi.png" alt="" style="width:60px"><p>BPI</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#securitybank">  
+                                <img src="../IMAGES/securityBank.png" alt="" style="width:60px"><p>Security Bank</p>
+                            </a>
+                        </li>
                     </ul>
 
-
-                    
                     <div class="tab-content">
-                        <div id="banktransfer" class="tab-pane fade">
-                            
-                            <h2>Available banks</h2>
-
-                            <ul class="nav nav-tabs justify-content-center">
-                                <li><a data-toggle="tab" href="#bdo"><img src="../IMAGES/bdo.png" alt="" style="width:60px"><p>BDO</p></a></li>
-                                <li><a data-toggle="tab" href="#bpi"><img src="../IMAGES/bpi.png" alt="" style="width:60px"><p>BPI</p></a></li>
-                                <li><a data-toggle="tab" href="#secbank"><img src="../IMAGES/securityBank.png" alt="" style="width:60px"><p>Security Bank</p></a></li>
-                            </ul>
-
-                            <div class="tab-content">
-                                <div id="bdo" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                            </div>
-
-                                            <div class="col-lg-8">
-                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                <p>Account Number: 09999999999</p>
-                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                <input type="button" value="Submit" class="btn btn-danger">
-                                            </div>
-                                        </div>
+                        <div class="tab-pane container fade" id="bdo">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
                                     </div>
-                                </div>
 
-                                <div id="bpi" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-lg-4">
-                                                    <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                                </div>
-
-                                                <div class="col-lg-8">
-                                                    <p>Account Name: Shukran Rentals OPC</p>
-                                                    <p>Account Number: 09999999999</p>
-                                                    <input type="button" value="Attach File" class="btn btn-danger">
-                                                    <input type="button" value="Submit" class="btn btn-danger">
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>
-
-                                <div id="secbank" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                            </div>
-
-                                            <div class="col-lg-8">
-                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                <p>Account Number: 09999999999</p>
-                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                <input type="button" value="Submit" class="btn btn-danger">
-                                            </div>
-                                        </div>
+                                    <div class="col-lg-8">
+                                        <p>Account Name: Shukran Rentals OPC</p>
+                                        <p>Account Number: 09999999999</p>
+                                        <input type="button" value="Attach File" class="btn btn-danger">
+                                        <input type="button" value="Submit" class="btn btn-danger">
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-                        <div id="digitalwallet" class="tab-pane fade">
-
-                            <h2>Available digital wallets</h2>
-
-                            <ul class="nav nav-tabs justify-content-center">
-                                <li><a data-toggle="tab" href="#gcash"><img src="../IMAGES/gCash.png" alt="" style="width:80px"><p>GCash</p></a></li>
-                                <li><a data-toggle="tab" href="#grab"><img src="../IMAGES/grabPay.png" alt="" style="width:80px"><p>Grab Pay</p></a></li>
-                                <li><a data-toggle="tab" href="#shopee"><img src="../IMAGES/shopeePay.png" alt="" style="width:80px"><p>Shopee Pay</p></a></li>
-                            </ul>
-
-                            <div class="tab-content">
-                                <div id="gcash" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                            </div>
-
-                                            <div class="col-lg-8">
-                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                <p>Account Number: 09999999999</p>
-                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                <input type="button" value="Submit" class="btn btn-danger">
-                                            </div>
-                                        </div>
+                        <div class="tab-pane container fade" id="bpi">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
                                     </div>
-                                </div>
 
-                                <div id="grab" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-lg-4">
-                                                    <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                                </div>
-
-                                                <div class="col-lg-8">
-                                                    <p>Account Name: Shukran Rentals OPC</p>
-                                                    <p>Account Number: 09999999999</p>
-                                                    <input type="button" value="Attach File" class="btn btn-danger">
-                                                    <input type="button" value="Submit" class="btn btn-danger">
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>
-
-                                <div id="shopee" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                            </div>
-
-                                            <div class="col-lg-8">
-                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                <p>Account Number: 09999999999</p>
-                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                <input type="button" value="Submit" class="btn btn-danger">
-                                            </div>
-                                        </div>
+                                    <div class="col-lg-8">
+                                        <p>Account Name: Shukran Rentals OPC</p>
+                                        <p>Account Number: 09999999999</p>
+                                        <input type="button" value="Attach File" class="btn btn-danger">
+                                        <input type="button" value="Submit" class="btn btn-danger">
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
+                        <div class="tab-pane container fade" id="securitybank">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
+                                    </div>
 
-
-
-
-                        <div id="counter" class="tab-pane fade">
-                            <h3>Kindly present this to the hotel lobby and pay the exact amount.</h3>
+                                    <div class="col-lg-8">
+                                        <p>Account Name: Shukran Rentals OPC</p>
+                                        <p>Account Number: 09999999999</p>
+                                        <input type="button" value="Attach File" class="btn btn-danger">
+                                        <input type="button" value="Submit" class="btn btn-danger">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-
-                    
-                    
                 </div>
-          </div>
 
+                    
+                        <div class="tab-content">
+                            <div class="tab-pane container fade" id="digitalwallet">
 
-          <div class="col-lg-4 col-sm-12">
+                                <br><br>
+                                <h2>Available banks</h2>
+                                <br>
+                                <ul class="nav nav-tabs justify-content-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#gcash">
+                                            <img src="../IMAGES/gCash.png" alt="" style="width:60px"><p>GCASH</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#grabpay">
+                                            <img src="../IMAGES/grabPay.png" alt="" style="width:60px"><p>GRAB PAY</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#shopeepay">  
+                                            <img src="../IMAGES/shopeePay.png" alt="" style="width:60px"><p>SHOPEE PAY</p>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane container fade" id="gcash">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
+                                                </div>
+
+                                                <div class="col-lg-8">
+                                                    <p>Account Name: Shukran Rentals OPC</p>
+                                                    <p>Account Number: 09999999999</p>
+                                                    <input type="button" value="Attach File" class="btn btn-danger">
+                                                    <input type="button" value="Submit" class="btn btn-danger">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container fade" id="grabpay">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
+                                                </div>
+
+                                                <div class="col-lg-8">
+                                                    <p>Account Name: Shukran Rentals OPC</p>
+                                                    <p>Account Number: 09999999999</p>
+                                                    <input type="button" value="Attach File" class="btn btn-danger">
+                                                    <input type="button" value="Submit" class="btn btn-danger">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container fade" id="shopeepay">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
+                                                </div>
+
+                                                <div class="col-lg-8">
+                                                    <p>Account Name: Shukran Rentals OPC</p>
+                                                    <p>Account Number: 09999999999</p>
+                                                    <input type="button" value="Attach File" class="btn btn-danger">
+                                                    <input type="button" value="Submit" class="btn btn-danger">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        
+                    
+                    
+                    <div class="tab-pane container fade" id="counter">THIS IS OVER THE COUNTER</div>
+                
+                </div>
+            </div>
+        </div>
+
+        
+
+        
+    </div>
+    <div class="col-lg-4 col-sm-12">
           
             <div class="payment-container">
                 <h1>Booking details</h1>
@@ -309,84 +349,13 @@
                 <h5 style="text-align:left;"><i>Note: Includes taxes & fees</i></h5>
             </div>
           </div>
-        </div>
-      </div>
-
-      
-
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link btn btn-light" id="#pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
-                <img src="../IMAGES/bankTransfer.png" alt="" style="width:100px"><p>Bank Transfer</p>
-            </button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link btn btn-light" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                <img src="../IMAGES/digitalWallet.png" alt="" style="width:100px"><p>Digital Wallet</p>
-            </button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link btn btn-light" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                <img src="../IMAGES/overTheCounter.png" alt="" style="width:100px"><p>Over the counter</p>
-            </button>
-        </li>
-      </ul>
-
-
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-light" id="#bdo" data-bs-toggle="pill" data-bs-target="#pills-burat-tab" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
-                            <img src="../IMAGES/bdo.png" alt="" style="width:60px"><p>BDO</p>
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-light" id="bpi" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                            <img src="../IMAGES/bpi.png" alt="" style="width:60px"><p>BPI</p>
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-light" id="securitybank" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                            <img src="../IMAGES/securityBank.png" alt="" style="width:60px"><p>Security Bank</p>
-                        </button>
-                    </li>
-                </ul>
-
-            </div>
-
-            
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><p>tite</p></div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-            
-            
-            <div class="tab-pane fade" id="pills-burat-tab" role="tabpanel" aria-labelledby="pills-burat" tabindex="0">
-                                
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                            </div>
-
-                                            <div class="col-lg-8">
-                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                <p>Account Number: 09999999999</p>
-                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                <input type="button" value="Submit" class="btn btn-danger">
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-
-            </div>
-            
+</div>
 
 
 
 
 
-            
-        </div>
+
+
 </body>
 </html>
