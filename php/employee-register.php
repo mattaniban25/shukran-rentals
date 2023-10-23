@@ -74,7 +74,7 @@
                 echo"<div class='alert alert-danger'>$error</div>";
                 }
             }else{
-                $sql = "INSERT INTO employeeaccount (username,firstname, lastname, email, contact, password) VALUES (?,?,?,?,?,?)";
+                $sql = "INSERT INTO adminaccount (username,firstname, lastname, email, contact, password) VALUES (?,?,?,?,?,?)";
                 $stmt = mysqli_stmt_init($conn);
                 $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
                 if ($prepareStmt) {

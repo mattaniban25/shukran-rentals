@@ -8,6 +8,19 @@
     $sql = "SELECT * FROM adminaccount WHERE username = '$_SESSION[username]'";
     $result = mysqli_query($conn, $sql);
     $adminuser = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+    $pendingsql = "SELECT * FROM pendingreservations";
+    $pendingresult = mysqli_query($conn, $pendingsql);
+
+    $confirmedsql = "SELECT * FROM confirmedreservations";
+    $confirmedresult = mysqli_query($conn, $confirmedsql);
+
+    $checkedinsql = "SELECT * FROM checkedinreservations";
+    $checkedinresult = mysqli_query($conn, $checkedinsql);
+
+    $alldatasql = "SELECT * FROM pendingreservations SELECT * FROM confirmedreservations SELECT * FROM checkedinreservations";
+    $calldataresult = mysqli_query($conn, $alldatasql);
+
 ?>
 
 <!DOCTYPE html>
@@ -25,38 +38,342 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../css/style.css">
-    <title>Shukran Rentals - Index</title>
+    <title>Shukran Rentals - Admin Index</title>
 
   </head>
 
   <body>
-    <div class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-2 border-danger" style="box-shadow: black 0px 0px 10px 0px;">
-        <div class="container-fluid justify-content-center">
-          <a href="#" class="navbar-brand">
-            <img src="../IMAGES/Logo.png" height="75" alt="" class="">
-          </a>
-          <div class="navbar-nav ms-auto px-4">
-            <div class="navbar-nav">
-              <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                </ul>
+    <header>
+      <div class="staff-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-2 border-danger" style="box-shadow: black 0px 0px 10px 0px;">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+              <img class="logo-icon" src="../IMAGES/smallLogo.png" alt="">
+            </a>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                  <a href="#" class="nav-item nav-link">Home</a>
+                  <a href="#" class="nav-item nav-link">Calendar</a>
+                  <a href="#" class="nav-item nav-link">Active Rooms</a>
+                  <a href="#" class="nav-item nav-link">Payments</a>
+                  <a href="#" class="nav-item nav-link">Profile</a>
+                  <div class="navbar-nav">
+                    <div class="navbar-nav">
+                      <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i></a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </div>
 
-    <div class="content">
-        <div class="container">
-          <p>Welcome to Shukran Rentals, admin <?php echo $adminuser['id']?></p>
-        </div>
-    </div>
+      <div class="sidebar bg-white">
+        <aside>
+          <header class="sidebar-header">
+            <img class="logo-img" src="../IMAGES/adminLogo.png" alt="">
+          </header>
+          <nav>
+            <button>
+              <span>
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+              </span>
+            </button>
 
-    <div class="footer">
-    </div>
+            <button>
+              <span>
+                <i class="fa-regular fa-calendar"></i>
+                <span>Calendar</span>
+              </span>
+            </button>
+
+            <button>
+              <span>
+                <i class="fa-solid fa-door-open"></i>
+                <span>Active Rooms</span>
+              </span>
+            </button>
+
+            <button>
+              <span>
+                <i class="fa-solid fa-peso-sign"></i>
+                <span>Payments</span>
+              </span>
+            </button>
+
+            <button>
+              <span>
+                <img src="../Images/Employee.jfif" alt="">
+                <div class="navbar-nav ms-auto">
+                  <div class="navbar-nav">
+                    <div class="dropdown">
+                      <a class="dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"><span>Account</span></a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="logout.php">Logout</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </button>
+          </nav>
+        </aside>
+      </div>  
+    </header>
+
+    <main>
+      <div class="staff-content bg-light">
+        <div class="mt-4">
+          <p class="fs-3">Dashboard</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-3" style="">
+            <div class="border-start border-4 border-primary shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'pending')" id="defaultOpen">
+              <b class="text-primary">PENDING<br></b>
+              <b class="fs-2"><?php echo $pendingresult-> num_rows ?></b>
+            </div>
+          </div>
+
+          <div class=" col-lg-3 col-md-6 mb-3" style="">
+            <div class="border-start border-4 border-warning shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'confirmed')">
+              <b class="text-warning ">CONFIRMED<br></b>
+              <b class="fs-2"><?php echo $confirmedresult-> num_rows ?></b>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-3" style="">
+            <div class="border-start border-4 border-success shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'checkin')">
+              <b class="text-success">CHECKED-IN<br></b>
+              <b class="fs-2"><?php echo $checkedinresult-> num_rows ?></b>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-3" style="">
+            <div class="border-start border-4 border-danger shadow-sm rounded p-4  bg-white tablinks" onclick="openCity(event, 'alldata')">
+              <b class="text-danger">ALL<br></b>
+              <b class="fs-2"><?php echo ($pendingresult-> num_rows) + ($confirmedresult-> num_rows) + ($checkedinresult-> num_rows) ?></b>
+            </div>
+          </div>
+        </div>
+
+        <div id="pending" class="tabcontent active">
+          <div class="mt-4">
+            <b class="fs-5">Pending Reservations</b>
+
+            <div class="container">
+              <div class="table-responsive border border-2 border-primary">
+                  <table class="table table-bordered">
+                      <thead class="thead-dark">
+                          <tr class="border">
+                              <th class="border">Booking Code</th>
+                              <th class="border">First Name</th>
+                              <th class="border">Last Name</th>
+                              <th class="border">Contact Info</th>
+                              <th class="border">Room Number</th>
+                              <th class="border">Check-In</th>
+                              <th class="border">Check-Out</th>
+                              <th class="border">Amount To Pay</th>
+                              <th class="border">EDIT</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <?php
+                          if ($pendingresult-> num_rows > 0) {
+                            $i = 0;
+                            while ($row = $pendingresult->fetch_assoc()) {
+                              $i++;
+                              $class = $i % 2 == 0 ? '' : 'table-secondary';
+                              echo "<tr class=". $class .">";
+                              echo "<td>" . $row["bookingCode"] . "</td>";
+                              echo "<td>" . $row["firstName"] . "</td>";
+                              echo "<td>" . $row["lastName"] . "</td>";
+                              echo "<td>" . $row["contactInfo"] . "</td>";
+                              echo "<td>" . $row["roomNumber"] . "</td>";
+                              echo "<td>" . $row["checkIn"] . "</td>";
+                              echo "<td>" . $row["checkOut"] . "</td>";
+                              echo "<td>" . $row["amountToPay"] . "</td>";
+                              echo "<td>" . "<button class='fa-solid fa-pen-to-square'></button>" . "</td>";
+                              echo "</tr>";
+                            }
+                        } else {
+                            echo "No pending reservations found.";
+                        }
+                        ?>
+                      </tbody>
+                  </table>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div id="confirmed" class="tabcontent">
+          <div class="mt-4">
+            <b class="fs-5">Confirmed</b>
+
+            <div class="container">
+              <div class="table-responsive">
+                  <table class="table table-bordered border border-2 border-warning">
+                      <thead class="thead-dark">
+                          <tr>
+                              <th>ID</th>
+                              <th>Booking Code</th>
+                              <th>First Name</th>
+                              <th>Last Name</th>
+                              <th>Contact Info</th>
+                              <th>Room Number</th>
+                              <th>Check-In</th>
+                              <th>Check-Out</th>
+                              <th>Amount To Pay</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <?php
+                          if ($confirmedresult->num_rows > 0) {
+                            $i = 0;
+                            while ($row = $confirmedresult->fetch_assoc()) {
+                              $i++;
+                              $class = $i % 2 == 0 ? '' : 'table-secondary';
+                                echo "<tr>";
+                                echo "<td>" . $row["id"] . "</td>";
+                                echo "<td>" . $row["bookingCode"] . "</td>";
+                                echo "<td>" . $row["firstName"] . "</td>";
+                                echo "<td>" . $row["lastName"] . "</td>";
+                                echo "<td>" . $row["contactInfo"] . "</td>";
+                                echo "<td>" . $row["roomNumber"] . "</td>";
+                                echo "<td>" . $row["checkIn"] . "</td>";
+                                echo "<td>" . $row["checkOut"] . "</td>";
+                                echo "<td>" . $row["amountToPay"] . "</td>";
+                                echo "</tr>";
+                            }
+                        } else {
+                            echo "No pending reservations found.";
+                        }
+                        ?>
+                      </tbody>
+                  </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="checkin" class="tabcontent">
+          <div class="mt-4">
+            <b class="fs-5">Checked-in</b>
+
+            <div class="container">
+              <div class="table-responsive">
+                  <table class="table table-bordered border border-2 border-success">
+                      <thead class="thead-dark">
+                          <tr>
+                              <th>ID</th>
+                              <th>Booking Code</th>
+                              <th>First Name</th>
+                              <th>Last Name</th>
+                              <th>Contact Info</th>
+                              <th>Room Number</th>
+                              <th>Check-In</th>
+                              <th>Check-Out</th>
+                              <th>Amount To Pay</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      <?php
+                          if ($checkedinresult->num_rows > 0) {
+                            $i = 0;
+                            while ($row = $checkedinresult->fetch_assoc()) {
+                              $i++;
+                              $class = $i % 2 == 0 ? '' : 'table-secondary';
+                                echo "<tr>";
+                                echo "<td>" . $row["id"] . "</td>";
+                                echo "<td>" . $row["bookingCode"] . "</td>";
+                                echo "<td>" . $row["firstName"] . "</td>";
+                                echo "<td>" . $row["lastName"] . "</td>";
+                                echo "<td>" . $row["contactInfo"] . "</td>";
+                                echo "<td>" . $row["roomNumber"] . "</td>";
+                                echo "<td>" . $row["checkIn"] . "</td>";
+                                echo "<td>" . $row["checkOut"] . "</td>";
+                                echo "<td>" . $row["amountToPay"] . "</td>";
+                                echo "</tr>";
+                            }
+                        } else {
+                            echo "No pending reservations found.";
+                        }
+                        ?>
+                      </tbody>
+                  </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="alldata" class="tabcontent">
+          <div class="mt-4">
+            <b class="fs-5">ALL</b>
+
+            <div class="container">
+              <div class="table-responsive">
+                  <table class="table table-bordered border border-2 border-danger">
+                      <thead class="thead-dark">
+                          <tr>
+                              <th>ID</th>
+                              <th>Booking Code</th>
+                              <th>First Name</th>
+                              <th>Last Name</th>
+                              <th>Contact Info</th>
+                              <th>Room Number</th>
+                              <th>Check-In</th>
+                              <th>Check-Out</th>
+                              <th>Amount To Pay</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                  </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>  
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+      function openCity(evt, dashboardCard) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(dashboardCard).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      document.getElementById("defaultOpen").click();
+    </script>
   </body>
 </html>
