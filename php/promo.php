@@ -65,7 +65,7 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <?php include 'admin-header.php'; ?> 
 
     <main class="staff-content">
-        <h1>Products</h1>
+        <h1>Promo</h1>
 
         <table>
             <thead>
@@ -86,12 +86,29 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
                         <td><?= $product['price'] ?></td>
                         <td>
                             <form method="post">
-                                <input type="hidden" name="id" value="<?= $product['id'] ?>">
-                                <input type="text" name="name" value="<?= $product['name'] ?>">
-                                <input type="text" name="description" value="<?= $product['description'] ?>">
-                                <input type="text" name="price" value="<?= $product['price'] ?>">
-                                <button type="submit" name="edit">Edit</button>
-                                <button type="submit" name="delete">Delete</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Terms & Conditions</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" >
+                                                <input type="hidden" name="id" value="<?= $product['id'] ?>">
+                                                <input type="text" name="name" value="<?= $product['name'] ?>">
+                                                <input type="text" name="description" value="<?= $product['description'] ?>">
+                                                <input type="text" name="price" value="<?= $product['price'] ?>">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-primary" name="edit">Edit</button>
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+                                <button type="submit" class="btn btn-danger" name="delete">Delete</button>
                             </form>
                         </td>
                     </tr>
