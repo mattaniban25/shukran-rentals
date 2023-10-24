@@ -14,9 +14,9 @@
                     <a href="../index.php" class="nav-item page-header nav-link">Home</a>
                     <a href="accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
                     <a href="events.php" class="nav-item page-header nav-link">Events</a>
-                    <a href="#" class="nav-item page-header nav-link">Leisure</a>
+                    <a href="leisure.php" class="nav-item page-header nav-link">Leisure</a>
                     <a href="about-us.php" class="nav-item page-header nav-link">About Us</a>
-                    <a href="#" class="nav-item page-header nav-link">Terms & Conditions</a>
+                    <a href="terms.php" class="nav-item page-header nav-link">Terms & Conditions</a>
                 </div>
                 <div class="navbar-nav ms-auto">
                     <a href="register.php" class="nav-item page-header nav-link"><strong>Register</strong></a>
