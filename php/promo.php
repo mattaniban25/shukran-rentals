@@ -14,31 +14,40 @@ $adminuser = mysqli_fetch_array($result, MYSQLI_ASSOC);
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['add'])) {
         // Add record to database
-        $name = $_POST['name'];
-        $description = $_POST['description'];
-        $price = $_POST['price'];
-        $sql = "INSERT INTO products (name, description, price) VALUES ('$name', '$description', '$price')";
-        mysqli_query($conn, $sql);
+        $promoName = $_POST['promoName'];
+        $promoType = $_POST['promoType'];
+        $promoDuration = $_POST['promoDuration'];
+        $discount = $_POST['discount'];
+        $promoCode = $_POST['promoCode'];
+        $promoDescription = $_POST['promoDescription'];
+        $promoImage = $_POST['promoImage'];
+        $promoSql = "INSERT INTO promo (promoName, promoType, promoDuration, discount, promoCode, promoDescription, promoImage) VALUES ('$promoName', '$promoType', '$promoDuration', '$discount', '$promoCode', '$promoDescription', '$promoImage')";
+        mysqli_query($conn, $promoSql);
+
     } elseif (isset($_POST['edit'])) {
         // Update record in database
         $id = $_POST['id'];
-        $name = $_POST['name'];
-        $description = $_POST['description'];
-        $price = $_POST['price'];
-        $sql = "UPDATE products SET name='$name', description='$description', price='$price' WHERE id='$id'";
-        mysqli_query($conn, $sql);
+        $promoName = $_POST['promoName'];
+        $promoType = $_POST['promoType'];
+        $promoDuration = $_POST['promoDuration'];
+        $discount = $_POST['discount'];
+        $promoCode = $_POST['promoCode'];
+        $promoDescription = $_POST['promoDescription'];
+        $promoImage = $_POST['promoImage'];
+        $promoSql = "UPDATE promo SET promoName='$promoName', promoType='$promoType', promoDuration='$promoDuration', discount='$discount', promoCode='$promoCode', promoDescription='$promoDescription', promoImage='$promoImage' WHERE id='$id'";
+        mysqli_query($conn, $promoSql);
+
     } elseif (isset($_POST['delete'])) {
         // Delete record from database
         $id = $_POST['id'];
-        $sql = "DELETE FROM products WHERE id='$id'";
-        mysqli_query($conn, $sql);
+        $promoSql = "DELETE FROM promo WHERE id='$id'";
+        mysqli_query($conn, $promoSql);
     }
 }
 
-// Fetch records from database
-$sql = "SELECT * FROM products";
-$result = mysqli_query($conn, $sql);
-$products = mysqli_fetch_all($result, MYSQLI_ASSOC);
+$promoSql = "SELECT * FROM promo";
+$promoResult = mysqli_query($conn, $promoSql);
+$promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -62,68 +71,168 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
   <body>
   
-    <?php include 'admin-header.php'; ?> 
+    <?php include 'admin-header.php'; ?>
 
-    <main class="staff-content">
-        <h1>Promo</h1>
+    <main class="staff-content bg-light">
+        <div class="mt-4">
+          <p class="fs-3">Promos</p>
+        </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($products as $product): ?>
-                    <tr>
-                        <td><?= $product['id'] ?></td>
-                        <td><?= $product['name'] ?></td>
-                        <td><?= $product['description'] ?></td>
-                        <td><?= $product['price'] ?></td>
-                        <td>
-                            <form method="post">
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Terms & Conditions</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 col-sm-12" style="">
+                <div class="border-start border-end border-4 border-danger-subtle shadow-sm rounded-3 p-4  bg-white tablinks">
+                    <b class="text-danger">ADD A NEW PROMO</b>
+                    <br><br>
+                    <form method="post">
+                        <div class="row">
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control" name="promoName" placeholder="Promo Name">
+                            </div>
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control" name="promoType" placeholder="Promo Type">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <input type="date" class="form-control" name="promoDuration" placeholder="Promo Duration">
+                            </div>
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control" name="discount" placeholder="Discount">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control" name="promoCode" placeholder="Promo Code">
+                            </div>
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control" name="promoDescription" placeholder="Description">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control" name="promoImage" placeholder="Promo Image">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <button type="submit" class="btn btn-success" name="add">ADD</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+
+        <div id="active" class="">
+          <div class="mt-4">
+            <b class="fs-5">Active Promos</b>
+            <div class="container">
+                <div class="table-responsive border border-2 border-danger">
+                    <table class="table table-bordered">
+                        <thead class="thead-dark">
+                            <tr class="border">
+                                <th class="border">Promo ID</th>
+                                <th class="border">Promo Name</th>
+                                <th class="border">Promo Type</th>
+                                <th class="border">Duration</th>
+                                <th class="border">Discount</th>
+                                <th class="border">Promo Code</th>
+                                <th class="border">Description</th>
+                                <th class="border">Promo Image</th>
+                                <th class="border"></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <?php foreach ($promos as $promo): ?>
+                                <tr>
+                                    <td><?= $promo['id'] ?></td>
+                                    <td><?= $promo['promoName'] ?></td>
+                                    <td><?= $promo['promoType'] ?></td>
+                                    <td><?= $promo['promoDuration'] ?></td>
+                                    <td><?= $promo['discount'] ?></td>
+                                    <td><?= $promo['promoCode'] ?></td>
+                                    <td><?= $promo['promoDescription'] ?></td>
+                                    <td><?= $promo['promoImage'] ?></td>
+                                    <td>
+                                        <form method="post">
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+
+                                                            <input type="hidden" name="id" value="<?= $promo['id'] ?>">
+
+                                                            <div class="border border-4 border-primary-subtle shadow-sm  p-4  bg-white tablinks">
+                                                                <h5 class="text-primary modal-title" id="exampleModalLabel">EDIT PROMO</h5>
+                                                                <br><br>
+                                                                <div class="row">
+                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                                                        <input type="text" name="promoName" placeholder="Promo Name" value="<?= $promo['promoName'] ?>">
+                                                                    </div>
+                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                                                        <input type="text" name="promoType" placeholder="Promo Name" value="<?= $promo['promoType'] ?>">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                                                        <input type="text" name="promoDuration" placeholder="Promo Name" value="<?= $promo['promoDuration'] ?>">
+                                                                    </div>
+                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                                                        <input type="text" name="discount" placeholder="Promo Name" value="<?= $promo['discount'] ?>">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                                                        <input type="text" name="promoCode" placeholder="Promo Name" value="<?= $promo['promoCode'] ?>">
+                                                                    </div>
+                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                                                        <input type="text" name="promoDescription" placeholder="Promo Name" value="<?= $promo['promoDescription'] ?>">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                                                        <input type="text" name="promoImage" placeholder="Promo Name" value="<?= $promo['promoImage'] ?>">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                                                        <button type="submit" class="btn btn-success" name="add">ADD</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button type="submit" class="btn btn-primary" name="edit">Edit</button>
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="modal-body" >
-                                                <input type="hidden" name="id" value="<?= $product['id'] ?>">
-                                                <input type="text" name="name" value="<?= $product['name'] ?>">
-                                                <input type="text" name="description" value="<?= $product['description'] ?>">
-                                                <input type="text" name="price" value="<?= $product['price'] ?>">
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="submit" class="btn btn-primary" name="edit">Edit</button>
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
-                                <button type="submit" class="btn btn-danger" name="delete">Delete</button>
-                            </form>
-                        </td>
-                    </tr>
-                <?php endforeach ?>
-            </tbody>
-        </table>
-
-        <h2>Add Product</h2>
-
-        <form method="post">
-            <input type="text" name="name" placeholder="Name">
-            <input type="text" name="description" placeholder="Description">
-            <input type="text" name="price" placeholder="Price">
-            <button type="submit" name="add">Add</button>
-        </form>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+                                            <button type="submit" class="btn btn-danger" name="delete">Delete</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            <?php endforeach ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+          </div>
+        </div>
     </main>
 
     <footer>

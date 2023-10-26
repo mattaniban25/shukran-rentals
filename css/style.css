@@ -321,3 +321,14 @@ h2
         width: 50px;
     }
 }
+
+.promo-container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: black 0px 7px 29px 0px;
+}
+
+.pointer {
+    cursor: pointer;
+}
