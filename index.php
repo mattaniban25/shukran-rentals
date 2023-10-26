@@ -46,9 +46,9 @@
               <a href="index.php" class="nav-item page-header nav-link">Home</a>
               <a href="php/accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
               <a href="php/events.php" class="nav-item page-header nav-link">Events</a>
-              <a href="#" class="nav-item page-header nav-link">Leisure</a>
+              <a href="php/leisure.php" class="nav-item page-header nav-link">Leisure</a>
               <a href="php/about-us.php" class="nav-item page-header nav-link">About Us</a>
-              <a href="#" class="nav-item page-header nav-link">Terms & Conditions</a>     
+              <a href="php/terms.php" class="nav-item page-header nav-link">Terms & Conditions</a>     
             </div>
             <div class="navbar-nav ms-auto">
               <a href="php/register.php" class="nav-item page-header nav-link"><strong>Register</strong></a>

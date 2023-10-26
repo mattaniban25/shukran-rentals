@@ -28,10 +28,11 @@
     <?php include 'header.php'; ?> 
 
 
-    <div class="container">
+    <br><br><br>
+    <div class="container" >
     <div class="row" align="center">
         <div class="col-lg-8">
-            <div class="container w-75 payment-container">
+            <div class="container w-75 payment-container rounded-2">
                 <h1>Choose Payment Method</h1>
                 <br><br>
 
@@ -216,23 +217,23 @@
         
         <div class="col-lg-4 col-sm-12">
             
-                <div class="container payment-container">
-                    <h1>Booking details</h1>
+                <div class="container payment-container rounded-2" style="width:fit-content">
+                    <h1 class="fs-2">Booking details</h1>
                     <hr>
-                    <h4 style="text-align:left;"><b>Total: ₱2,700.00</b></h4>
-                    <h4 style="text-align:left;">Mon, Sept 30, 2023 - Thu, Oct 03, 2023</h4>
+                    <h1 style="text-align:left;" class="fs-4"><b>Total: ₱2,700.00</b></h1>
+                    <h1 style="text-align:left;" class="fs-6">Mon, Sept 30, 2023 - Thu, Oct 03, 2023</h1>
                     <hr>
-                    <h3 style="text-align:left;">Standard Room</h3>
-                    <h5 style="text-align:left;">3 guests (2 adults, 1 child)</h5>
-                    <h5 style="text-align:left;">2 days, 3 nights</h5>
+                    <h1 style="text-align:left;" class="fs-2">Standard Room</h1>
+                    <h1 style="text-align:left;" class="fs-6">3 guests (2 adults, 1 child)</h1>
+                    <h1 style="text-align:left;" class="fs-6">2 days, 3 nights</h1>
                     <hr>
-                    <h5 style="text-align:left;"><i>Note: Includes taxes & fees</i></h5>
+                    <h1 style="text-align:left;" class="fs-6"><i>Note: Includes taxes & fees</i></h1>
                 </div>
         </div>
     </div>
 </div>
 
-
+<br><br><br>
 
     <?php include 'footer.php'; ?>
   </body>
