@@ -36,7 +36,7 @@
       <nav class="navbar navbar-expand-lg sticky-top bg-white">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
-            <img src="IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
+            <img src="IMAGES/Logo.png"  width="160" height="80" alt="" class=" border-end border-2 border-danger">
           </a>
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
