@@ -559,7 +559,7 @@
                     each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
                     find the perfect room to make your stay memorable and one for the books.</p>
                   </div>    
-                  <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/default-accommodations.php">EXPLORE</a> 
+                  <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/accommodations.php">EXPLORE</a> 
                 </div>
               </div>
         </div>
