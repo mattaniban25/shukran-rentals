@@ -56,37 +56,37 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/billiards2.jpg"  style="width:100%;" class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                <img src="../IMAGES/billiards2.jpg"  style="width:600px; height:450px" class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
               </div>
             </div>
 
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/cheers.jpg"  style="width:100%" class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
+                <img src="../IMAGES/cheers.jpg"  style="width:600px; height:450px" class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
               </div>
             </div>
 
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/movies.jpg"  style="width:100%" class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
+                <img src="../IMAGES/movies.jpg"  style="width:600px; height:450px" class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
               </div>
             </div>
 
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/samgyup.jpg"  style="width:100%" class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
+                <img src="../IMAGES/samgyup.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
               </div>
             </div>
 
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/jacuzzi.jpg"  style="width:100%" class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
+                <img src="../IMAGES/jacuzzi.jpg"  style="width:600px; height:450px" class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
               </div>
             </div>
 
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/beerpong.jpg"  style="width:100%" class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+                <img src="../IMAGES/beerpong.jpg"  style="width:600px; height:450px" class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
               </div>
             </div>
           </div>
