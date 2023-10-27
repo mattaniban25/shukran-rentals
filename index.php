@@ -229,47 +229,53 @@
       <!-- DEALS AND OFFERS SECTION -->
       
         <div class="general-section2">
-          <h2 align="center" >Deals and offers this month</h2>
-          <p class="" align="center">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum</p>
+          <h3 class ="fs-2" align="center" >Special deals and offers every month!</h3>
+          <br>
+          <p class="fs-5" align="center">Discover the latest promos and discounts offered by our hotel. 
+            <br>Check out our monthly promos and special offers to make your stay even more affordable and enjoyable.</p>
+            <br>
 
-        <div class="container" align="center">
-          <div class="row" >
-            <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-              <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
-                <img class="card-img-top" src="IMAGES/promoSample.jpg" alt="Card image">
-                  <div class="card-body">
-                    <h4 class="card-title">BOMBASTIC</h4>
-                    <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
-                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoOne"><a href="#promoOne" class="btn btn-danger">View Details</a></button>
-                  </div>
-              </div>
-            </div>
+          <div class="container" align="center">
+            <div class="row" >
 
-            <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-              <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
-                <img class="card-img-top" src="IMAGES/promoSample2.jpg" alt="Card image">
-                  <div class="card-body">
-                    <h4 class="card-title">PALONCHAY</h4>
-                    <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
-                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoTwo"><a href="#promoTwo" class="btn btn-danger">View Details</a></button> 
-                  </div>
+              <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
+                <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
+                  <img class="card-img-top" src="IMAGES/promoSample.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">BOMBASTIC</h4>
+                      <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
+                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoOne"><a href="#promoOne" class="btn btn-danger">View Details</a></button>
+                    </div>
+                </div>
               </div>
-            </div>
+
+              <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
+                <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
+                  <img class="card-img-top" src="IMAGES/promoSample2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">PALONCHAY</h4>
+                      <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
+                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoTwo"><a href="#promoTwo" class="btn btn-danger">View Details</a></button> 
+                    </div>
+                </div>
+              </div>
                       
 
-            <div class="col-lg-4 col-sm-12 col-md-12">
-              <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
-                <img class="card-img-top" src="IMAGES/promoSample3.jpg" alt="Card image">
-                  <div class="card-body">
-                    <h4 class="card-title">GIL PANOT</h4>
-                    <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
-                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoThree"><a href="#promoThree" class="btn btn-danger">View Details</a></button>
-                  </div>
+              <div class="col-lg-4 col-sm-12 col-md-12">
+                <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
+                  <img class="card-img-top" src="IMAGES/promoSample3.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">GIL PANOT</h4>
+                      <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
+                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoThree"><a href="#promoThree" class="btn btn-danger">View Details</a></button>
+                    </div>
+                </div>
               </div>
-            </div>
+
+
           </div>
         </div>
-      </div>
+      
 
 
 
@@ -587,7 +593,7 @@
                     <div style="text-align:left">
                       <hr class="border border-danger opacity-100 w-50 mb-3">
                     </div>
-                    <p align="justify" class="">Discover and explore the ideal space for your stay, explore the range of accommodations, 
+                    <p align="justify" class="fs-5" style="line-height:27px;">Discover and explore the ideal space for your stay, explore the range of accommodations, 
                     each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
                     find the perfect room to make your stay memorable and one for the books.</p>
                   </div>    
@@ -613,7 +619,7 @@
                 <div style="text-align:left">
                   <hr class="border border-danger opacity-100 w-50 mb-3">
                 </div>
-                  <p align="justify">Level up your special moments with Shukran, whether it’s a wedding reception, 
+                  <p align="justify" class="fs-5" style="line-height:27px;">Level up your special moments with Shukran, whether it’s a wedding reception, 
                   business meeting, or a personal celebration, Shukran offers a versatile and modern events and 
                   celebrations venue. With ideal spaces, modern amenities, and a cooperative team, we ensure your 
                   events are elevated to extraordinary experiences.</p>
@@ -639,7 +645,7 @@
                 <div style="text-align:left">
                   <hr class="border border-danger opacity-100 w-50 mb-3">
                 </div>
-                  <p align="justify">Experience lifestyle and leisure, unwind and rejuvenate with Shukran’s array of facilities. 
+                  <p align="justify" class="fs-5" style="line-height:27px;">Experience lifestyle and leisure, unwind and rejuvenate with Shukran’s array of facilities. 
                   From a serene jacuzzi experience to fitness facilities, our hotel invites you to immerse yourself 
                   in relaxation and enjoy the finer aspects of life.</p>
                 </div> 	      
@@ -672,7 +678,7 @@
             </div>
 
             <div class="col-lg-6 col-sm-12" align="center">
-              <p class="pb-3 ">Destinations near us:</p>
+              <p class="pb-3 fs-3">Destinations near us:</p>
               
               <ul class="list-group w-75">
                 <li class="list-group-item">SM Mall Of Asia: <strong>approx 3.08km</strong></li>

@@ -196,11 +196,6 @@ body
 {
     font-family: 'Montserrat', sans-serif;
 }
-
-ul li::before
-{
-    content: "";   
-}
 td,th,tr
 {
    border: none;
