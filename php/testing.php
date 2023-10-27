@@ -19,6 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $price = $_POST['price'];
         $sql = "INSERT INTO products (name, description, price) VALUES ('$name', '$description', '$price')";
         mysqli_query($conn, $sql);
+
+
     } elseif (isset($_POST['edit'])) {
         // Update record in database
         $id = $_POST['id'];
@@ -27,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $price = $_POST['price'];
         $sql = "UPDATE products SET name='$name', description='$description', price='$price' WHERE id='$id'";
         mysqli_query($conn, $sql);
+
     } elseif (isset($_POST['delete'])) {
         // Delete record from database
         $id = $_POST['id'];
@@ -65,7 +68,7 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <?php include 'admin-header.php'; ?> 
 
     <main class="staff-content">
-        <h1>TESTINGGGGG</h1>
+        <h1>Promo</h1>
 
         <table>
             <thead>
@@ -77,6 +80,7 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
                     <th>Actions</th>
                 </tr>
             </thead>
+            
             <tbody>
                 <?php foreach ($products as $product): ?>
                     <tr>

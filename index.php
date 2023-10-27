@@ -36,7 +36,7 @@
       <nav class="navbar navbar-expand-lg sticky-top bg-white">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
-            <img src="IMAGES/Logo.png"  width="80" height="40" alt="" class=" border-end border-2 border-danger">
+            <img src="IMAGES/Logo.png"  width="160" height="80" alt="" class=" border-end border-2 border-danger">
           </a>
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -597,7 +597,7 @@
                     each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
                     find the perfect room to make your stay memorable and one for the books.</p>
                   </div>    
-                  <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/default-accommodations.php">EXPLORE</a> 
+                  <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/accommodations.php">EXPLORE</a> 
                 </div>
               </div>
         </div>
@@ -624,7 +624,7 @@
                   celebrations venue. With ideal spaces, modern amenities, and a cooperative team, we ensure your 
                   events are elevated to extraordinary experiences.</p>
                 </div>   
-                <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/default-events.php">EXPLORE</a>   
+                <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/events.php">EXPLORE</a>   
               </div>
             </div>
         </div>
@@ -649,7 +649,7 @@
                   From a serene jacuzzi experience to fitness facilities, our hotel invites you to immerse yourself 
                   in relaxation and enjoy the finer aspects of life.</p>
                 </div> 	      
-                <a class="btn btn-danger ps-5 pe-5 mt-3"href="">EXPLORE</a>   
+                <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/leisure.php">EXPLORE</a>   
               </div>
             </div>
         </div>

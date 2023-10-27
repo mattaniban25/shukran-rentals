@@ -232,7 +232,7 @@
         </div>
 
         <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
-          <a href="">
+          <a href="deluxe-room.php">
 
             <div class="card w-100 h-100 border-0">
               <img src="../IMAGES/accommodations.jpg" class="card-img-top" alt="..." >
@@ -244,7 +244,7 @@
         </div>
 
         <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
-          <a href="">
+          <a href="twin-room.php">
       
             <div class="card w-100 .h-100 border-0">
               <img src="../IMAGES/roomSample.jpg" class="card-img-top" alt="...">
@@ -256,7 +256,7 @@
         </div>
 
         <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
-          <a href="">
+          <a href="jacuzzi-room.php">
 
             <div class="card w-100 .h-100 border-0">
               <img src="../IMAGES/roomSample2.jpg" class="card-img-top" alt="...">
@@ -268,7 +268,7 @@
         </div>
 
         <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
-          <a href="">
+          <a href="game-room.php">
       
             <div class="card w-100 .h-100 border-0">
               <img src="../IMAGES/roomSample3.jpg" class="card-img-top" alt="...">
@@ -280,7 +280,7 @@
         </div>
 
         <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
-          <a href="">
+          <a href="family-room.php">
 
             <div class="card w-100 .h-100 border-0">
               <img src="../IMAGES/living-room.jpg" class="card-img-top" alt="...">
@@ -290,6 +290,20 @@
             </div>
           </a>
         </div>
+
+
+        <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
+          <a href="executive-room.php">
+      
+            <div class="card w-100 .h-100 border-0">
+              <img src="../IMAGES/roomSample3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align:left;">Executive Room</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
     </div>
   </main>
