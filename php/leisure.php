@@ -74,7 +74,7 @@
 
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/samgyup.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
+                <img src="../IMAGES/samgyup.jpg" style="width:600px; height:450px" class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
               </div>
             </div>
 
