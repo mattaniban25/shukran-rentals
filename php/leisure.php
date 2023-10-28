@@ -56,19 +56,19 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/billiards2.jpg"  style="width:600px; height:450px" class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                <img src="../IMAGES/roomSample2.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
               </div>
             </div>
 
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/cheers.jpg"  style="width:600px; height:450px" class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
+                <img src="../IMAGES/accommodations.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
               </div>
             </div>
 
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/movies.jpg"  style="width:600px; height:450px" class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
+                <img src="../IMAGES/samgyup.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
               </div>
             </div>
 
