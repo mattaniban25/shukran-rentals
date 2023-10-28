@@ -56,7 +56,7 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/roomSample2.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                <img src="../IMAGES/billiards2.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
               </div>
             </div>
 
