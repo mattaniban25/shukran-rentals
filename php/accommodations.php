@@ -217,13 +217,13 @@
       <hr class="border border-danger opacity-100 w-25">
     </div>
 
-    <div class="container" align="center">
+    <div class="container" align="center" style="width:90%;">
       <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
           <a href="standard-room.php">
           
             <div class="card w-100 h-100 border-0">
-              <img src="../IMAGES/roomOne.jpg" class="card-img-top" alt="..." >
+              <img src="../IMAGES/Rooms/Standard Room/standard_room7.jpeg" class="card-img-top" alt="..." >
                 <div class="card-body">
                   <h5 class="card-title" style="text-align:left;">Standard Room</h5>
                 </div>
@@ -235,7 +235,7 @@
           <a href="deluxe-room.php">
 
             <div class="card w-100 h-100 border-0">
-              <img src="../IMAGES/accommodations.jpg" class="card-img-top" alt="..." >
+              <img src="../IMAGES/Rooms/Deluxe Rooms/deluxe4.jpeg" class="card-img-top" alt="..." >
               <div class="card-body">
                 <h5 class="card-title" style="text-align:left;">Deluxe Room</h5>
               </div>
@@ -247,7 +247,7 @@
           <a href="twin-room.php">
       
             <div class="card w-100 .h-100 border-0">
-              <img src="../IMAGES/roomSample.jpg" class="card-img-top" alt="...">
+              <img src="../IMAGES/Rooms/Twin Room/twin_room1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title" style="text-align:left;">Twin Room</h5>
               </div>
@@ -259,7 +259,7 @@
           <a href="jacuzzi-room.php">
 
             <div class="card w-100 .h-100 border-0">
-              <img src="../IMAGES/roomSample2.jpg" class="card-img-top" alt="...">
+              <img src="../IMAGES/Rooms/Jacuzzi Room/316 Jacuzzi Room/316_jacuzzi3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title" style="text-align:left;">Jacuzzi Room</h5>
               </div>
@@ -271,7 +271,7 @@
           <a href="game-room.php">
       
             <div class="card w-100 .h-100 border-0">
-              <img src="../IMAGES/roomSample3.jpg" class="card-img-top" alt="...">
+              <img src="../IMAGES/Rooms/Game Room/game_room1.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title" style="text-align:left;">Game Room</h5>
               </div>
@@ -283,7 +283,7 @@
           <a href="family-room.php">
 
             <div class="card w-100 .h-100 border-0">
-              <img src="../IMAGES/living-room.jpg" class="card-img-top" alt="...">
+              <img src="../IMAGES/Rooms/Family Room/family_room2.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title" style="text-align:left;">Family Room</h5>
               </div>
@@ -296,9 +296,35 @@
           <a href="executive-room.php">
       
             <div class="card w-100 .h-100 border-0">
-              <img src="../IMAGES/roomSample3.jpg" class="card-img-top" alt="...">
+              <img src="../IMAGES/Rooms/Executive Suite Room/executive3.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title" style="text-align:left;">Executive Room</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
+          <a href="barkada-room.php">
+      
+            <div class="card w-100 .h-100 border-0">
+              <img src="../IMAGES/Rooms/Barkada Rooms/barkada5.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align:left;">Barkada Room</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
+          <a href="triple-room.php">
+      
+            <div class="card w-100 .h-100 border-0">
+              <img src="../IMAGES/Rooms/Triple Room/triple_room.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align:left;">Triple Room</h5>
               </div>
             </div>
           </a>

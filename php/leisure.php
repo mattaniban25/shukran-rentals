@@ -56,7 +56,7 @@
         <div class="container" align="center">
           <div class="row">
             <div class="col-lg-4 col-sm-12">
-                <img src="../IMAGES/billiardtable.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                <img src="../IMAGES/rooftop.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
             </div>
 
             <div class="col-lg-4 col-sm-12">
@@ -73,19 +73,19 @@
 
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/samgyup.jpg"  class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
+                <img src="../IMAGES/cheers.jpg"  class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
               </div>
             </div>
 
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/jacuzzi.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
+                <img src="../IMAGES/beerpongs.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
               </div>
             </div>
 
             <div class="col-lg-4 col-sm-12">
               <div class="thumbnail">
-                <img src="../IMAGES/beerpong.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+                <img src="../IMAGES/billiards.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
               </div>
             </div>
           </div>

@@ -38,10 +38,10 @@
         </div>
       </div>
 
-      <div class="welcome-div" align="center">
-        <p class="welcome-message h4 fs-4 mt-5 mb-3 fw-bold">PLAN YOUR NEXT EVENT WITH US!</p>
-        <div class="welcome-description mb-5 col-lg-6 col-md-6 col-sm-12">
-          <p align="justify" class="fs-5">Experience churvanes in our Unfussy budget hotel located in an accessible and strategic place in the locality of Paranque City. Long weekend staycations, Holiday breaks, Unwinding with your family or just Celebrating with your friends? We've got it covered! </p>
+      <div class="container" align="center" style="width:90%;">
+        <p class="h4 fs-4 mt-5 mb-3 fw-bold">PLAN YOUR NEXT EVENT WITH US!</p>
+        <div class=" mb-5 col-lg-6 col-md-6 col-sm-12">
+          <p align="justify" class="">Experience churvanes in our Unfussy budget hotel located in an accessible and strategic place in the locality of Paranque City. Long weekend staycations, Holiday breaks, Unwinding with your family or just Celebrating with your friends? We've got it covered! </p>
         </div>
       </div>
 

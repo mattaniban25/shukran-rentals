@@ -31,16 +31,26 @@
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
               </div>
 
               <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                  <img src="../IMAGES/Rooms/Family Room/family_room1.jpeg" class="d-block w-100" alt="...">
+                  <img src="../IMAGES/Rooms/Barkada Rooms/barkada5.jpeg" class="d-block w-100" alt="...">
                 </div>
                 
                 <div class="carousel-item">
-                  <img src="../IMAGES/Rooms/Family Room/family_room2.jpeg" class="d-block w-100" alt="...">
+                  <img src="../IMAGES/Rooms/Barkada Rooms/barkada1.jpeg" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="../IMAGES/Rooms/Barkada Rooms/barkada2.jpeg" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="../IMAGES/Rooms/Barkada Rooms/barkada6.jpeg" class="d-block w-100" alt="...">
                 </div>
 
               </div>
@@ -57,7 +67,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-sm-12">
-            <p class="fs-1">Family Room</p>
+            <p class="fs-1">Barkada Room</p>
             <p>Our spacious Family room will surely make you create lasting memories, furnished to accommodate your entire family. 
                 With three comfortable bunk beds, this space has plenty of room for everyone to rest and recharge after a day of 
                 activities. Includes modern amenities, ensuring convenience and relaxation. While you’re embarking on a family getaway,

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar Reservation Interface</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+   
+  <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -56,7 +58,10 @@
             border:1px solid black;
             padding: 20px;
         }
+
     </style>
+
+
 </head>
 <body>
     <div class="calendar">
@@ -399,6 +404,74 @@
         </div>
 
 
+        <br><br><br><br><br><br>
+
+
+
+<div class="container-fluid">
+
+    <ul class="nav nav-tabs">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Number of guests</a>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#sectionA" data-bs-toggle="tab">1-2 Pax</a></li>
+        <li><a class="dropdown-item" href="#sectionB" data-bs-toggle="tab">3 Pax</a></li>
+        <li><a class="dropdown-item" href="#sectionC" data-bs-toggle="tab">4 Pax</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+    </li>
+    </ul>
+
+    <div class="tab-content"> 
+        <div id="sectionA" class="tab-pane fade in active"> 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-6" align="left">
+                        <br><br>
+                        <p class="fs-5">Price: ₱1,500</p>
+                        <p class="fs-5">Check In: 2 PM</p>
+                        <p class="fs-5">Check Out: 12 PM</p>
+                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+
+        
+        <div id="sectionB" class="tab-pane fade in "> 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-6" align="left">
+                        <br><br>
+                        <p class="fs-5">Price: ₱1,800</p>
+                        <p class="fs-5">Check In: 2 PM</p>
+                        <p class="fs-5">Check Out: 12 PM</p>
+                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
+                       </div> 
+                </div>
+            </div>
+        </div> 
+
+        
+        <div id="sectionC" class="tab-pane fade in "> 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-6" align="left">
+                        <br><br>
+                        <p class="fs-5">Price: ₱2,300</p>
+                        <p class="fs-5">Check In: 2 PM</p>
+                        <p class="fs-5">Check Out: 12 PM</p>
+                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+        
+    </div>
+</div>
+
+    
 
 
 <?php include 'footer.php'; ?>

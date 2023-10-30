@@ -15,6 +15,10 @@
     <!-- CSS FILE -->
     <link rel="stylesheet" href="../css/style.css">
 
+
+
+    
+
     <title>Shukran Rentals - Login</title>
 
   </head>
@@ -32,20 +36,27 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
               </div>
 
               <div class="carousel-inner">
+
                 <div class="carousel-item active">
-                  <img src="../IMAGES/roomOne.jpg" class="d-block w-100" alt="...">
+                  <img src="../IMAGES/Rooms/Twin Room/twin_room1.jpg" class="d-block w-100" alt="...">
                 </div>
                 
                 <div class="carousel-item">
-                  <img src="../IMAGES/roomSample.jpg" class="d-block w-100" alt="...">
+                  <img src="../IMAGES/Rooms/Twin Room/twin_room2.jpeg" class="d-block w-100" alt="...">
                 </div>
 
                 <div class="carousel-item">
-                  <img src="../IMAGES/roomSample2.jpg" class="d-block w-100" alt="...">
+                  <img src="../IMAGES/Rooms/Twin Room/twin_room3.jpeg" class="d-block w-100" alt="...">
                 </div>
+
+                <div class="carousel-item">
+                  <img src="../IMAGES/Rooms/Twin Room/twin_room4.jpeg" class="d-block w-100" alt="...">
+                </div>
+
               </div>
 
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -285,7 +296,7 @@
           </div>
 
           <div class="col-lg-3 col-sm-6">
-            <p class="fs-4">4 Max Guests</p>
+            <p class="fs-4">2 Max Guests</p>
             <hr class="border border-danger opacity-75 w-25">
           </div>
           <div class="col-lg-3 col-sm-6">
@@ -293,7 +304,7 @@
             <hr class="border border-danger opacity-75 w-25">
           </div>
           <div class="col-lg-3 col-sm-6">
-            <p class="fs-4">1 Bedroom</p>
+            <p class="fs-4">No Bedroom</p>
             <hr class="border border-danger opacity-75 w-25">
           </div>
         </div>
@@ -303,16 +314,68 @@
         <hr class="border opacity-50 w-75">
       </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <p class="fs-5">Price: ₱5,000</p>
-            <p class="fs-5">Check In: 2 PM</p>
-            <p class="fs-5">Check Out: 12 PM</p>
-            <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
-          </div> 
-        </div>
-      </div>
+<div class="container">
+
+    <ul class="nav nav-tabs">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Number of guests</a>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#sectionA" data-bs-toggle="tab">1-2 Pax</a></li>
+        <li><a class="dropdown-item" href="#sectionB" data-bs-toggle="tab">3 Pax</a></li>
+        <li><a class="dropdown-item" href="#sectionC" data-bs-toggle="tab">4 Pax</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+    </li>
+    </ul>
+
+    <div class="tab-content"> 
+        <div id="sectionA" class="tab-pane fade in active"> 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-6" align="left">
+                        <br><br>
+                        <p class="fs-5">Price: ₱1,500</p>
+                        <p class="fs-5">Check In: 2 PM</p>
+                        <p class="fs-5">Check Out: 12 PM</p>
+                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+
+        
+        <div id="sectionB" class="tab-pane fade in "> 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-6" align="left">
+                        <br><br>
+                        <p class="fs-5">Price: ₱1,800</p>
+                        <p class="fs-5">Check In: 2 PM</p>
+                        <p class="fs-5">Check Out: 12 PM</p>
+                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
+                       </div> 
+                </div>
+            </div>
+        </div> 
+
+        
+        <div id="sectionC" class="tab-pane fade in "> 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-6" align="left">
+                        <br><br>
+                        <p class="fs-5">Price: ₱2,300</p>
+                        <p class="fs-5">Check In: 2 PM</p>
+                        <p class="fs-5">Check Out: 12 PM</p>
+                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+        
+    </div>
+</div>
 
       <div align="center" class="text-secondary">
         <hr class="border opacity-100 w-75">

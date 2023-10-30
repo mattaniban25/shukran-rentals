@@ -109,8 +109,8 @@
       <!-- WELCOME CONTENT -->
                   
         <div class="welcome-div" align="center">
-          <p class="welcome-message h4 fs-4 mt-5 mb-3">WELCOME TO SHUKRAN RENTALS OPC</p>
-          <div class="welcome-description mb-5 col-lg-8 col-md-8 col-sm-8">
+          <p class="welcome-message h4 fs-4 mt-5 mb-3" style="width:80%;">WELCOME TO SHUKRAN RENTALS OPC</p>
+          <div class=" mb-5 col-lg-8 col-md-8 col-sm-8" style="width:80%;">
             <p align="justify" class="fs-6">Experience churvanes in our Unfussy budget hotel located in an accessible and strategic place in the locality of Paranque City.
             Long weekend staycations, Holiday breaks, Unwinding with your family or just Celebrating with your friends? We've got it 
             covered!</p>
@@ -186,7 +186,7 @@
             </div>
           </div>
 
-          <div class="container" >
+          <div class="container" style="width:80%;">
             <div class="row" >
               
                 <div class="col-lg-3 mb-2" style="text-align:left;">
@@ -230,43 +230,42 @@
       
         <div class="general-section2">
           <h3 class ="fs-2" align="center" >Special deals and offers every month!</h3>
-          <br>
-          <p class="fs-5" align="center">Discover the latest promos and discounts offered by our hotel. 
-            <br>Check out our monthly promos and special offers to make your stay even more affordable and enjoyable.</p>
-            <br>
-
+            <div class="container"style="width:90%;">
+              <p align="center">Discover the latest promos and discounts offered by our hotel. 
+              Check out our monthly promos and special offers to make your stay even more affordable and enjoyable.</p>
+            </div>
           <div class="container" align="center">
             <div class="row" >
 
               <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-                <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
+                <div class="card shadow-lg p-2 bg-body-tertiary rounded cards h-100" style="width: 18rem;">
                   <img class="card-img-top" src="IMAGES/promoSample.jpg" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title">BOMBASTIC</h4>
-                      <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
+                      <h4 class="card-title">LOVE MONTH</h4>
+                      <p class="card-text">Use the voucher code above to get 20% off from your bill.</p>
                       <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoOne"><a href="#promoOne" class="btn btn-danger">View Details</a></button>
                     </div>
                 </div>
               </div>
 
               <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-                <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
+                <div class="card shadow-lg  p-2 bg-body-tertiary rounded cards h-100" style="width: 18rem;">
                   <img class="card-img-top" src="IMAGES/promoSample2.jpg" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title">PALONCHAY</h4>
-                      <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
+                      <h4 class="card-title">ZERO</h4>
+                      <p class="card-text">Use the voucher code above to avail a zero interest promo.</p>
                       <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoTwo"><a href="#promoTwo" class="btn btn-danger">View Details</a></button> 
                     </div>
                 </div>
               </div>
                       
 
-              <div class="col-lg-4 col-sm-12 col-md-12">
-                <div class="card shadow-lg p-2 bg-body-tertiary rounded cards" style="width: 18rem;">
+              <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
+                <div class="card shadow-lg p-2 bg-body-tertiary rounded cards h-100" style="width: 18rem;">
                   <img class="card-img-top" src="IMAGES/promoSample3.jpg" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title">GIL PANOT</h4>
-                      <p class="card-text">Use the voucher code above to get 50% off from your tite</p>
+                      <h4 class="card-title">ALLIN</h4>
+                      <p class="card-text">Use the voucher code above to avail the promo.</p>
                       <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoThree"><a href="#promoThree" class="btn btn-danger">View Details</a></button>
                     </div>
                 </div>
@@ -284,7 +283,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Promo Details - Valid until January 56, 1987</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Promo Details - valid until the end of November</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" > 
@@ -384,7 +383,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Promo Details - Valid until January 56, 1987</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Promo Details - valid until end of the month</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" > 
@@ -484,7 +483,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Promo Details - Valid until January 56, 1987</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Shukran Rentals OPC | Promo Details - valid until December</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
@@ -579,88 +578,88 @@
 
       <!--Main content section (Accommodations)-->
 
-      <div class="general-section1">
+      <div class="general-section1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
         <div class="container">
-          
-            <div class="row align-self-center" align="center">
-              <div class="col-lg-6 col-sm-12">
-                  <img src="IMAGES/accommodations.jpg" alt="" class="img-fluid main-content-img" style="width:85%; vertical-align:middle;" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
-              </div>
-
-              <div class="col-lg-6 col-sm-12 align-self-center">
-                  <div class="home-description" style="width:80%;">
-                    <p class="fs-2" style="text-align:left">Accommodations</p>
-                    <div style="text-align:left">
-                      <hr class="border border-danger opacity-100 w-50 mb-3">
-                    </div>
-                    <p align="justify" class="fs-5" style="line-height:27px;">Discover and explore the ideal space for your stay, explore the range of accommodations, 
+          <div class="row " align="center">
+            <div class="col-lg-6 col-sm-12">
+                <img src="IMAGES/Rooms/Standard Room/standard_room5.jpeg" alt="" class="img-fluid" style="width:85%; vertical-align:middle;" >
+            </div>
+              <div class="col-lg-6 col-sm-12 align-self-center" >
+                <div class="home-description" style="width:80%;">
+                  <p class="fs-2" style="text-align:left">ACCOMODATIONS</p>
+                  <div style="text-align:left">
+                    <hr class="border border-danger opacity-100 w-50 mb-3">
+                    
+                    <p align="justify" class="fs-6">Discover and explore the ideal space for your stay, explore the range of accommodations, 
                     each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
                     find the perfect room to make your stay memorable and one for the books.</p>
+                    <a class="btn btn-danger ps-5 pe-5 mt-3" href="php/accommodations.php" align="justify">EXPLORE</a> 
                   </div>    
-                  <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/accommodations.php">EXPLORE</a> 
                 </div>
               </div>
+          </div>
         </div>
       </div>
 
 
       <!--Main content section (Events & Celebrations)-->
 
-      <div class="general-section2">
+      <div class="general-section2" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
         <div class="container">
-            <div class="row" align="center">
-              <div class="col-lg-6 col-sm-12" >
-                <img src="IMAGES/events.JPG" alt="" class="img-fluid main-content-img" style="width:85%" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">
-              </div>
-
-              <div class="col-lg-6 col-sm-12 align-self-center"  >
-                <div class="home-description" style="width:80%;">
-                <p class="fs-2" style="text-align:left">Events & Celebrations</p>
-                <div style="text-align:left">
-                  <hr class="border border-danger opacity-100 w-50 mb-3">
-                </div>
-                  <p align="justify" class="fs-5" style="line-height:27px;">Level up your special moments with Shukran, whether it’s a wedding reception, 
-                  business meeting, or a personal celebration, Shukran offers a versatile and modern events and 
-                  celebrations venue. With ideal spaces, modern amenities, and a cooperative team, we ensure your 
-                  events are elevated to extraordinary experiences.</p>
-                </div>   
-                <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/events.php">EXPLORE</a>   
-              </div>
+          <div class="row " align="center">
+            <div class="col-lg-6 col-sm-12">
+                <img src="IMAGES/events.jpg" alt="" class="img-fluid" style="width:85%; vertical-align:middle;" >
             </div>
+              <div class="col-lg-6 col-sm-12 align-self-center" >
+                <div class="home-description" style="width:80%;">
+                  <p class="fs-2" style="text-align:left">EVENTS & CELEBRATIONS</p>
+                  <div style="text-align:left">
+                    <hr class="border border-danger opacity-100 w-50 mb-3">
+                    
+                    <p align="justify" class="fs-6">Level up your special moments with Shukran, whether it’s a wedding reception, 
+                    business meeting, or a personal celebration, Shukran offers a versatile and modern events and 
+                    celebrations venue. With ideal spaces, modern amenities, and a cooperative team, we ensure your 
+                    events are elevated to extraordinary experiences.</p>
+                    <a class="btn btn-danger ps-5 pe-5 mt-3" href="php/events.php" align="justify">EXPLORE</a> 
+                  </div>    
+                </div>
+              </div>
+          </div>
         </div>
       </div>
 
+      
       <!--Main content section (Lifestyle & Leisure)-->
 
-      <div class="general-section1">
+      <div class="general-section1"  data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
         <div class="container">
-          <div class="row" align="center">
-              <div class="col-lg-6 col-sm-12" >
-                <img src="IMAGES/billiards.jpg" alt="" class="img-fluid main-content-img" style="width:85%" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
-              </div>
-
-              <div class="col-lg-6 col-sm-12 align-self-center"  >
-                <div class="home-description" style="width:80%;">
-                <p class="fs-2" style="text-align:left">Lifestyle & Leisure</p>
-                <div style="text-align:left">
-                  <hr class="border border-danger opacity-100 w-50 mb-3">
-                </div>
-                  <p align="justify" class="fs-5" style="line-height:27px;">Experience lifestyle and leisure, unwind and rejuvenate with Shukran’s array of facilities. 
-                  From a serene jacuzzi experience to fitness facilities, our hotel invites you to immerse yourself 
-                  in relaxation and enjoy the finer aspects of life.</p>
-                </div> 	      
-                <a class="btn btn-danger ps-5 pe-5 mt-3"href="php/leisure.php">EXPLORE</a>   
-              </div>
+          <div class="row " align="center">
+            <div class="col-lg-6 col-sm-12">
+                <img src="IMAGES/accommodations.jpg" alt="" class="img-fluid" style="width:85%; vertical-align:middle;" >
             </div>
+              <div class="col-lg-6 col-sm-12 align-self-center" >
+                <div class="home-description" style="width:80%;">
+                  <p class="fs-2" style="text-align:left">LIFESTYLE & LEISURE</p>
+                  <div style="text-align:left">
+                    <hr class="border border-danger opacity-100 w-50 mb-3">
+                    
+                    <p align="justify" class="fs-6">Experience lifestyle and leisure, unwind and rejuvenate with Shukran’s array of facilities. 
+                    From a serene jacuzzi experience to fitness facilities, our hotel invites you to immerse yourself 
+                    in relaxation and enjoy the finer aspects of life.</p>
+                    <a class="btn btn-danger ps-5 pe-5 mt-3" href="php/leisure.php" align="justify">EXPLORE</a> 
+                  </div>    
+                </div>
+              </div>
+          </div>
         </div>
       </div>
 
-
+      
       <!--Main content section (Location)-->
 
       <div class="general-section2" id="location">
         <div class="container mb-3">
-          <p align="center" class="mb-5 mt-3 fs-2">Find us here</p>
+          <p align="center" class="mb-4 fs-2">Find us here</p>
           
           <div class="row">
             <div class="col-lg-6 col-sm-12" >
@@ -678,9 +677,9 @@
             </div>
 
             <div class="col-lg-6 col-sm-12" align="center">
-              <p class="pb-3 fs-3">Destinations near us:</p>
+              <p class="pt-3 pb-3 fs-3">What's near us:</p>
               
-              <ul class="list-group w-75">
+              <ul class="list-group" style="width:90%;">
                 <li class="list-group-item">SM Mall Of Asia: <strong>approx 3.08km</strong></li>
                 <li class="list-group-item">NAIA Terminals 1-4: <strong>approx 1.21km - 2.54km</strong></li>
                 <li class="list-group-item">Paranaque Integrated Terminal Exchange(PITX): <strong>approx 0.24km</strong></li>

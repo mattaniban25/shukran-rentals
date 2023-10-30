@@ -28,36 +28,19 @@
         <div class="row">
           <div class="col-lg-8 col-sm-12" align="center ">
             <div id="carouselExampleIndicators" class="carousel slide">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              </div>
-
+              
               <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                  <img src="../IMAGES/Rooms/Family Room/family_room1.jpeg" class="d-block w-100" alt="...">
+                  <img src="../IMAGES/Rooms/Triple Room/triple_room.jpg" class="d-block w-100" alt="...">
                 </div>
                 
-                <div class="carousel-item">
-                  <img src="../IMAGES/Rooms/Family Room/family_room2.jpeg" class="d-block w-100" alt="...">
-                </div>
-
               </div>
 
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
           <div class="col-lg-4 col-sm-12">
-            <p class="fs-1">Family Room</p>
+            <p class="fs-1">Triple Room</p>
             <p>Our spacious Family room will surely make you create lasting memories, furnished to accommodate your entire family. 
                 With three comfortable bunk beds, this space has plenty of room for everyone to rest and recharge after a day of 
                 activities. Includes modern amenities, ensuring convenience and relaxation. While you’re embarking on a family getaway,
