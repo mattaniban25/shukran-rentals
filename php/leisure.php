@@ -44,16 +44,16 @@
     <main>
 
         <div class="container mt-5" align="center">
-            <h5 class="fs-6">Discover the endless possibilities for leisure and relaxation at our hotel. 
+            <p style="width:70%;">Discover the endless possibilities for leisure and relaxation at our hotel. 
             Enjoy a game of billiards, sing your heart out at our karaoke lounge, stay fit in our fully-equipped gym, 
-            indulge in refreshments from the mini bar, and experience breathtaking views from our stunning roof deck.</h5>
+            indulge in refreshments from the mini bar, and experience breathtaking views from our stunning roof deck.</p>
         </div>
 
 
         <br><br>
         
 
-        <div class="container" align="center">
+        <div class="container" align="center" style="width:90%;">
           <div class="row">
             <div class="col-lg-4 col-sm-12">
                 <img src="../IMAGES/rooftop.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
