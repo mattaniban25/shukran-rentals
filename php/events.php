@@ -11,6 +11,7 @@
     <!-- bootleg -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
 
     <!-- CSS FILE -->
     <link rel="stylesheet" href="../css/style.css">
@@ -40,50 +41,78 @@
 
       <div class="container" align="center" style="width:90%;">
         <p class="h4 fs-4 mt-5 mb-3 fw-bold">PLAN YOUR NEXT EVENT WITH US!</p>
-        <div class=" mb-5 col-lg-6 col-md-6 col-sm-12">
-          <p align="justify" class="">Experience churvanes in our Unfussy budget hotel located in an accessible and strategic place in the locality of Paranque City. Long weekend staycations, Holiday breaks, Unwinding with your family or just Celebrating with your friends? We've got it covered! </p>
+        <div class="mb-5 col-lg-6 col-md-6 col-sm-12">
+          <p align="center" class="">Experience churvanes in our Unfussy budget hotel located in an accessible and strategic place in the locality of Paranque City. Long weekend staycations, Holiday breaks, Unwinding with your family or just Celebrating with your friends? We've got it covered! </p>
         </div>
       </div>
 
-      <div class="container mt-5">
-        <div class="row" align="center"> 
-          <div class="function-room col-lg-6">
-            <p class="fs-4 fw-semibold">Function Room</p>
+      <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#function-room" type="button" role="tab" aria-controls="function-room" aria-selected="true">Function Room</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#roof-deck" type="button" role="tab" aria-controls="roof-deck" aria-selected="false">Roof Deck</button>
+          </li>
+        </ul>
+          <div class="tab-content" id="myTabContent">
 
-              <p class="fs-5">500 sqm</p>
-              <p class="fs-5">Accommodates up to 20 pax</p>   
+            <div class="tab-pane fade" id="function-room" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <div class="container mt-5">
+                      <div class="row" align="center"> 
 
-              <img src="../IMAGES/functionRoom.jpg" alt="" class="img-fluid " style="width:85%">
+                      <div class="function-room col-lg-6"> 
+                          <img src="../IMAGES/functionRoom.jpg" alt="" class="img-fluid " style="width:100%">  
+                      </div>
 
-              <p class="fs-3 mt-3 fw-bold">Inclusions</p>
+                      <div class="col-lg-6" align="left">
+                          <p class="fs-3 " style="margin-bottom:0px;">Function Room</p>
+                          <p class="text-muted">Accommodates up to 20 pax</p>
+                          <hr>
 
-              <p class="fs-5">Sound system</p>
-              <p class="fs-5">Karaoke</p>
-              <p class="fs-5">In-room bathroom</p>
-              <p class="fs-5">Tables & chairs</p>
-              <p class="fs-5">Billiards</p>
-              <p class="fs-5">Party lights</p>
-              <p class="fs-5">Mini bar counter</p>
+                          <p class="fs-3 pt-2">Inclusions</p>
+                          <ol>
+                              <li><i class="fi fi-rs-air-conditioner pe-3"></i>Airconditioned</li>
+                              <li><i class="fi fi-rs-speakers pe-3"></i>Sound System</li>
+                              <li><i class="fi fi-rs-microphone-alt pe-3"></i>Karaoke</li>
+                              <li><i class="fi fi-rs-toilet pe-3"></i>In-room bathroom w/ flush & bidet</li>
+                              <li><i class="fi fi-rs-chair pe-3"></i>Tables & Chairs</li>
+                              <li><i class="fi fi-rs-pool-8-ball pe-3"></i>Billiards</li>
+                              <li><i class="fi fi-rs-lights-holiday pe-3"></i>Party lights</li>
+                              <li><i class="fi fi-rs-cocktail-alt pe-3"></i>Mini bar area</li>
+                          </ol>
+                      </div>
+                      </div>
+                  </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="roof-deck" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <div class="container mt-5">
+                      <div class="row" align="center"> 
+
+                      <div class="function-room col-lg-6"> 
+                          <img src="../IMAGES/roofDeck.jpg" alt="" class="img-fluid " style="width:100%">  
+                      </div>
+
+                      <div class="col-lg-6" align="left">
+                          <p class="fs-3 " style="margin-bottom:0px;">Roof Deck</p>
+                          <p class="text-muted">Accommodates up to 30 pax</p>
+                          <hr>
+
+                          <p class="fs-3 pt-2">Inclusions</p>
+                          <ol>
+                              <li><i class="fi fi-rs-mountain-city pe-3"></i>Roof deck view</li>
+                              <li><i class="fi fi-rs-speakers pe-3"></i>Sound System</li>
+                              <li><i class="fi fi-rs-microphone-alt pe-3"></i>Karaoke</li>
+                              <li><i class="fi fi-rs-house-blank pe-3"></i>Retractable tent</li>
+                              <li><i class="fi fi-rs-chair pe-3"></i>Tables & Chairs</li>
+                          </ol>
+                      </div>
+                      </div>
+                  </div>
+            </div>
           </div>
-
-          <div class="roof-deck col-lg-6">
-            <p class="fs-4 fw-semibold">Roof Deck</p>
-
-            <p class="fs-5 ">Open Area</p>
-            <p class="fs-5">Accommodates up to 30 pax</p>
-
-            <img src="../IMAGES/roofDeck.jpg" alt="" class="img-fluid" style="width:85%">
-
-            <p class="fs-3 mt-3 fw-bold">Inclusions</p>
-
-            <p class="fs-5">Sound system</p>
-            <p class="fs-5">Karaoke</p>
-            <p class="fs-5">Retractable Tent</p>
-            <p class="fs-5">Tables & chairs</p>
-              
-            <p></p>
-          </div>
-        </div>
       </div>
     </main>
 

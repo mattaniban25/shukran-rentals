@@ -6,7 +6,7 @@
     <title>Calendar Reservation Interface</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
    
   <style>
         body {
@@ -64,39 +64,7 @@
 
 </head>
 <body>
-    <div class="calendar">
-        <div class="calendar-header">
-            <button onclick="prevMonth()">Previous Month</button>
-            <h2 id="month-year">September 2023</h2>
-            <button onclick="nextMonth()">Next Month</button>
-        </div>
-
-        <div class="calendar-days" id="calendar-days">
-            <!-- Days will be dynamically generated here -->
-        </div>
-    </div>
-
-    <script>
-        // Function to get the total number of days in a month (as in previous example)
-
-        // Function to generate the calendar for a specific month and year (as in previous example)
-
-        // Function to handle day click for reservation
-        function reserveDay(day) {
-            if (!day.classList.contains('reserved')) {
-                day.classList.toggle('selected');
-            }
-        }
-
-        // Function to display the previous month (as in previous example)
-
-        // Function to display the next month (as in previous example)
-
-        // Function to update the calendar display (as in previous example)
-    </script>
-
-<br><br><br><br><br>
-
+    
 <!--
 <div class="container "align="center">
     <div class="row">
@@ -146,332 +114,74 @@
     <?php include 'header.php'; ?> 
 
         <!-- Nav tabs -->
-        <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-sm-12" align="center ">
-            <div class="container w-75 payment-container">
-                    <h1>Choose payment method</h1>
-                    <br><br>
+        
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#function-room" type="button" role="tab" aria-controls="function-room" aria-selected="true">Function Room</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#roof-deck" type="button" role="tab" aria-controls="roof-deck" aria-selected="false">Roof Deck</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
 
+  <div class="tab-pane fade" id="function-room" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+    <div class="container mt-5">
+            <div class="row" align="center"> 
 
-                    <ul class="nav nav-tabs justify-content-center">
-                        <li><a data-toggle="tab" href="#banktransfer"><img src="../IMAGES/bankTransfer.png" alt="" style="width:100px"><p>Bank Transfer</p></a></li>
-                        <li><a data-toggle="tab" href="#digitalwallet"><img src="../IMAGES/digitalWallet.png" alt="" style="width:100px"><p>Digital Wallet</p></a></li>
-                        <li><a data-toggle="tab" href="#counter"><img src="../IMAGES/overTheCounter.png" alt="" style="width:100px"><p>Over the counter</p></a></li>
-                    </ul>
-
-
-                    
-                    <div class="tab-content">
-                        <div id="banktransfer" class="tab-pane fade">
-                            
-                            <h2>Available banks</h2>
-
-                            <ul class="nav nav-tabs justify-content-center">
-                                <li><a data-toggle="tab" href="#bdo"><img src="../IMAGES/bdo.png" alt="" style="width:60px"><p>BDO</p></a></li>
-                                <li><a data-toggle="tab" href="#bpi"><img src="../IMAGES/bpi.png" alt="" style="width:60px"><p>BPI</p></a></li>
-                                <li><a data-toggle="tab" href="#secbank"><img src="../IMAGES/securityBank.png" alt="" style="width:60px"><p>Security Bank</p></a></li>
-                            </ul>
-
-                            <div class="tab-content">
-                                <div id="bdo" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                            </div>
-
-                                            <div class="col-lg-8">
-                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                <p>Account Number: 09999999999</p>
-                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                <input type="button" value="Submit" class="btn btn-danger">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="bpi" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-lg-4">
-                                                    <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                                </div>
-
-                                                <div class="col-lg-8">
-                                                    <p>Account Name: Shukran Rentals OPC</p>
-                                                    <p>Account Number: 09999999999</p>
-                                                    <input type="button" value="Attach File" class="btn btn-danger">
-                                                    <input type="button" value="Submit" class="btn btn-danger">
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>
-
-                                <div id="secbank" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                            </div>
-
-                                            <div class="col-lg-8">
-                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                <p>Account Number: 09999999999</p>
-                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                <input type="button" value="Submit" class="btn btn-danger">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div id="digitalwallet" class="tab-pane fade">
-
-                            <h2>Available digital wallets</h2>
-
-                            <ul class="nav nav-tabs justify-content-center">
-                                <li><a data-toggle="tab" href="#gcash"><img src="../IMAGES/gCash.png" alt="" style="width:80px"><p>GCash</p></a></li>
-                                <li><a data-toggle="tab" href="#grab"><img src="../IMAGES/grabPay.png" alt="" style="width:80px"><p>Grab Pay</p></a></li>
-                                <li><a data-toggle="tab" href="#shopee"><img src="../IMAGES/shopeePay.png" alt="" style="width:80px"><p>Shopee Pay</p></a></li>
-                            </ul>
-
-                            <div class="tab-content">
-                                <div id="gcash" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                            </div>
-
-                                            <div class="col-lg-8">
-                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                <p>Account Number: 09999999999</p>
-                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                <input type="button" value="Submit" class="btn btn-danger">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="grab" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-lg-4">
-                                                    <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                                </div>
-
-                                                <div class="col-lg-8">
-                                                    <p>Account Name: Shukran Rentals OPC</p>
-                                                    <p>Account Number: 09999999999</p>
-                                                    <input type="button" value="Attach File" class="btn btn-danger">
-                                                    <input type="button" value="Submit" class="btn btn-danger">
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>
-
-                                <div id="shopee" class="tab-pane fade">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                            </div>
-
-                                            <div class="col-lg-8">
-                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                <p>Account Number: 09999999999</p>
-                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                <input type="button" value="Submit" class="btn btn-danger">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-
-
-
-                        <div id="counter" class="tab-pane fade">
-                            <h3>Kindly present this to the hotel lobby and pay the exact amount.</h3>
-                        </div>
-                    </div>
-
-
-                    
-                    
-                </div>
-          </div>
-
-
-          <div class="col-lg-4 col-sm-12">
-          
-            <div class="payment-container">
-                <h1>Booking details</h1>
-                <hr>
-                <h4 style="text-align:left;"><b>Total: ₱2,700.00</b></h4>
-                <h4 style="text-align:left;">Mon, Sept 30, 2023 - Thu, Oct 03, 2023</h4>
-                <hr>
-                <h3 style="text-align:left;">Standard Room</h3>
-                <h5 style="text-align:left;">3 guests (2 adults, 1 child)</h5>
-                <h5 style="text-align:left;">2 days, 3 nights</h5>
-                <hr>
-                <h5 style="text-align:left;"><i>Note: Includes taxes & fees</i></h5>
+            <div class="function-room col-lg-6"> 
+                <img src="../IMAGES/functionRoom.jpg" alt="" class="img-fluid " style="width:100%">  
             </div>
-          </div>
+
+            <div class="col-lg-6" align="left">
+                <p class="fs-3 " style="margin-bottom:0px;">Function Room</p>
+                <p class="text-muted">Accommodates up to 20 pax</p>
+                <hr>
+
+                <p class="fs-3 pt-2">Inclusions</p>
+                <ol>
+                    <li><i class="fi fi-rs-air-conditioner pe-3"></i>Airconditioned</li>
+                    <li><i class="fi fi-rs-speakers pe-3"></i>Sound System</li>
+                    <li><i class="fi fi-rs-microphone-alt pe-3"></i>Karaoke</li>
+                    <li><i class="fi fi-rs-toilet pe-3"></i>In-room bathroom w/ flush & bidet</li>
+                    <li><i class="fi fi-rs-chair pe-3"></i>Tables & Chairs</li>
+                    <li><i class="fi fi-rs-pool-8-ball pe-3"></i>Billiards</li>
+                    <li><i class="fi fi-rs-lights-holiday pe-3"></i>Party lights</li>
+                    <li><i class="fi fi-rs-cocktail-alt pe-3"></i>Mini bar area</li>
+                </ol>
+            </div>
+            </div>
         </div>
-      </div>
-
-      
-
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link btn btn-light" id="#pills-home-tab" data-bs-toggle="bg-secondary" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
-                <img src="../IMAGES/bankTransfer.png" alt="" style="width:100px"><p>Bank Transfer</p>
-            </button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link btn btn-light" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                <img src="../IMAGES/digitalWallet.png" alt="" style="width:100px"><p>Digital Wallet</p>
-            </button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link btn btn-light" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                <img src="../IMAGES/overTheCounter.png" alt="" style="width:100px"><p>Over the counter</p>
-            </button>
-        </li>
-      </ul>
+  </div>
 
 
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-light" id="#bdo" data-bs-toggle="pill" data-bs-target="#pills-burat-tab" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
-                            <img src="../IMAGES/bdo.png" alt="" style="width:60px"><p>BDO</p>
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-light" id="bpi" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                            <img src="../IMAGES/bpi.png" alt="" style="width:60px"><p>BPI</p>
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-light" id="securitybank" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                            <img src="../IMAGES/securityBank.png" alt="" style="width:60px"><p>Security Bank</p>
-                        </button>
-                    </li>
-                </ul>
+  <div class="tab-pane fade" id="roof-deck" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+    <div class="container mt-5">
+            <div class="row" align="center"> 
 
+            <div class="function-room col-lg-6"> 
+                <img src="../IMAGES/roofDeck.jpg" alt="" class="img-fluid " style="width:100%">  
             </div>
 
-            
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><p>tite</p></div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-            
-            
-            <div class="tab-pane fade" id="pills-burat-tab" role="tabpanel" aria-labelledby="pills-burat" tabindex="0">
-                                
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
-                                            </div>
+            <div class="col-lg-6" align="left">
+                <p class="fs-3 " style="margin-bottom:0px;">Roof Deck</p>
+                <p class="text-muted">Accommodates up to 30 pax</p>
+                <hr>
 
-                                            <div class="col-lg-8">
-                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                <p>Account Number: 09999999999</p>
-                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                <input type="button" value="Submit" class="btn btn-danger">
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-
+                <p class="fs-3 pt-2">Inclusions</p>
+                <ol>
+                    <li><i class="fi fi-rs-mountain-city pe-3"></i>Roof deck view</li>
+                    <li><i class="fi fi-rs-speakers pe-3"></i>Sound System</li>
+                    <li><i class="fi fi-rs-microphone-alt pe-3"></i>Karaoke</li>
+                    <li><i class="fi fi-rs-house-blank pe-3"></i>Retractable tent</li>
+                    <li><i class="fi fi-rs-chair pe-3"></i>Tables & Chairs</li>
+                </ol>
             </div>
-            
-
-
-
-
-
-            
+            </div>
         </div>
-
-
-        <br><br><br><br><br><br>
-
-
-
-<div class="container-fluid">
-
-    <ul class="nav nav-tabs">
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Number of guests</a>
-        <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#sectionA" data-bs-toggle="tab">1-2 Pax</a></li>
-        <li><a class="dropdown-item" href="#sectionB" data-bs-toggle="tab">3 Pax</a></li>
-        <li><a class="dropdown-item" href="#sectionC" data-bs-toggle="tab">4 Pax</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-    </li>
-    </ul>
-
-    <div class="tab-content"> 
-        <div id="sectionA" class="tab-pane fade in active"> 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-2 col-sm-6" align="left">
-                        <br><br>
-                        <p class="fs-5">Price: ₱1,500</p>
-                        <p class="fs-5">Check In: 2 PM</p>
-                        <p class="fs-5">Check Out: 12 PM</p>
-                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
-                    </div> 
-                </div>
-            </div>
-        </div> 
-
-        
-        <div id="sectionB" class="tab-pane fade in "> 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-2 col-sm-6" align="left">
-                        <br><br>
-                        <p class="fs-5">Price: ₱1,800</p>
-                        <p class="fs-5">Check In: 2 PM</p>
-                        <p class="fs-5">Check Out: 12 PM</p>
-                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
-                       </div> 
-                </div>
-            </div>
-        </div> 
-
-        
-        <div id="sectionC" class="tab-pane fade in "> 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-2 col-sm-6" align="left">
-                        <br><br>
-                        <p class="fs-5">Price: ₱2,300</p>
-                        <p class="fs-5">Check In: 2 PM</p>
-                        <p class="fs-5">Check Out: 12 PM</p>
-                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
-                    </div> 
-                </div>
-            </div>
-        </div> 
-        
-    </div>
+  </div>
+  
 </div>
-
-    
 
 
 <?php include 'footer.php'; ?>

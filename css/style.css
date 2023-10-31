@@ -200,10 +200,10 @@ td,th,tr
 
 li
 { 
-    
+    list-style-type: none;
     text-align: start;
 }
- 
+
 .welcome-message
 {
     letter-spacing: -1px;

@@ -40,7 +40,7 @@
     <!-- IMAGE HEADER -->
     <div class="carousel-inner ">
       <div class="carousel-item active">
-        <img src="../IMAGES/accommodationsHeader.jpg" class="d-block w-100 " alt="...">
+        <img src="../IMAGES/accoheader.jpg" class="d-block w-100 " alt="...">
         
         <div class="carousel-caption d-none d-md-block">
               <!--
@@ -52,12 +52,19 @@
     </div>
 
     <!-- ROOM INCLUSIONS SECTION -->
-            
+         
+    
+
     <div class="container pb-5" >
-      <p class="mb-5 mt-5 fs-2" align="center">ALL TYPES OF ROOM APPLIES TO THIS</p>
+  
+      <p class="mt-5 fs-2">Applies to all room types</p>
+      <div class="border-danger mb-5"style="border-top: 2px solid">
+
+      </div>
+      
         <div class="row" align="" >
           <div class="container col-lg-6">
-            <p class="fs-4 fw-bold">INCLUSIONS</p>
+            <p class="fs-4 fw-bold">ROOM INCLUSIONS</p>
             <table class="table w-100">
                 <ul>
                   <tbody>
@@ -235,11 +242,12 @@
 
     <!-- ROOMS SECTION -->
       
-    <p class="mb-5 mt-5 fs-2" align="center">ROOMS</p>
-    
-    <div align="center">
-      <hr class="border border-danger opacity-100 w-25">
+    <br><br>
+    <div class="container w-25 border-danger mb-5" style="border-bottom: 2px solid">
+      <p class="mt-5 fs-2" align="center">ROOMS</p>
     </div>
+
+    
 
     <div class="container" align="center" style="width:90%;">
       <div class="row row-cols-1 row-cols-md-3 g-4">

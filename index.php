@@ -108,14 +108,15 @@
         </div>
       <!-- WELCOME CONTENT -->
                   
-        <div class="welcome-div" align="center">
-          <p class="welcome-message h4 fs-4 mt-5 mb-3" style="width:80%;">WELCOME TO SHUKRAN RENTALS OPC</p>
-          <div class=" mb-5 col-lg-8 col-md-8 col-sm-8" style="width:80%;">
-            <p align="justify" class="fs-6">Experience churvanes in our Unfussy budget hotel located in an accessible and strategic place in the locality of Paranque City.
-            Long weekend staycations, Holiday breaks, Unwinding with your family or just Celebrating with your friends? We've got it 
-            covered!</p>
-          </div>
+      <div class="container" align="center" style="width:90%;">
+        <p class="welcome-message h4 fs-4 mt-3 mb-3" >WELCOME TO SHUKRAN RENTALS OPC</p>
+        <div class="mb-5 col-lg-6 col-md-6 col-sm-12">
+          <p align="center" class="">Welcome to Shukran Rentals, your go-to destination for affordable staycations. Relax, unwind, 
+            and enjoy a weekend or holiday getaway without breaking your budget. Find the perfect accommodation option and make the
+            most of your time off.</p>
         </div>
+      </div>
+
       <!-- WELCOME IMAGES -->
 
         <div class="container" align="center">
