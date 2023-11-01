@@ -25,10 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $tempfile = $_FILES["promoImage"]["tmp_name"];
         $folder = "../images/promos/".$promoImage;
 
-
         $promoSql = "INSERT INTO promo (promoName, promoType, promoDuration, discount, promoCode, promoDescription, promoImage) VALUES ('$promoName', '$promoType', '$promoDuration', '$discount', '$promoCode', '$promoDescription', '$promoImage')";
         if($promoImage == "")
-        
         {
         }else{
             $imageResult = mysqli_query($conn, $promoSql);
@@ -190,7 +188,7 @@ $promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
                                     <td><?= $promo['discount'] ?></td>
                                     <td><?= $promo['promoCode'] ?></td>
                                     <td><?= $promo['promoDescription'] ?></td>
-                                    <td><img src="../images/promos/<?php echo $promo['promoImage'] ?>" width=150px height=150px alt=""></td>
+                                    <td><img src="../images/promos/<?php echo $promo['promoImage'] ?>" width=150px height="150px" alt=""></td>
                                     <td>
                                         <form action="promo.php" method="post" enctype="multipart/form-data" id="edit">
                                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
