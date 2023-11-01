@@ -105,7 +105,42 @@
     -->
 
 
+    <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Define a class for the container div */
+        .item-container {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            background-color:#f5f8f7;
+            width:fit-content;
+        }
 
+        /* Style the image */
+        .item-image {
+            width: 500px; /* Set the width of the image */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        /* Style the description */
+        .item-description {
+            margin: 30px; /* Add some space between the image and description */
+        }
+    </style>
+</head>
+<body>
+    <div class="item-container">
+        <img src="../IMAGES/cheers.jpg" alt="Description of the image" class="item-image">
+        <div class="item-description">
+            <h2>CHEERS TO THE ONES WHO WE GOT</h2>
+            <br><br><br>
+            <p>This is a description of the item. You can add more details here.</p>
+            <button>testing</button>
+        </div>
+    </div>
+</body>
+</html>
 
 
 

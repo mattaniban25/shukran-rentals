@@ -40,44 +40,65 @@
     <!-- NAVBAR -->
 
     <header>
-      <nav class="navbar navbar-expand-lg sticky-top bg-white">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <img src="IMAGES/Logo.png"  width="160" height="80" alt="" class=" border-end border-2 border-danger">
-          </a>
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-              <a href="index.php" class="nav-item page-header nav-link">Home</a>
-              <a href="php/accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
-              <a href="php/events.php" class="nav-item page-header nav-link">Events</a>
-              <a href="php/leisure.php" class="nav-item page-header nav-link">Leisure</a>
-              <a href="php/about-us.php" class="nav-item page-header nav-link">About Us</a>
-              <a href="php/terms.php" class="nav-item page-header nav-link">Terms & Conditions</a>     
-            </div>
-            <div class="navbar-nav ms-auto">
-              <a href="php/register.php" class="nav-item page-header nav-link"><strong>Register</strong></a>
-              <a href="php/login.php" class="nav-item page-header nav-link"><strong>Login</strong></a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      
-      
-    <!-- BOTTOM NAVBAR -->
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
-            <div class="d-flex">
-              <a href="#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
-              <a href="" class="nav-link me-4" style="cursor:alias">
-              <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
-            </div>
-        </div>
-      </nav>
-    </header>
+    <div class="header bg-light sticky-top">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid ">
+                    <a href="#" class="navbar-brand">
+                    <img src="IMAGES/Logo.png"  width="120" height="auto" alt="" class=" border-end border-2 border-danger">
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="#" class="nav-item page-header nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="php/accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="php/events.php" class="nav-item page-header nav-link">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="php/leisure.php" class="nav-item page-header nav-link">Leisure</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-item page-header nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Engage
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="nav-item page-header nav-link dropdown-item" href="php/about-us.php">About us</a></li>
+                                    <li><a class="nav-item page-header nav-link dropdown-item" href="#">Contact us</a></li>
+                                    <li><a class="nav-item page-header nav-link dropdown-item" href="terms.php">Terms & Conditions</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <hr class="w-100  text-dark">
+                        </div>
+                        <div class="d-flex">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li><a href="register.php" class="nav-item page-header nav-link"><strong>Register</strong></a></li>
+                              <li><a href="login.php" class="nav-item page-header nav-link"><strong>Login</strong></a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </nav>
+    </div>
+        <nav class="navbar bg-mute shukran-navbar">
+                <div class="container-fluid" id="shukran-navbar">
+                    <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
+                    <div class="d-flex">
+                    <a href="../index.php#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
+                    <a href="" class="nav-link me-4" style="cursor:alias">
+                    <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
+                    </div>
+                </div>
+        </nav>
+</header>
 
     <main>
       <!-- CAROUSEL -->
@@ -110,7 +131,7 @@
       <!-- WELCOME CONTENT -->
                   
       <div class="container" align="center" style="width:90%;">
-        <p class="welcome-message h4 fs-4 mt-3 mb-3" >WELCOME TO SHUKRAN RENTALS OPC</p>
+        <p class="welcome-message h4 fs-4 mt-5 mb-3" >WELCOME TO SHUKRAN RENTALS OPC</p>
         <div class="mb-5 col-lg-6 col-md-6 col-sm-12">
           <p align="center" class="">Welcome to Shukran Rentals, your go-to destination for affordable staycations. Relax, unwind, 
             and enjoy a weekend or holiday getaway without breaking your budget. Find the perfect accommodation option and make the
@@ -157,7 +178,7 @@
           <div class="container " align="center">
             <div class="row gap-0">
               <div class="col-lg-4 pb-2">
-                <div class="card h-100" style="width: 18rem;">
+                <div class="card h-100" data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" style="width: 18rem;">
                   <div class="card-body">
                     <i class="fa-solid fa-house-circle-check fa-2xl mb-4" style="color: #000000;"></i>
                     <h5 class="card-title mb-4">Accommodations</h5>
@@ -167,21 +188,21 @@
               </div>
 
               <div class="col-lg-4 pb-2">
-                <div class="card h-100" style="width: 18rem;">
+                <div class="card h-100" data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" style="width: 18rem;">
                   <div class="card-body">
-                    <i class="fa-solid fa-champagne-glasses fa-2xl mb-4" style="color: #000000;"></i>
-                    <h5 class="card-title mb-4">Events & Celebrations</h5>
-                    <p class="card-text">Venues and Spaces for your celebrations</p>
+                  <i class="fa-solid fa-child-reaching fa-2xl mb-4"></i>
+                    <h5 class="card-title mb-3">Unwind</h5>
+                    <p class="card-text">Relieve your stress, hold a night party with family or friends and celebrate your special days with us.</p>
                   </div>
                 </div>
               </div>
 
               <div class="col-lg-4 pb-2">
-                <div class="card h-100" style="width: 18rem;">
+                <div class="card h-100" data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" style="width: 18rem;">
                   <div class="card-body">
                     <i class="fa-solid fa-dumbbell fa-2xl mb-4" style="color: #000000;"></i>
-                    <h5 class="card-title mb-4">Lifestyle & Leisure</h5>
-                    <p class="card-text">Fitness, Chill, Drink, Watch & Play!</p>
+                    <h5 class="card-title mb-3">Activities</h5>
+                    <p class="card-text">Enjoyable activities that you can engage in to have a great time and create lasting memories.</p>
                   </div>
                 </div>
               </div>
@@ -559,7 +580,7 @@
 
       <!--Main content section (Accommodations)-->
 
-      <div class="general-section1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+      <div class="general-section1" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
         <div class="container">
           <div class="row " align="center">
             <div class="col-lg-6 col-sm-12">
@@ -585,7 +606,7 @@
 
       <!--Main content section (Events & Celebrations)-->
 
-      <div class="general-section2" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+      <div class="general-section2" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
         <div class="container">
           <div class="row " align="center">
             <div class="col-lg-6 col-sm-12">
@@ -612,7 +633,7 @@
       
       <!--Main content section (Lifestyle & Leisure)-->
 
-      <div class="general-section1"  data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+      <div class="general-section1"  data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
         <div class="container">
           <div class="row " align="center">
             <div class="col-lg-6 col-sm-12">
