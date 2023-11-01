@@ -1,3 +1,12 @@
+<?php
+
+    require "php/database.php";
+    $promoSql = "SELECT * FROM promo";
+    $promoresult = mysqli_query($conn, $promoSql);
+    $promo = mysqli_fetch_array($promoresult, MYSQLI_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -238,6 +247,24 @@
           <div class="container" align="center">
             <div class="row" >
 
+            <?php
+              if ($promoresult-> num_rows > 0) {
+                while ($row = $promoresult->fetch_assoc()) {
+                  echo "<div class=\"col-lg-4 col-sm-12 col-md-12 mb-5\">";
+                    echo "<div class=\"card shadow-lg p-2 bg-body-tertiary rounded cards h-100\" style=\"width: 18rem;\">";
+                    echo "<img class=\"card-img-top\" src=\"IMAGES/promoSample.jpg\" alt=\"Card image\">";
+                      echo "<div class=\"card-body\">";
+                      echo "<h4 class=\"card-title\">" . $row["promoName"]. "</h4>";
+                      echo "<p class=\"card-text\">Use the voucher code above to get 20% off from your bill.</p>";
+                      echo "<button type=\"button\" class=\"btn btn-link\" data-bs-toggle=\"modal\" data-bs-target=\"#promoOne\"><a href=\"#promoOne\" class=\"btn btn-danger\">View Details</a></button>";
+                      echo "</div>";
+                    echo "</div>";
+                  echo "</div>";
+                }
+            } else {
+                echo "No promos found.";
+            }
+            ?>
               <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
                 <div class="card shadow-lg p-2 bg-body-tertiary rounded cards h-100" style="width: 18rem;">
                   <img class="card-img-top" src="IMAGES/promoSample.jpg" alt="Card image">

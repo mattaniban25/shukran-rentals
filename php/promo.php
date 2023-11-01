@@ -20,8 +20,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $discount = $_POST['discount'];
         $promoCode = $_POST['promoCode'];
         $promoDescription = $_POST['promoDescription'];
-        $promoImage = $_POST['promoImage'];
+
+        $promoImage = $_FILES["promoImage"]["name"];
+        $tempfile = $_FILES["promoImage"]["tmp_name"];
+        $folder = "../images/promos/".$promoImage;
+
         $promoSql = "INSERT INTO promo (promoName, promoType, promoDuration, discount, promoCode, promoDescription, promoImage) VALUES ('$promoName', '$promoType', '$promoDuration', '$discount', '$promoCode', '$promoDescription', '$promoImage')";
+        if($promoImage == "")
+        {
+        }else{
+            $imageResult = mysqli_query($conn, $promoSql);
+            move_uploaded_file($tempfile, $folder);
+        }
+        
         mysqli_query($conn, $promoSql);
 
     } elseif (isset($_POST['edit'])) {
@@ -33,8 +44,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $discount = $_POST['discount'];
         $promoCode = $_POST['promoCode'];
         $promoDescription = $_POST['promoDescription'];
-        $promoImage = $_POST['promoImage'];
-        $promoSql = "UPDATE promo SET promoName='$promoName', promoType='$promoType', promoDuration='$promoDuration', discount='$discount', promoCode='$promoCode', promoDescription='$promoDescription', promoImage='$promoImage' WHERE id='$id'";
+
+        $promoImg = $_FILES["promoImage"]["name"];
+        $tempfile = $_FILES["promoImage"]["tmp_name"];
+        $folder = "../images/promos/".$promoImg;
+        $promoSql = "UPDATE promo SET promoName='$promoName', promoType='$promoType', promoDuration='$promoDuration', discount='$discount', promoCode='$promoCode', promoDescription='$promoDescription', promoImage='$promoImg' WHERE id='$id'";
+        if($promoImg == "")
+        {
+            echo 
+            "
+            <div class='alert alert-danger' role='alert'>
+                <h4 class='text-center'>Blank not Allowed</h4>
+            </div>
+            ";
+        }else{
+            $imageResult = mysqli_query($conn, $promoSql);
+            move_uploaded_file($tempfile, $folder);
+        }
+        
         mysqli_query($conn, $promoSql);
 
     } elseif (isset($_POST['delete'])) {
@@ -79,12 +106,12 @@ $promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
         </div>
 
         <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8 col-sm-12" style="">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 col-sm-12" style="">
                 <div class="border-start border-end border-4 border-danger-subtle shadow-sm rounded-3 p-4  bg-white tablinks">
                     <b class="text-danger">ADD A NEW PROMO</b>
                     <br><br>
-                    <form method="post">
+                    <form action="promo.php" method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                 <input type="text" class="form-control" name="promoName" placeholder="Promo Name">
@@ -114,7 +141,7 @@ $promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
 
                         <div class="row">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <input type="text" class="form-control" name="promoImage" placeholder="Promo Image">
+                                <input type="file" class="form-control" name="promoImage" placeholder="Promo Image">
                             </div>
                         </div>
 
@@ -126,7 +153,7 @@ $promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
                     </form>
                 </div>
             </div>
-            <div class="col-lg-2"></div>
+            <div class="col-lg-3"></div>
         </div>
 
         <div id="active" class="">
@@ -150,6 +177,8 @@ $promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
                         </thead>
 
                         <tbody>
+
+                            
                             <?php foreach ($promos as $promo): ?>
                                 <tr>
                                     <td><?= $promo['id'] ?></td>
@@ -159,9 +188,9 @@ $promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
                                     <td><?= $promo['discount'] ?></td>
                                     <td><?= $promo['promoCode'] ?></td>
                                     <td><?= $promo['promoDescription'] ?></td>
-                                    <td><?= $promo['promoImage'] ?></td>
+                                    <td><img src="../images/promos/<?php echo $promo['promoImage'] ?>" width=150px height="150px" alt=""></td>
                                     <td>
-                                        <form method="post">
+                                        <form action="promo.php" method="post" enctype="multipart/form-data" id="edit">
                                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" >
                                                     <div class="modal-content">
@@ -174,40 +203,34 @@ $promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
                                                                 <br><br>
                                                                 <div class="row">
                                                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                                        <input type="text" name="promoName" placeholder="Promo Name" value="<?= $promo['promoName'] ?>">
+                                                                        <input type="text" class="form-control" name="promoName" placeholder="Promo Name">
                                                                     </div>
                                                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                                        <input type="text" name="promoType" placeholder="Promo Name" value="<?= $promo['promoType'] ?>">
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="row">
-                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                                        <input type="text" name="promoDuration" placeholder="Promo Name" value="<?= $promo['promoDuration'] ?>">
-                                                                    </div>
-                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                                        <input type="text" name="discount" placeholder="Promo Name" value="<?= $promo['discount'] ?>">
+                                                                        <input type="text" class="form-control" name="promoType" placeholder="Promo Type">
                                                                     </div>
                                                                 </div>
 
                                                                 <div class="row">
                                                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                                        <input type="text" name="promoCode" placeholder="Promo Name" value="<?= $promo['promoCode'] ?>">
+                                                                        <input type="date" class="form-control" name="promoDuration" placeholder="Promo Duration">
                                                                     </div>
                                                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                                        <input type="text" name="promoDescription" placeholder="Promo Name" value="<?= $promo['promoDescription'] ?>">
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="row">
-                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                                        <input type="text" name="promoImage" placeholder="Promo Name" value="<?= $promo['promoImage'] ?>">
+                                                                        <input type="text" class="form-control" name="discount" placeholder="Discount">
                                                                     </div>
                                                                 </div>
 
                                                                 <div class="row">
                                                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                                        <button type="submit" class="btn btn-success" name="add">ADD</button>
+                                                                        <input type="text" class="form-control" name="promoCode" placeholder="Promo Code">
+                                                                    </div>
+                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                                                        <input type="text" class="form-control" name="promoDescription" placeholder="Description">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                                                        <input type="file" class="form-control" name="promoImage" placeholder="Promo Image">
                                                                     </div>
                                                                 </div>
                                                             </div>
