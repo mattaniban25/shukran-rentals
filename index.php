@@ -261,18 +261,18 @@
             <div class="row" style="justify-content: center;">
               
               <?php 
-              foreach ($promos as $promo):
-                  echo "<div class=\"col-lg-4 col-sm-12 col-md-12 mb-5\">";
-                    echo "<div class=\"card shadow-lg p-2 bg-body-tertiary rounded cards h-100\" style=\"width: 18rem;\">";
-                    echo "<img class=\"card-img-top\" src=\"images/promos/" . $promo["promoImage"] . "\" alt=\"Card image\" object-fit: cover;>";
-                      echo "<div class=\"card-body\">";
-                      echo "<h4 class=\"card-title\">" . $promo["promoName"] . "</h4>";
-                      echo "<p class=\"card-text\">" . $promo["promoDescription"] . "</p>";
-                      echo "<button type=\"button\" class=\"btn btn-link\" data-bs-toggle=\"modal\" data-bs-target=\"#promoOne\"><a href=\"#promoOne\" class=\"btn btn-danger\">View Details</a></button>";
+                foreach ($promos as $promo):
+                    echo "<div class=\"col-lg-4 col-sm-12 col-md-12 mb-5\">";
+                      echo "<div class=\"card shadow-lg p-2 bg-body-tertiary rounded cards h-100\" style=\"width: 18rem;\">";
+                      echo "<img class=\"card-img-top\" src=\"images/promos/" . $promo["promoImage"] . "\" alt=\"Card image\" object-fit: cover;>";
+                        echo "<div class=\"card-body\">";
+                        echo "<h4 class=\"card-title\">" . $promo["promoName"] . "</h4>";
+                        echo "<p class=\"card-text\">" . $promo["promoDescription"] . "</p>";
+                        echo "<button type=\"button\" class=\"btn btn-link\" data-bs-toggle=\"modal\" data-bs-target=\"#promoOne\"><a href=\"#promoOne\" class=\"btn btn-danger\">View Details</a></button>";
+                        echo "</div>";
                       echo "</div>";
                     echo "</div>";
-                  echo "</div>";
-             endforeach; 
+              endforeach; 
              ?>
             </div>
           </div>
