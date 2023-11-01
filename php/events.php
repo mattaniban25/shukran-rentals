@@ -49,7 +49,7 @@
       <div class="container">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#function-room" type="button" role="tab" aria-controls="function-room" aria-selected="true">Function Room</button>
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#function-room" type="button" role="tab" aria-controls="function-room" aria-selected="true">Function Room</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#roof-deck" type="button" role="tab" aria-controls="roof-deck" aria-selected="false">Roof Deck</button>
@@ -57,7 +57,7 @@
         </ul>
           <div class="tab-content" id="myTabContent">
 
-            <div class="tab-pane fade" id="function-room" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="tab-pane fade show active" id="function-room" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
               <div class="container mt-5">
                       <div class="row" align="center"> 
 
