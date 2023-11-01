@@ -1,10 +1,8 @@
 <?php
-
     require "php/database.php";
     $promoSql = "SELECT * FROM promo";
-    $promoresult = mysqli_query($conn, $promoSql);
-    $promo = mysqli_fetch_array($promoresult, MYSQLI_ASSOC);
-
+    $promoResult = mysqli_query($conn, $promoSql);
+    $promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -239,63 +237,24 @@
               Check out our monthly promos and special offers to make your stay even more affordable and enjoyable.</p>
             </div>
           <div class="container" align="center">
-            <div class="row" >
-
-            <?php
-              if ($promoresult-> num_rows > 0) {
-                while ($row = $promoresult->fetch_assoc()) {
+            <div class="row" style="justify-content: center;">
+              
+              <?php 
+              foreach ($promos as $promo):
                   echo "<div class=\"col-lg-4 col-sm-12 col-md-12 mb-5\">";
                     echo "<div class=\"card shadow-lg p-2 bg-body-tertiary rounded cards h-100\" style=\"width: 18rem;\">";
-                    echo "<img class=\"card-img-top\" src=\"IMAGES/promoSample.jpg\" alt=\"Card image\">";
+                    echo "<img class=\"card-img-top\" src=\"images/promos/" . $promo["promoImage"] . "\" alt=\"Card image\" object-fit: cover;>";
                       echo "<div class=\"card-body\">";
-                      echo "<h4 class=\"card-title\">" . $row["promoName"]. "</h4>";
-                      echo "<p class=\"card-text\">Use the voucher code above to get 20% off from your bill.</p>";
+                      echo "<h4 class=\"card-title\">" . $promo["promoName"] . "</h4>";
+                      echo "<p class=\"card-text\">" . $promo["promoDescription"] . "</p>";
                       echo "<button type=\"button\" class=\"btn btn-link\" data-bs-toggle=\"modal\" data-bs-target=\"#promoOne\"><a href=\"#promoOne\" class=\"btn btn-danger\">View Details</a></button>";
                       echo "</div>";
                     echo "</div>";
                   echo "</div>";
-                }
-            } else {
-                echo "No promos found.";
-            }
-            ?>
-              <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-                <div class="card shadow-lg p-2 bg-body-tertiary rounded cards h-100" style="width: 18rem;">
-                  <img class="card-img-top" src="IMAGES/promoSample.jpg" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">LOVE MONTH</h4>
-                      <p class="card-text">Use the voucher code above to get 20% off from your bill.</p>
-                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoOne"><a href="#promoOne" class="btn btn-danger">View Details</a></button>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-                <div class="card shadow-lg  p-2 bg-body-tertiary rounded cards h-100" style="width: 18rem;">
-                  <img class="card-img-top" src="IMAGES/promoSample2.jpg" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">ZERO</h4>
-                      <p class="card-text">Use the voucher code above to avail a zero interest promo.</p>
-                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoTwo"><a href="#promoTwo" class="btn btn-danger">View Details</a></button> 
-                    </div>
-                </div>
-              </div>
-                      
-
-              <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-                <div class="card shadow-lg p-2 bg-body-tertiary rounded cards h-100" style="width: 18rem;">
-                  <img class="card-img-top" src="IMAGES/promoSample3.jpg" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">ALLIN</h4>
-                      <p class="card-text">Use the voucher code above to avail the promo.</p>
-                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#promoThree"><a href="#promoThree" class="btn btn-danger">View Details</a></button>
-                    </div>
-                </div>
-              </div>
-
-
+             endforeach; 
+             ?>
+            </div>
           </div>
-        </div>
       
 
 
