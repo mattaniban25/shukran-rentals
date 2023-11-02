@@ -9,6 +9,7 @@ require "database.php";
 $sql = "SELECT * FROM adminaccount WHERE username = '$_SESSION[username]'";
 $result = mysqli_query($conn, $sql);
 $adminuser = mysqli_fetch_array($result, MYSQLI_ASSOC);
+$editstate = false;
 
 // Handle form submissions
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -24,12 +25,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $promoImage = $_FILES["promoImage"]["name"];
         $tempfile = $_FILES["promoImage"]["tmp_name"];
         $folder = "../images/promos/".$promoImage;
-
         $promoSql = "INSERT INTO promo (promoName, promoType, promoDuration, discount, promoCode, promoDescription, promoImage) VALUES ('$promoName', '$promoType', '$promoDuration', '$discount', '$promoCode', '$promoDescription', '$promoImage')";
         if($promoImage == "")
         {
+            echo 
+            "
+            <div class='alert alert-danger' role='alert'>
+                <h4 class='text-center'>Blank not Allowed</h4>
+            </div>
+            ";
         }else{
-            $imageResult = mysqli_query($conn, $promoSql);
             move_uploaded_file($tempfile, $folder);
         }
         
@@ -111,7 +116,7 @@ $promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
                 <div class="border-start border-end border-4 border-danger-subtle shadow-sm rounded-3 p-4  bg-white tablinks">
                     <b class="text-danger">ADD A NEW PROMO</b>
                     <br><br>
-                    <form action="promo.php" method="post" enctype="multipart/form-data">
+                    <form action="" method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                 <input type="text" class="form-control" name="promoName" placeholder="Promo Name">
