@@ -39,9 +39,9 @@
     </script>
     <!-- NAVBAR -->
 
-    <header>
-    <div class="header bg-light sticky-top">
-            <nav class="navbar navbar-expand-lg ">
+    
+    <div class="header bg-white sticky-top">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid ">
                     <a href="#" class="navbar-brand">
                     <img src="IMAGES/Logo.png"  width="120" height="auto" alt="" class=" border-end border-2 border-danger">
@@ -88,7 +88,7 @@
                 </div>
             </nav>
     </div>
-        <nav class="navbar bg-mute shukran-navbar">
+        <nav class="navbar bg-light shukran-navbar">
                 <div class="container-fluid" id="shukran-navbar">
                     <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
                     <div class="d-flex">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
         </nav>
-</header>
+
 
     <main>
       <!-- CAROUSEL -->
@@ -160,6 +160,10 @@
                 <img src="IMAGES/roomSample3.jpg"  style="width:100%" class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
               </div>
             </div>
+
+            <div class="col-lg-12 pt-3">
+              <a class="btn btn-danger pe-4 ps-4 mb-5 rounded-1"href="php/gallery.php">VIEW GALLERY →</a>
+            </div>
           </div>
         </div>
         
@@ -169,7 +173,7 @@
             <div class="shukran-experience">
               <h3 class="welcome-message h2">Want the Shukran experience?</h3>
               <p>Create an account now to start booking with us!</p>
-              <a class="btn btn-danger pe-5 ps-5 mb-5"href="php/register.php">REGISTER</a>
+              <a class="btn btn-danger pe-5 ps-5 mb-5 rounded-1"href="php/register.php">REGISTER</a>
             </div>
           </div>
         </div>
@@ -180,9 +184,9 @@
               <div class="col-lg-4 pb-2">
                 <div class="card h-100" data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" style="width: 18rem;">
                   <div class="card-body">
-                    <i class="fa-solid fa-house-circle-check fa-2xl mb-4" style="color: #000000;"></i>
-                    <h5 class="card-title mb-4">Accommodations</h5>
-                    <p class="card-text">Have your cozy staycation with us! Explore our wide selection of rooms.</p>
+                    <i class="fa-solid fa-hotel fa-2xl mb-4" style="color: #000000;"></i>
+                    <h5 class="card-title mb-3">Accommodations</h5>
+                    <p class="card-text">Extend a warm invitation to stay at our hotel with comfortable accommodations and exceptional service.</p>
                   </div>
                 </div>
               </div>
@@ -213,37 +217,37 @@
             <div class="row" >
               
                 <div class="col-lg-3 mb-2" style="text-align:left;">
-                  <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Cozy rooms
+                  <i class="fa-regular fa-circle-check fa-lg pe-3" style="color: #000000;"></i>Cozy rooms
                 </div>
 
                 <div class="col-lg-3 mb-2" style="text-align:left;">
-                  <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Free WiFi
+                  <i class="fa-regular fa-circle-check fa-lg pe-3" style="color: #000000;"></i>Free WiFi
                 </div>
 
                 <div class="col-lg-3 mb-2" style="text-align:left;">
-                  <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Extended stays
+                  <i class="fa-regular fa-circle-check fa-lg pe-3" style="color: #000000;"></i>Extended stays
                 </div>
 
                 <div class="col-lg-3 mb-2" style="text-align:left;">
-                  <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> No cancellation policy
+                  <i class="fa-regular fa-circle-check fa-lg pe-3" style="color: #000000;"></i>No cancellation policy
                 </div>
             </div>
 
             <div class="row" >
                 <div class="col-lg-3 mb-2" style="text-align:left;">
-                  <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Affordable
+                  <i class="fa-regular fa-circle-check fa-lg pe-3" style="color: #000000;"></i>Affordable
                 </div>
               
                 <div class="col-lg-3 mb-2" style="text-align:left;">
-                  <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Accessible
+                  <i class="fa-regular fa-circle-check fa-lg pe-3" style="color: #000000;"></i>Accessible
                 </div>
 
                 <div class="col-lg-3 mb-2" style="text-align:left;">
-                  <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Stay now, Pay later
+                  <i class="fa-regular fa-circle-check fa-lg pe-3" style="color: #000000;"></i>Stay now, Pay later
                 </div>
 
                 <div class="col-lg-3 mb-2" style="text-align:left;">
-                  <i class="fa-regular fa-circle-check fa-lg" style="color: #000000;"></i> Monthly Promos
+                  <i class="fa-regular fa-circle-check fa-lg pe-3" style="color: #000000;"></i>Monthly Promos
                 </div>    
             </div>
           </div>

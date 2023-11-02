@@ -1,7 +1,7 @@
 
 <?php
     echo'
-        <div class="header bg-light sticky-top">
+        <div class="header bg-white sticky-top">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid ">
                     <a href="#" class="navbar-brand">
@@ -51,7 +51,7 @@
             
             
         </div>
-        <nav class="navbar bg-mute shukran-navbar">
+        <nav class="navbar bg-light shukran-navbar">
                 <div class="container-fluid" id="shukran-navbar">
                     <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
                     <div class="d-flex">
