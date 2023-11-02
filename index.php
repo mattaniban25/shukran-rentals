@@ -105,11 +105,11 @@
       <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner ">
           <div class="carousel-item active" data-bs-interval="5000">
-            <img src="IMAGES/carousel-shukneneng.jpg" class="d-block w-100 " alt="...">
+            <img src="IMAGES/header2.jpg" class="d-block w-100 " alt="...">
           </div>
               
           <div class="carousel-item" data-bs-interval="5000">
-          <img src="IMAGES/carousel-pool.jpg" class="d-block w-100" alt="...">
+          <img src="IMAGES/pool.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
                   <!--
                   <h5>Second slide label</h5>
@@ -119,7 +119,7 @@
           </div>
 
           <div class="carousel-item" data-bs-interval="5000">
-          <img src="IMAGES/carousel-side.JPG" class="d-block w-100" alt="...">
+          <img src="IMAGES/reddoorz_sign.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                   <!--
                   <h5>Third slide label</h5>
@@ -272,7 +272,7 @@
                         echo "<div class=\"card-body\">";
                         echo "<h4 class=\"card-title\">" . $promo["promoName"] . "</h4>";
                         echo "<p class=\"card-text\">" . $promo["promoDescription"] . "</p>";
-                        echo "<button type=\"button\" class=\"btn btn-link\" data-bs-toggle=\"modal\" data-bs-target=\"#promoOne\"><a href=\"#promoOne\" class=\"btn btn-danger\">View Details</a></button>";
+                        echo "<button type=\"button\" class=\"btn btn-link\" data-bs-toggle=\"modal\" data-bs-target=\"#promoOne\"><a href=\"#promoOne\" class=\"btn btn-danger rounded-1\" >View Details</a></button>";
                         echo "</div>";
                       echo "</div>";
                     echo "</div>";
@@ -588,7 +588,7 @@
         <div class="container">
           <div class="row " align="center">
             <div class="col-lg-6 col-sm-12">
-                <img src="IMAGES/Rooms/Standard Room/standard_room5.jpeg" alt="" class="img-fluid" style="width:85%; vertical-align:middle;" >
+                <img src="IMAGES/acco.jpg" alt="" class="img-fluid" style="width:85%; vertical-align:middle;" >
             </div>
               <div class="col-lg-6 col-sm-12 align-self-center" >
                 <div class="home-description" style="width:80%;">
@@ -599,7 +599,7 @@
                     <p align="justify" class="fs-6">Discover and explore the ideal space for your stay, explore the range of accommodations, 
                     each beautifully designed to give you enjoyment and comfort. From cozy getaways to luxurious suites, 
                     find the perfect room to make your stay memorable and one for the books.</p>
-                    <a class="btn btn-danger ps-5 pe-5 mt-3" href="php/accommodations.php" align="justify">EXPLORE</a> 
+                    <a class="btn btn-danger ps-5 pe-5 mt-3 rounded-1" href="php/accommodations.php" align="justify">EXPLORE</a> 
                   </div>    
                 </div>
               </div>
@@ -614,7 +614,7 @@
         <div class="container">
           <div class="row " align="center">
             <div class="col-lg-6 col-sm-12">
-                <img src="IMAGES/events.jpg" alt="" class="img-fluid" style="width:85%; vertical-align:middle;" >
+                <img src="IMAGES/cheers.jpg" alt="" class="img-fluid" style="width:85%; vertical-align:middle;" >
             </div>
               <div class="col-lg-6 col-sm-12 align-self-center" >
                 <div class="home-description" style="width:80%;">
@@ -626,7 +626,7 @@
                     business meeting, or a personal celebration, Shukran offers a versatile and modern events and 
                     celebrations venue. With ideal spaces, modern amenities, and a cooperative team, we ensure your 
                     events are elevated to extraordinary experiences.</p>
-                    <a class="btn btn-danger ps-5 pe-5 mt-3" href="php/events.php" align="justify">EXPLORE</a> 
+                    <a class="btn btn-danger ps-5 pe-5 mt-3 rounded-1" href="php/events.php" align="justify">EXPLORE</a> 
                   </div>    
                 </div>
               </div>
@@ -641,7 +641,7 @@
         <div class="container">
           <div class="row " align="center">
             <div class="col-lg-6 col-sm-12">
-                <img src="IMAGES/accommodations.jpg" alt="" class="img-fluid" style="width:85%; vertical-align:middle;" >
+                <img src="IMAGES/samgyups.jpg" alt="" class="img-fluid" style="width:85%; vertical-align:middle;" >
             </div>
               <div class="col-lg-6 col-sm-12 align-self-center" >
                 <div class="home-description" style="width:80%;">
@@ -652,7 +652,7 @@
                     <p align="justify" class="fs-6">Experience lifestyle and leisure, unwind and rejuvenate with Shukran’s array of facilities. 
                     From a serene jacuzzi experience to fitness facilities, our hotel invites you to immerse yourself 
                     in relaxation and enjoy the finer aspects of life.</p>
-                    <a class="btn btn-danger ps-5 pe-5 mt-3" href="php/leisure.php" align="justify">EXPLORE</a> 
+                    <a class="btn btn-danger ps-5 pe-5 mt-3 rounded-1" href="php/leisure.php" align="justify">EXPLORE</a> 
                   </div>    
                 </div>
               </div>

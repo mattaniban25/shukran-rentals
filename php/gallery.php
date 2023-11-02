@@ -46,44 +46,59 @@
         </div>
       </div>
 
-      
+      <br><br><br>
+
       <div class="container" align="center">
           <div class="row">
 
-          <hr>
-          <br><br>
-            
-            <div class="container" align="left">
+              <div class="container" align="left">
+                  <p class="fs-4">FACILITIES</p>
+                  <hr>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                  <img src="../IMAGES/Rooms/Facilities/shukneneng.JPG"  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+              </div>
+
+              <div class="col-lg-4 col-sm-12">
+                  <img src="../IMAGES/Rooms/Facilities/shukneneng2.JPG"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
+              </div>
+
+              <div class="col-lg-4 col-sm-12">
+                  <img src="../IMAGES/Rooms/Facilities/reddoorz_sign.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+              </div>
+
+              <div class="col-lg-4 col-sm-12">
+                  <img src="../IMAGES/Rooms/Facilities/smokingarea1.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+              </div>
+
+              <div class="col-lg-4 col-sm-12">
+                  <img src="../IMAGES/Rooms/Facilities/smokingarea2.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+              </div>
+
+              <div class="col-lg-4 col-sm-12">
+                  <img src="../IMAGES/Rooms/Facilities/hallway1.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+              </div>
+
+              <div class="col-lg-4 col-sm-12">
+                  <img src="../IMAGES/Rooms/Facilities/hallway2.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+              </div>
+
+              <div class="col-lg-4 col-sm-12">
+                  <img src="../IMAGES/Rooms/Facilities/smokingarea3.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+              </div>
+
+              <div class="col-lg-4 col-sm-12">
+                  <img src="../IMAGES/Rooms/Facilities/outdoor_jacuzzi.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+              </div>
+
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              
+              <div class="container" align="left">
                 <p class="fs-4">FACILITIES</p>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <img src="../IMAGES/Rooms/Facilities/shukneneng.JPG"  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
-            </div>
-
-            <div class="col-lg-4 col-sm-12">
-                <img src="../IMAGES/Rooms/Facilities/shukneneng2.JPG"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
-            </div>
-
-            <div class="col-lg-4 col-sm-12">
-                <img src="../IMAGES/Rooms/Facilities/reddoorz_sign.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
-            </div>
-
-            <div class="col-lg-4 col-sm-12">
-                <img src="../IMAGES/Rooms/Facilities/smokingarea1.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
-            </div>
-
-            <div class="col-lg-4 col-sm-12">
-                <img src="../IMAGES/Rooms/Facilities/smokingarea2.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
-            </div>
-
-            <div class="col-lg-4 col-sm-12">
-                <img src="../IMAGES/Rooms/Facilities/hallway1.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
-            </div>
-
-            <div class="col-lg-4 col-sm-12">
-                <img src="../IMAGES/Rooms/Facilities/outdoor_jacuzzi.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
-            </div>
-
+                <hr>
+              </div>
+              
+              
           </div>
         </div>
 

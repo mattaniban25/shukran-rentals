@@ -38,9 +38,9 @@
 
   <main>
     <!-- IMAGE HEADER -->
-    <div class="carousel-inner ">
+    <div class="carousel-inner " data-aos="fade" data-aos-duration="1500" data-aos-once="true">
       <div class="carousel-item active">
-        <img src="../IMAGES/accoheader.jpg" class="d-block w-100 " alt="...">
+        <img src="../IMAGES/Rooms/SHUK/headered.jpg" class="d-block w-100 " alt="..." >
         
         <div class="carousel-caption d-none d-md-block">
               <!--

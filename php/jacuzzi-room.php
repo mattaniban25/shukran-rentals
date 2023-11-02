@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="carousel-item">
-                  <img src="../IMAGES/Rooms/Jacuzzi Room/105 Jacuzzi Room/105_jacuzzi1.jpg" class="d-block w-100" alt="...">
+                  <img src="../IMAGES/Rooms/Jacuzzi Room/Jacuzzi Room 2.jpg" class="d-block w-100" alt="...">
                 </div>
 
                 <div class="carousel-item">
@@ -85,6 +85,7 @@
             <p class="fs-3">Room features</p>
               <ol>
                 <li><i class="fi fi-rs-bed-alt pe-3"></i>One queen-sized bed</li>
+                <li><i class="fi fi-rs-fan pe-3"></i>Ceiling fan</li>
                 <li><i class="fi fi-rs-bath pe-3"></i>Jacuzzi bathtub</li>
                 <li><i class="fi fi-rs-tshirt pe-3"></i>Bath robes</i></li>
                 <li><i class="fi fi-rs-toilet pe-3"></i>Comfort Room</li>

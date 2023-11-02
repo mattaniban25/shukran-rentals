@@ -27,9 +27,9 @@
     
     <?php include 'header.php'; ?> 
 
-    <div class="carousel-inner ">
-      <div class="carousel-item active">
-        <img src="../IMAGES/accommodationsHeader.jpg" class="d-block w-100 " alt="...">
+    <div class="carousel-inner " >
+      <div class="carousel-item active" >
+        <img src="../IMAGES/leisure.jpg" class="d-block w-100 " alt="..." >
         
         <div class="carousel-caption d-none d-md-block">
               <!--
@@ -43,7 +43,7 @@
 
     <main>
 
-        <div class="container mt-5" align="center">
+        <div class="container mt-5" align="center" > 
             <p style="width:70%;">Discover the endless possibilities for leisure and relaxation at our hotel. 
             Enjoy a game of billiards, sing your heart out at our karaoke lounge, stay fit in our fully-equipped gym, 
             indulge in refreshments from the mini bar, and experience breathtaking views from our stunning roof deck.</p>
