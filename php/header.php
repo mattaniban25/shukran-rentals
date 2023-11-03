@@ -30,6 +30,7 @@
                                     Engage
                                 </a>
                                 <ul class="dropdown-menu">
+                                    <li><a class="nav-item page-header nav-link dropdown-item" href="gallery.php">Gallery</a></li>
                                     <li><a class="nav-item page-header nav-link dropdown-item" href="about-us.php">About us</a></li>
                                     <li><a class="nav-item page-header nav-link dropdown-item" href="contact-us.php">Contact us</a></li>
                                     <li><a class="nav-item page-header nav-link dropdown-item" href="terms.php">Terms & Conditions</a></li>

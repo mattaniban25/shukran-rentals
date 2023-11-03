@@ -69,6 +69,7 @@
                                     Engage
                                 </a>
                                 <ul class="dropdown-menu">
+                                    <li><a class="nav-item page-header nav-link dropdown-item" href="php/gallery.php">Gallery</a></li>
                                     <li><a class="nav-item page-header nav-link dropdown-item" href="php/about-us.php">About us</a></li>
                                     <li><a class="nav-item page-header nav-link dropdown-item" href="php/contact-us.php">Contact us</a></li>
                                     <li><a class="nav-item page-header nav-link dropdown-item" href="terms.php">Terms & Conditions</a></li>

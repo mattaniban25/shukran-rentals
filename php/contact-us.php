@@ -26,11 +26,11 @@
     <?php include 'header.php'; ?> 
 
     <main>
-      <div class="container pt-5 pb-5 mt-5 mb-5">
-        <div class="row " style="width:fit-content; background-color:#f5f8f7;">
+      <div class="container pt-5 pb-5 mt-5 mb-5" align="center">
+        <div class="row " style="width:fit-content; background-color:#f5f8f7;" align="left">
             <div class="col-lg-6 col-sm-12">
                 <div class="container p-4">
-                    <h3 align="left">Contact Information</h3>
+                    <h3>Contact Information</h3>
                     <h5 class="fw-semibold" style="color:#aa4200;">Shukran Rentals OPC</h5>
                     <p class="mb-5">3384, Arias Compound, Paranaque City 1701, Metro Manila, Philippines</p>
 
@@ -54,7 +54,7 @@
                     
                     <ul style="padding-left:0;" class="mb-4">
                         <li><i class="fi fi-brands-facebook pe-2 align-middle fs-5"></i>Shukran Rentals OPC</li>
-                        <li><i class="fi fi-brands-instagram pe-2 align-middle fs-5"></i></i>@shukranrantalsopc</li>
+                        <li><i class="fi fi-brands-instagram pe-2 align-middle fs-5"></i>@shukranrantalsopc</li>
                         <li><i class="fi fi-brands-tik-tok pe-2 align-middle fs-5"></i>@shukranrantalsopc</li>
                     </ul>
 
@@ -63,7 +63,7 @@
 
             <div class="col-lg-6 col-sm-12">
                 <div class="container p-4">
-                    <h3 align="left">Inquiry Form</h3>
+                    <h3>Inquiry Form</h3>
                     <br>
                     <form>
                         <div class="mb-3">

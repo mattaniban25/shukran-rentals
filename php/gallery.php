@@ -16,11 +16,18 @@
     <!-- CSS FILE -->
     <link rel="stylesheet" href="../css/style.css">
 
+    <!-- Animate On Scroll links -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
     <title>Shukran Rentals - Login</title>
 
   </head>
 
   <body>
+  <script>
+    AOS.init();
+  </script>
     
     <?php include 'header.php'; ?>  
     
@@ -55,40 +62,213 @@
                   <p class="fs-4">FACILITIES</p>
                   <hr>
               </div>
+
               <div class="col-lg-4 col-sm-12">
-                  <img src="../IMAGES/Rooms/Facilities/shukneneng.JPG"  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="../IMAGES/Rooms/Facilities/shukneneng.JPG" alt=""  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                  </button>
+
+                  <!-- Image Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content ">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="../IMAGES/Rooms/Facilities/shukneneng.JPG" alt="" style="width:100%; height:auto;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->   
+
               </div>
 
               <div class="col-lg-4 col-sm-12">
-                  <img src="../IMAGES/Rooms/Facilities/shukneneng2.JPG"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="2500" data-aos-once="true">
+
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <img src="../IMAGES/Rooms/Facilities/shukneneng2.JPG" alt=""  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                  </button>
+
+                  <!-- Image Modal -->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content ">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="../IMAGES/Rooms/Facilities/shukneneng2.JPG" alt="" style="width:100%; height:auto;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+
               </div>
 
               <div class="col-lg-4 col-sm-12">
-                  <img src="../IMAGES/Rooms/Facilities/reddoorz_sign.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img src="../IMAGES/Rooms/Facilities/reddoorz_sign.jpg" alt=""  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                  </button>
+
+                  <!-- Image Modal -->
+                  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content ">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="../IMAGES/Rooms/Facilities/reddoorz_sign.jpg" alt="" style="width:100%; height:auto;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+
               </div>
 
               <div class="col-lg-4 col-sm-12">
-                  <img src="../IMAGES/Rooms/Facilities/smokingarea1.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                    <img src="../IMAGES/Rooms/Facilities/smokingarea1.jpg" alt=""  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                  </button>
+
+                  <!-- Image Modal -->
+                  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content ">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="../IMAGES/Rooms/Facilities/smokingarea1.jpg" alt="" style="width:100%; height:auto;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+
               </div>
 
               <div class="col-lg-4 col-sm-12">
-                  <img src="../IMAGES/Rooms/Facilities/smokingarea2.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                    <img src="../IMAGES/Rooms/Facilities/smokingarea2.jpg" alt=""  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                  </button>
+
+                  <!-- Image Modal -->
+                  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content ">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="../IMAGES/Rooms/Facilities/smokingarea2.jpg" alt="" style="width:100%; height:auto;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+
+                  <img src=""   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
               </div>
 
               <div class="col-lg-4 col-sm-12">
-                  <img src="../IMAGES/Rooms/Facilities/hallway1.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                    <img src="../IMAGES/Rooms/Facilities/hallway1.jpg" alt=""  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                  </button>
+
+                  <!-- Image Modal -->
+                  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content ">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="../IMAGES/Rooms/Facilities/hallway1.jpg" alt="" style="width:100%; height:auto;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+
               </div>
 
               <div class="col-lg-4 col-sm-12">
-                  <img src="../IMAGES/Rooms/Facilities/hallway2.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                    <img src="../IMAGES/Rooms/Facilities/hallway2.jpg" alt=""  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                  </button>
+
+                  <!-- Image Modal -->
+                  <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content ">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="../IMAGES/Rooms/Facilities/hallway2.jpg" alt="" style="width:100%; height:auto;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+
               </div>
 
               <div class="col-lg-4 col-sm-12">
-                  <img src="../IMAGES/Rooms/Facilities/smokingarea3.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                    <img src="../IMAGES/Rooms/Facilities/smokingarea3.jpg" alt=""  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                  </button>
+
+                  <!-- Image Modal -->
+                  <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content ">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="../IMAGES/Rooms/Facilities/smokingarea3.jpg" alt="" style="width:100%; height:auto;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  
               </div>
 
               <div class="col-lg-4 col-sm-12">
-                  <img src="../IMAGES/Rooms/Facilities/outdoor_jacuzzi.jpg"   class="img-fluid mb-3" data-aos="fade" data-aos-duration="3000" data-aos-once="true">
+
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                    <img src="../IMAGES/Rooms/Facilities/outdoor_jacuzzi.jpg" alt=""  class="img-fluid mb-3" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
+                  </button>
+
+                  <!-- Image Modal -->
+                  <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content ">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="../IMAGES/Rooms/Facilities/outdoor_jacuzzi.jpg" alt="" style="width:100%; height:auto;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  
               </div>
 
               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

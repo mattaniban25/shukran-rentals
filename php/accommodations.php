@@ -22,12 +22,7 @@
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
     <title>Shukran Rentals - Login</title>
-    <style>
-      li{
-        list-style-type: none;
-      }
-    </style>
-
+    
   </head>
 
   <body>
@@ -224,8 +219,8 @@
     <div class="container" style="border-top: 1px solid gray">
       <div class="row">
         <div class="col-lg-6">
-          <div class="note pt-4">
-            <ul>
+          <div class="note pt-4 m-2" >
+            <ul style="padding-left:0;">
               <li><h3>NOTE:</h1></li>
               <li> <i class="fi fi-rs-thumbtack pe-3"></i>Additional pax charge of P 500.00/night over the minimum capacity per room.</li>
               <li> <i class="fi fi-rs-thumbtack pe-3"></i>Standard Check-in time 2 PM / Check-out time 12 NN.</li>
@@ -241,8 +236,8 @@
     <!-- ROOMS SECTION -->
       
     <br><br>
-    <div class="container w-25 border-danger mb-5" style="border-bottom: 2px solid">
-      <p class="mt-5 fs-2" align="center">ROOMS</p>
+    <div class="container" align="center">
+      <p class="mt-5 fs-2 border-danger mb-5 w-50"  style="border-bottom: 2px solid">ROOMS</p>
     </div>
 
     

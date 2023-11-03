@@ -32,7 +32,7 @@
     <div class="container" >
     <div class="row" align="center">
         <div class="col-lg-8">
-            <div class="container w-75 payment-container rounded-2">
+            <div class="container w-75 payment-container rounded-1">
                 <h1>Choose Payment Method</h1>
                 <br><br>
 
@@ -213,7 +213,7 @@
                                 
                     </div>
                 </div>   
-</div>
+            </div>
         
         <div class="col-lg-4 col-sm-12">
             

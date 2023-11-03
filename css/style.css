@@ -48,8 +48,6 @@
     background-color: white;
     transition: .8s;
 }
-
-
 .form-control{
     border:none;
     border-bottom: 2px solid #ccc;
@@ -203,9 +201,8 @@ td,th,tr
 }
 
 li
-{ 
+{
     list-style-type: none;
-    text-align: start;
 }
 
 .welcome-message
