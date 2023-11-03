@@ -34,6 +34,10 @@
     margin-bottom: 30px;
 }
 
+.text-danger
+{
+    color:#aa2400;
+}
 .btn-danger{
     background-color: #aa2400;
     font-size: 0.9rem;

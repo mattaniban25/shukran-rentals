@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+
     <!-- CSS FILE -->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -43,10 +44,7 @@
         <img src="../IMAGES/Rooms/SHUK/headered.jpg" class="d-block w-100 " alt="..." >
         
         <div class="carousel-caption d-none d-md-block">
-              <!--
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-              -->
+              
         </div>
       </div>
     </div>
@@ -70,73 +68,73 @@
                   <tbody>
                     <tr>
                       <td>
-                        <li ><i class="fi fi-rs-bed-alt pe-3"></i> Bed & Pillows</li>
+                        <li ><i class="fi fi-rs-bed-alt pe-3 fs-5 align-middle"></i> Bed & Pillows</li>
                       </td>
                       <td>
-                        <li><i class="fi fi-rs-coffee-pot pe-3"></i> Water Kettle</li>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <li><i class="fi fi-rs-shower pe-3"></i> Hot & Cold Shower</li>
-                      </td>
-                      <td>
-                        <li><i class="fi fi-rs-tool-box pe-3"></i> Guest Kit</li>
+                        <li><i class="fi fi-rs-coffee-pot pe-3 fs-5 align-middle"></i> Water Kettle</li>
                       </td>
                     </tr>
 
                     <tr>
                       <td>
-                        <li><i class="fi fi-rs-tv-music pe-3"></i> Cable TV or Android TV</li>
+                        <li><i class="fi fi-rs-shower pe-3 fs-5 align-middle"></i> Hot & Cold Shower</li>
+                      </td>
+                      <td>
+                        <li><i class="fi fi-rs-tool-box pe-3 fs-5 align-middle"></i> Guest Kit</li>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <li><i class="fi fi-rs-tv-music pe-3 fs-5 align-middle"></i> Cable TV or Android TV</li>
                       </td> 
                       <td>
-                        <li><i class="fi fi-rs-toilet-paper-blank pe-3"></i> Tissue</li>
+                        <li><i class="fi fi-rs-toilet-paper-blank pe-3 fs-5 align-middle"></i> Tissue</li>
                       </td>
                     </tr>
 
                     <tr>
                       <td>
-                        <li><i class="fi fi-rs-microwave pe-3"></i> Microwave</li>
+                        <li><i class="fi fi-rs-microwave pe-3 fs-5 align-middle"></i> Microwave</li>
                       </td>
                       <td>
-                        <li><i class="fi fi-rs-family pe-3"></i> Spacious</li>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <li><i class="fi fi-rs-bowl-rice pe-3"></i> Rice Cooker</li>
-                      </td>
-                      <td>
-                        <li><i class="fi fi-rs-air-conditioner pe-3"></i> Airconditioned</li>
+                        <li><i class="fi fi-rs-family pe-3 fs-5 align-middle"></i> Spacious</li>
                       </td>
                     </tr>
 
                     <tr>
                       <td>
-                        <li><i class="fi fi-rs-router pe-3"></i> WiFi</li>
+                        <li><i class="fi fi-rs-bowl-rice pe-3 fs-5 align-middle"></i> Rice Cooker</li>
                       </td>
                       <td>
-                        <li><i class="fi fi-rs-blanket pe-3"></i> Towels</li>
+                        <li><i class="fi fi-rs-air-conditioner pe-3 fs-5 align-middle"></i> Airconditioned</li>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <li><i class="fi fi-rs-router pe-3 fs-5 align-middle"></i> WiFi</li>
+                      </td>
+                      <td>
+                        <li><i class="fi fi-rs-blanket pe-3 fs-5 align-middle"></i> Towels</li>
                       </td>
                     </tr>
                     
                     <tr>
                       <td>
-                        <li><i class="fi fi-rs-refrigerator pe-3"></i> Mini Fridge</li>
+                        <li><i class="fi fi-rs-refrigerator pe-3 fs-5 align-middle"></i> Mini Fridge</li>
                       </td>
                       <td>
-                        <li><i class="fi fi-rs-chair pe-3"></i> Tables & Chairs</li>
+                        <li><i class="fi fi-rs-chair pe-3 fs-5 align-middle"></i> Tables & Chairs</li>
                       </td>
                     </tr>
 
                     <tr>
                       <td>
-                        <li><i class="fi fi-rs-water-bottle pe-3"></i> Complimentary Water</li>
+                        <li><i class="fi fi-rs-water-bottle pe-3 fs-5 align-middle"></i> Complimentary Water</li>
                       </td>
                       <td>
-                        <li><i class="fi fi-rs-trash-check pe-3"></i> Trash Bin</li>
+                        <li><i class="fi fi-rs-trash-check pe-3 fs-5 align-middle"></i> Trash Bin</li>
                       </td>
                     </tr>
                   </tbody>
@@ -151,43 +149,43 @@
                   <tbody>
                     <tr>
                       <td>
-                        <li><i class="fi fi-rs-biking pe-3"></i> Gym</li>
+                        <li><i class="fi fi-rs-biking pe-3 fs-5 align-middle"></i> Gym</li>
                       </td>
                       <td>
-                        <li><i class="fi fi-rs-couch pe-3"></i> Lounge</li>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <li><i class="fi fi-rs-elevator pe-3"></i> Roof deck view & Jacuzzi Area</li>
-                      </td>
-                      <td>
-                        <li><i class="fi fi-rs-pool-8-ball pe-3"></i> Billiard Table, Beer Pong & Mini Bar</li>
+                        <li><i class="fi fi-rs-couch pe-3 fs-5 align-middle"></i> Lounge</li>
                       </td>
                     </tr>
 
                     <tr>
                       <td>
-                        <li><i class="fi fi-rs-swimmer pe-3"></i> Indoor Swimming pool</li>
+                        <li><i class="fi fi-rs-elevator pe-3 fs-5 align-middle"></i> Roof deck view & Jacuzzi Area</li>
                       </td>
                       <td>
-                        <li><i class="fi fi-rs-basketball-hoop pe-3"></i> Basketball Court & Playground</li>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <li><i class="fi fi-rs-store-alt pe-3"></i> Convenience Store</li>
-                      </td>
-                      <td>
-                        <li><i class="fi fi-rs-room-service pe-3"></i> Room service food & beverage</li>
+                        <li><i class="fi fi-rs-pool-8-ball pe-3 fs-5 align-middle"></i> Billiard Table, Beer Pong & Mini Bar</li>
                       </td>
                     </tr>
 
                     <tr>
                       <td>
-                      <li><i class="fi fi-rs-smoking pe-3"></i> Smoking Area</li>
+                        <li><i class="fi fi-rs-swimmer pe-3 fs-5 align-middle"></i> Indoor Swimming pool</li>
+                      </td>
+                      <td>
+                        <li><i class="fi fi-rs-basketball-hoop pe-3 fs-5 align-middle"></i> Basketball Court & Playground</li>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <li><i class="fi fi-rs-store-alt pe-3 fs-5 align-middle"></i> Convenience Store</li>
+                      </td>
+                      <td>
+                        <li><i class="fi fi-rs-room-service pe-3 fs-5 align-middle"></i> Room service food & beverage</li>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                      <li><i class="fi fi-rs-smoking pe-3 fs-5 align-middle"></i> Smoking Area</li>
                       </td>
                     </tr>
                   </tbody>
@@ -200,19 +198,19 @@
                   <tbody>
                     <tr>
                       <td>
-                        <li><i class="fi fi-rs-phone-call pe-3"></i> Room service telephone</li> 
+                        <li><i class="fi fi-rs-phone-call pe-3 fs-5 align-middle"></i> Room service telephone</li> 
                       </td>
                       <td>
-                        <li><i class="fi fi-rs-camera-cctv pe-3"></i> 24 hours surveillance system</li>
+                        <li><i class="fi fi-rs-camera-cctv pe-3 fs-5 align-middle"></i> 24 hours surveillance system</li>
                       </td>
                     </tr>  
 
                     <tr>
                       <td>
-                        <li><i class="fi fi-rs-car-side pe-3"></i> Free parking</li>
+                        <li><i class="fi fi-rs-car-side pe-3 fs-5 align-middle"></i> Free parking</li>
                       </td>
                       <td>
-                        <li><i class="fi fi-rs-user-police pe-3"></i> 24 hours security service</li>
+                        <li><i class="fi fi-rs-user-police pe-3 fs-5 align-middle"></i> 24 hours security service</li>
                       </td>
                     </tr>
                   </tbody>

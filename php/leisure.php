@@ -15,6 +15,10 @@
     <!-- CSS FILE -->
     <link rel="stylesheet" href="../css/style.css">
 
+    <!-- Animate On Scroll -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
     <title>Shukran Rentals - Login</title>
 
   </head>
@@ -27,16 +31,9 @@
     
     <?php include 'header.php'; ?> 
 
-    <div class="carousel-inner " >
+    <div class="carousel-inner" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
       <div class="carousel-item active" >
         <img src="../IMAGES/leisure.jpg" class="d-block w-100 " alt="..." >
-        
-        <div class="carousel-caption d-none d-md-block">
-              <!--
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-              -->
-        </div>
       </div>
     </div>
 
