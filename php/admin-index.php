@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(!isset($_SESSION["adminuser"])){
-        header("Location: admin-login.php");
+        header("Location: employee-login.php");
     }
 
     require "database.php";

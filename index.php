@@ -72,7 +72,7 @@
                                     <li><a class="nav-item page-header nav-link dropdown-item" href="php/gallery.php">Gallery</a></li>
                                     <li><a class="nav-item page-header nav-link dropdown-item" href="php/about-us.php">About us</a></li>
                                     <li><a class="nav-item page-header nav-link dropdown-item" href="php/contact-us.php">Contact us</a></li>
-                                    <li><a class="nav-item page-header nav-link dropdown-item" href="terms.php">Terms & Conditions</a></li>
+                                    <li><a class="nav-item page-header nav-link dropdown-item" href="php/terms.php">Terms & Conditions</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -81,8 +81,8 @@
                         </div>
                         <div class="d-flex">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li><a href="register.php" class="nav-item page-header nav-link"><strong>Register</strong></a></li>
-                              <li><a href="login.php" class="nav-item page-header nav-link"><strong>Login</strong></a></li>
+                                <li><a href="php/register.php" class="nav-item page-header nav-link"><strong>Register</strong></a></li>
+                              <li><a href="php/login.php" class="nav-item page-header nav-link"><strong>Login</strong></a></li>
                             </ul>
                         </div> 
                     </div>
