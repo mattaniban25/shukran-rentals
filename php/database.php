@@ -9,4 +9,6 @@
         die("Something went wrong;");
     }
 
+    $connection = new mysqli($hostName, $dbUser, $dbPassword, $dbName);
+
 ?>
