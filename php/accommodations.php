@@ -334,11 +334,12 @@
           <a href="barkada-room.php">
       
             <div class="card w-100 .h-100 border-0">
-              <img src="../IMAGES/Rooms/Barkada Rooms/barkada5.jpeg" class="card-img-top" alt="...">
+              <img src="../IMAGES/Rooms/Barkada Rooms/barkada5.jpmg-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title" style="text-align:left;">Barkada Room</h5>
               </div>
             </div>
+            
           </a>
         </div>
 
