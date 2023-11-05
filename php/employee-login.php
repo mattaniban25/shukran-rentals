@@ -1,13 +1,55 @@
 <?php
-    session_start();
-    if(isset($_SESSION["employeeuser"])){
-        header("Location: employee-index.php");
-    }
-
-    if(isset($_SESSION["adminuser"])){
-      header("Location: admin-index.php");
+  include "database.php";
+  session_start();
+  if(isset($_SESSION["employeeuser"])){
+      header("Location: employee-index.php");
   }
-?>
+
+  if(isset($_SESSION["adminuser"])){
+    header("Location: admin-index.php");
+  }
+
+  if(isset($_POST["employee-login"])){
+      $username = $_POST["username"];
+      $password = $_POST["password"];
+      $sql = "SELECT * FROM employeeaccount WHERE username = '$username'";
+      $result = mysqli_query($conn, $sql);
+      $employeeuser = mysqli_fetch_array($result, MYSQLI_ASSOC);
+      if($employeeuser){
+          if (password_verify($password, $employeeuser["password"])){
+              session_start();
+              $_SESSION["employeeuser"] = "yes"; 
+              $_SESSION["username"] = $username;
+              header("Location: employee-index.php");
+              die();
+          }else{
+              echo "<div class='alert alert-danger'>Password does not match</div>";
+          }
+      }else{
+          echo "<div class='alert alert-danger'>Username does not match</div>";
+      }
+  }
+
+  if(isset($_POST["admin-login"])){
+      $username = $_POST["username"];
+      $password = $_POST["password"];
+      $sql = "SELECT * FROM adminaccount WHERE username = '$username'";
+      $result = mysqli_query($conn, $sql);
+      $adminuser = mysqli_fetch_array($result, MYSQLI_ASSOC);
+      if($adminuser){
+          if (password_verify($password, $adminuser["password"])){
+              session_start();
+              $_SESSION["adminuser"] = "yes"; 
+              $_SESSION["username"] = $username;
+              header("Location: admin-index.php");
+              die();
+          }else{
+              echo "<div class='alert alert-danger'>Password does not match</div>";
+          }
+      }else{
+          echo "<div class='alert alert-danger'>Username does not match</div>";
+      }
+  }?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,55 +83,6 @@
 
     <div class="content">
         <div class="login-container rounded-3" align="center">
-            <?php
-                if(isset($_POST["employee-login"])){
-                    require_once "database.php";
-                    $username = $_POST["username"];
-                    $password = $_POST["password"];
-                    $sql = "SELECT * FROM employeeaccount WHERE username = '$username'";
-                    $result = mysqli_query($conn, $sql);
-                    $employeeuser = mysqli_fetch_array($result, MYSQLI_ASSOC);
-                    if($employeeuser){
-                        if (password_verify($password, $employeeuser["password"])){
-                            session_start();
-                            $_SESSION["employeeuser"] = "yes"; 
-                            $_SESSION["username"] = $username;
-                            header("Location: employee-index.php");
-                            die();
-                        }else{
-                            echo "<div class='alert alert-danger'>Password does not match</div>";
-                        }
-                    }else{
-                        echo "<div class='alert alert-danger'>Username does not match</div>";
-                    }
-                }
-            ?>
-
-            <?php
-                if(isset($_POST["admin-login"])){
-                    require_once "database.php";
-                    $username = $_POST["username"];
-                    $password = $_POST["password"];
-                    $sql = "SELECT * FROM adminaccount WHERE username = '$username'";
-                    $result = mysqli_query($conn, $sql);
-                    $adminuser = mysqli_fetch_array($result, MYSQLI_ASSOC);
-                    if($adminuser){
-                        if (password_verify($password, $adminuser["password"])){
-                            session_start();
-                            $_SESSION["adminuser"] = "yes"; 
-                            $_SESSION["username"] = $username;
-                            header("Location: admin-index.php");
-                            die();
-                        }else{
-                            echo "<div class='alert alert-danger'>Password does not match</div>";
-                        }
-                    }else{
-                        echo "<div class='alert alert-danger'>Username does not match</div>";
-                    }
-                }
-            ?>
-
-            
             <form action="employee-login.php" method="post">
               <p class="fs-5">EMPLOYEE LOGIN</p>
 

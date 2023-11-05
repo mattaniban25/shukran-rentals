@@ -1,4 +1,3 @@
-
 <?php
     echo'
         <div class="header bg-white sticky-top">
@@ -49,18 +48,17 @@
                     </div>
                 </div>
             </nav>
-            
-            
         </div>
+
         <nav class="navbar bg-light shukran-navbar">
-                <div class="container-fluid" id="shukran-navbar">
-                    <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
-                    <div class="d-flex">
-                    <a href="../index.php#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
-                    <a href="" class="nav-link me-4" style="cursor:alias">
-                    <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
-                    </div>
-                </div>
-            </nav>
+            <div class="container-fluid" id="shukran-navbar">
+                <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
+                <div class="d-flex">
+                <a href="../index.php#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
+                <a href="" class="nav-link me-4" style="cursor:alias">
+                <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
+            </div>
+            </div>
+        </nav>
     ';
 ?>

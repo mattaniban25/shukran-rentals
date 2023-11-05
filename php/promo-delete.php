@@ -1,13 +1,13 @@
 <?php
-    if(isset($_GET["id"])){
-        require_once "database.php";
-        $id = $_GET["id"];
-        $promoSql = "DELETE FROM promo WHERE id = $id";
-        mysqli_query($conn, $promoSql);
-        header("Location: promo.php");
-    }
-    else{
-        header("Location: promo.php");
-    }
+session_start();
+include "database.php";
+
+$promoSql = "DELETE FROM promo WHERE id = $_GET[id]";
+
+if($conn->query($promoSql) === TRUE){
+    header("Location: promo.php");
+}else{
+    echo "Error deleting a reservation: ". $conn->error;
+}
 
 ?>

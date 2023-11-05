@@ -1,7 +1,28 @@
 <?php
+    include "database.php";
     session_start();
     if(isset($_SESSION["user"])){
         header("Location: index.php");
+    }
+
+    if(isset($_POST["login"])){
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+        $sql = "SELECT * FROM customeraccount WHERE email = '$email'";
+        $result = mysqli_query($conn, $sql);
+        $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+        if($user){
+            if (password_verify($password, $user["password"])){
+                $_SESSION["user"] = "yes"; 
+                $_SESSION["email"] = $email;
+                header("Location: index.php");
+                die();
+            }else{
+                echo "<div class='alert alert-danger'>Password does not match</div>";
+            }
+        }else{
+            echo "<div class='alert alert-danger'>Email does not match</div>";
+        }
     }
 ?>
 
@@ -19,7 +40,6 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <title>Shukran Rentals - Login</title>
-
   </head>
 
   <body>
@@ -28,29 +48,6 @@
     <main>
       <div class="content bg-body-secondary">
           <div class="login-container rounded-3 bg-white" align="center">
-              <?php
-                  if(isset($_POST["login"])){
-                      require_once "database.php";
-                      $email = $_POST["email"];
-                      $password = $_POST["password"];
-                      $sql = "SELECT * FROM customeraccount WHERE email = '$email'";
-                      $result = mysqli_query($conn, $sql);
-                      $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-                      if($user){
-                          if (password_verify($password, $user["password"])){
-                              session_start();
-                              $_SESSION["user"] = "yes"; 
-                              $_SESSION["email"] = $email;
-                              header("Location: index.php");
-                              die();
-                          }else{
-                              echo "<div class='alert alert-danger'>Password does not match</div>";
-                          }
-                      }else{
-                          echo "<div class='alert alert-danger'>Email does not match</div>";
-                      }
-                  }
-              ?>
               <form action="login.php" method="post">
                 <p class="fs-5">LOGIN</p>
 

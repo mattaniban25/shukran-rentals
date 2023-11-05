@@ -4,11 +4,7 @@ if(!isset($_SESSION["adminuser"])){
     header("Location: admin-login.php");
 }
 
-require "database.php";
-$sql = "SELECT * FROM adminaccount WHERE username = '$_SESSION[username]'";
-$result = mysqli_query($conn, $sql);
-$adminuser = mysqli_fetch_array($result, MYSQLI_ASSOC);
-
+include "database.php";
 // Handle form submissions
 $promoName = "";
 $promoType = "";
@@ -85,6 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <!-- social links logo -->
     <script src="https://kit.fontawesome.com/29a620f807.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -95,15 +92,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   </head>
 
-  <body>
+  <body class="bg-light">
   
     <?php include 'admin-header.php'; ?>
 
     <main class="staff-content bg-light">
         <div class="row">
             <div class="col-lg-3"></div>
-            <div class="col-lg-6 col-sm-12 border-start border-end border-4 border-danger-subtle shadow-sm rounded-3 p-4  bg-white tablinks" style="">
-                    <b class="text-danger">ADD A NEW PROMO</b>
+            <div class="col-lg-6 col-sm-12 border border-4 border-success-subtle register-container rounded-3 p-4  bg-white tablinks" style="">
+                    <b class="text-success">ADD A NEW PROMO</b>
                     <br><br>
 
                     <?php

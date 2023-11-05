@@ -1,4 +1,4 @@
-<?php
+<?php 
     echo '
         <header>
         <div class="staff-header">
@@ -40,62 +40,78 @@
                 <img class="logo-img" src="../IMAGES/adminLogo.png" alt="">
             </header>
             <nav>
+            <ul>
+                <a href="admin-index.php" class="nav-item nav-link">
+                    <button>
+                        <span>
+                            <li><i class="fi fi-rs-home pe-3 fs-5 align-middle"></i>Home</li> 
+                        </span>
+                    </button>
+                </a>
+
+                <a href="#" class="nav-item nav-link">
+                    <button>
+                        <span>
+                            <li><i class="fi fi-rs-calendar-days pe-3 fs-5 align-middle"></i>Calendar</li> 
+                        </span>
+                    </button>
+                </a>
+
+                
+                <a href="#" class="nav-item nav-link">
+                    <button>
+                        <span>
+                            <li><i class="fi fi-rs-bed-alt pe-3 fs-5 align-middle"></i>Rooms</li> 
+                        </span>
+                    </button>
+                </a>
+
+                <a href="#" class="nav-item nav-link">
+                    <button>
+                        <span>
+                            <li><i class="fi fi-rs-coins pe-3 fs-5 align-middle"></i>Payments</li> 
+                        </span>
+                    </button>
+                </a>
+
+                <a href="employee-register.php" class="nav-item nav-link">
+                    <button>
+                        <span>
+                                <li><i class="fi fi-rs-people pe-3 fs-5 align-middle"></i>Employees</li> 
+                        </span>
+                    </button>
+                </a>
+
+                <a href="promo.php" class="nav-item nav-link">
+                    <button>
+                        <span>
+                            <li><i class="fi fi-rs-receipt pe-3 fs-5 align-middle"></i>Promos</li> 
+                        </span>
+                    </button>
+                </a>
+                <hr class = "p-1 me-3">
+                
                 <button>
                     <span>
-                        <a href="admin-index.php" class="nav-item nav-link">
-                            <i class="fa-solid fa-house"></i>
-                            <span>Home</span>
-                        </a>
+                            <div class="navbar-nav ms-auto">
+                                <div class="navbar-nav">
+                                    <div class="dropdown">
+                                    <li><img src="../Images/Employee.jfif" class="" alt="">
+                                        <a class="dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"><span>Account</span></a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="logout.php">Logout</a>
+                                        </div>
+                                    </li>
+                                    </div>
+                                </div>
+                            </div>
+                        
                     </span>
                 </button>
-
-                <button>
-                    <span>
-                        <i class="fa-regular fa-calendar"></i>
-                        <span>Calendar</span>
-                    </span>
-                </button>
-
-                <button>
-                    <span>
-                        <i class="fa-solid fa-door-open"></i>
-                        <span>Active Rooms</span>
-                    </span>
-                </button>
-
-                <button>
-                    <span>
-                        <i class="fa-solid fa-peso-sign"></i>
-                        <span>Payments</span>
-                    </span>
-                </button>
-
-                <button>
-                    <span>
-                    <a href="promo.php" class="nav-item nav-link">
-                        <i class="fa-solid fa-receipt"></i>
-                        <span>Promos</span>
-                    </a>
-                    </span>
-                </button>
-
-                <button>
-                <span>
-                    <img src="../Images/Employee.jfif" alt="">
-                    <div class="navbar-nav ms-auto">
-                    <div class="navbar-nav">
-                        <div class="dropdown">
-                        <a class="dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"><span>Account</span></a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="logout.php">Logout</a>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </span>
-                </button>
+            </ul>
             </nav>
             </aside>
+
         </div>  
         </header>
     ';
