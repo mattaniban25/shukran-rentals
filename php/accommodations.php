@@ -342,7 +342,6 @@
             
           </a>
         </div>
-<p>s</p>
 
         <div class="col" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
           <a href="triple-room.php">
