@@ -98,8 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <main class="staff-content bg-light">
         <div class="row">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-6 col-sm-12 border border-4 border-success-subtle register-container rounded-3 p-4  bg-white tablinks" style="">
+            <div class="border border-4 border-success-subtle register-container rounded-3 p-4  bg-white" style="">
                     <b class="text-success">ADD A NEW PROMO</b>
                     <br><br>
 
@@ -169,7 +168,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                     </form>
             </div>
-            <div class="col-lg-3"></div>
         </div>
     </main>
 

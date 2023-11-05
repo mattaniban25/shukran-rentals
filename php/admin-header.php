@@ -74,7 +74,7 @@
                     </button>
                 </a>
 
-                <a href="employee-register.php" class="nav-item nav-link">
+                <a href="employee-list.php" class="nav-item nav-link">
                     <button>
                         <span>
                                 <li><i class="fi fi-rs-people pe-3 fs-5 align-middle"></i>Employees</li> 
