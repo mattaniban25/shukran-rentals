@@ -126,7 +126,7 @@
                         <p class="fs-5">Price: ₱1,500.00</p>
                         <p class="fs-5">Check In: 2 PM</p>
                         <p class="fs-5">Check Out: 12 PM</p>
-                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
+                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="booking-confirmation.php">Book Now</a>
                     </div> 
                 </div>
             </div>
@@ -141,7 +141,7 @@
                         <p class="fs-5">Price: ₱1,800.00</p>
                         <p class="fs-5">Check In: 2 PM</p>
                         <p class="fs-5">Check Out: 12 PM</p>
-                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
+                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="booking-confirmation.php">Book Now</a>
                        </div> 
                 </div>
             </div>
@@ -156,7 +156,7 @@
                         <p class="fs-5">Price: ₱2,300.00</p>
                         <p class="fs-5">Check In: 2 PM</p>
                         <p class="fs-5">Check Out: 12 PM</p>
-                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
+                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="booking-confirmation.php">Book Now</a>
                     </div> 
                 </div>
             </div>
