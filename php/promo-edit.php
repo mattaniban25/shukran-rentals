@@ -122,7 +122,7 @@ else{
         <div class="row">
             <div class="col-lg-3"></div>
             <div class="col-lg-6 col-sm-12 border-start border-end border-4 border-primary-subtle shadow-sm rounded-3 p-4  bg-white tablinks" style="">
-                    <b class="text-primary">EDIT PROMO</b>
+                    <b class="text-primary fs-5">EDIT PROMO</b>
                     <br><br>
 
                     <?php
@@ -139,34 +139,41 @@ else{
                         <input type="hidden" value="<?php echo $id; ?>">
                         <div class="row">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <b class = "fs-6">Promo Name</b>
                                 <input type="text" class="form-control" name="promoName" placeholder="Promo Name" value="<?php echo $promoName?>">
                             </div>
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <b class = "fs-6">Promo Type</b>
                                 <input type="text" class="form-control" name="promoType" placeholder="Promo Type" value="<?php echo $promoType ?>">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <b class = "fs-6">Promo Duration</b>
                                 <input type="date" class="form-control" name="promoDuration" placeholder="Promo Duration" value="<?php echo $promoDuration ?>">
                             </div>
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <b class = "fs-6">Discount</b>
                                 <input type="text" class="form-control" name="discount" placeholder="Discount" value="<?php echo $discount ?>">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <b class = "fs-6">Promo Code</b>
                                 <input type="text" class="form-control" name="promoCode" placeholder="Promo Code" value="<?php echo $promoCode ?>">
                             </div>
+
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <input type="text" class="form-control" name="promoDescription" placeholder="Description" value="<?php echo $promoDescription ?>">
-                            </div>
+                                <b class = "fs-6">Promo Image</b>
+                                <input type="file" class="form-control" name="promoImage" placeholder="Promo Image" value="<?php echo $promoImage ?>">
                         </div>
 
                         <div class="row">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <input type="file" class="form-control" name="promoImage" placeholder="Promo Image" value="<?php echo $promoImage ?>">
+                                <b class = "fs-6">Description</b>
+                                <textarea class="form-control" placeholder="Description" name="promoDescription" ><?php echo $promoDescription ?></textarea>
                             </div>
                         </div>
 

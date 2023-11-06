@@ -5,7 +5,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-2 border-danger" style="box-shadow: black 0px 0px 10px 0px;">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand">
-                <img class="logo-icon" src="../IMAGES/smallLogo.png" alt="">
+                <img class="logo-icon" src="../IMAGES/smallLogo.png" alt="" style="width:3rem; height:3rem;">
                 </a>
 
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -13,17 +13,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">Calendar</a>
-                    <a href="#" class="nav-item nav-link">Active Rooms</a>
-                    <a href="#" class="nav-item nav-link">Payments</a>
-                    <a href="#" class="nav-item nav-link">Profile</a>
+                    <a href="admin-index.php" class="nav-item nav-link text-light">Home</a>
+                    <a href="#" class="nav-item nav-link text-light">Calendar</a>
+                    <a href="#" class="nav-item nav-link text-light">Rooms</a>
+                    <a href="#" class="nav-item nav-link text-light">Payments</a>
+                    <a href="employee-list.php" class="nav-item nav-link text-light">Employees</a>
+                    <a href="promo.php" class="nav-item nav-link text-light">Promos</a>
+                    <hr class="border border-light border-1">
                     <div class="navbar-nav">
                         <div class="navbar-nav">
                         <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i></a>
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i> Profile</a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                             </ul>
                         </div>
                         </div>

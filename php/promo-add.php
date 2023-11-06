@@ -135,14 +135,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                 <input type="text" class="form-control" name="promoCode" placeholder="Promo Code" value="<?php echo $promoCode ?>">
                             </div>
+
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <input type="text" class="form-control" name="promoDescription" placeholder="Description" value="<?php echo $promoDescription ?>">
-                            </div>
+                                <input type="file" class="form-control" name="promoImage" placeholder="Promo Image" value="<?php echo $promoImage ?>">
                         </div>
 
                         <div class="row">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <input type="file" class="form-control" name="promoImage" placeholder="Promo Image" value="<?php echo $promoImage ?>">
+                                <textarea class="form-control" placeholder="Description" name="promoDescription" ><?php echo $promoDescription ?></textarea>
                             </div>
                         </div>
 
