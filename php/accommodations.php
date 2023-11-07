@@ -355,8 +355,8 @@
           </a>
         </div>
         
+        </div>
       </div>
-    </div>
   </main>
   <br><br><br>
   <?php include 'footer.php'; ?>  

@@ -78,6 +78,15 @@
         </div>
       </div>
       <!-- WELCOME CONTENT -->
+      <div class="welcome-div" align="center">
+          <div class="welcome-description">
+            <div class="shukran-experience">
+              <h3 class="welcome-message h2">Want the Shukran experience?</h3>
+              <p>Book a reservation to experience it now!</p>
+              <a class="btn btn-danger pe-5 ps-5 mb-5 rounded-1"href="#">BOOK</a>
+            </div>
+          </div>
+        </div>
                   
       <div class="container" align="center" style="width:90%;">
         <p class="welcome-message h4 fs-4 mt-5 mb-3" >WELCOME TO SHUKRAN RENTALS OPC</p>

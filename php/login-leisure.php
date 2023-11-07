@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["user"])){
+        header("Location: ../index.php");
+    }
+
+    include "database.php";
+    $sql = "SELECT * FROM customeraccount WHERE email = '$_SESSION[email]'";
+    $result = mysqli_query($conn, $sql);
+    $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,7 +41,7 @@
       AOS.init();
     </script>
     
-    <?php include 'header.php'; ?> 
+    <?php include 'login-header.php'; ?> 
 
     <div class="carousel-inner" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
       <div class="carousel-item active" >
@@ -84,7 +96,7 @@
 
     </main>
 
-    <?php include 'footer.php'; ?>
+    <?php include 'login-footer.php'; ?>
   </body>
 </html>
 

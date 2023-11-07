@@ -13,26 +13,26 @@
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a href="#" class="nav-item page-header nav-link">Home</a>
+                                <a href="index.php" class="nav-item page-header nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-item page-header nav-link">Accommodations</a>
+                                <a href="login-accommodations.php" class="nav-item page-header nav-link">Accommodations</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-item page-header nav-link">Events</a>
+                                <a href="login-events.php" class="nav-item page-header nav-link">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-item page-header nav-link">Leisure</a>
+                                <a href="login-leisure.php" class="nav-item page-header nav-link">Leisure</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-item page-header nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Engage
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="nav-item page-header nav-link dropdown-item" href="#">Gallery</a></li>
-                                    <li><a class="nav-item page-header nav-link dropdown-item" href="#">About us</a></li>
-                                    <li><a class="nav-item page-header nav-link dropdown-item" href="#">Contact us</a></li>
-                                    <li><a class="nav-item page-header nav-link dropdown-item" href="#">Terms & Conditions</a></li>
+                                    <li><a class="nav-item page-header nav-link dropdown-item" href="login-gallery.php">Gallery</a></li>
+                                    <li><a class="nav-item page-header nav-link dropdown-item" href="login-about-us.php">About us</a></li>
+                                    <li><a class="nav-item page-header nav-link dropdown-item" href="login-contact-us.php">Contact us</a></li>
+                                    <li><a class="nav-item page-header nav-link dropdown-item" href="login-terms.php">Terms & Conditions</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -66,7 +66,7 @@
                 <div class="container-fluid" id="shukran-navbar">
                     <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
                     <div class="d-flex">
-                        <a href="../index.php#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
+                        <a href="index.php#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
                         <a href="" class="nav-link me-4" style="cursor:alias">
                         <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
                     </div>
