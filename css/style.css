@@ -66,6 +66,24 @@
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
 }
 
+.form-select{
+    border:none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0px;
+}
+
+.form-select:hover{
+    border:none;
+    border-bottom: 2px solid #aa2400;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.form-select:focus{
+    border-color: #aa2400;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
 ::-webkit-input-placeholder{
     color: black;
     opacity: 0.5;

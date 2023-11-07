@@ -4,8 +4,8 @@
         header("Location: ../index.php");
     }
 
-    require "database.php";
-    $sql = "SELECT * FROM customerAccount WHERE email = '$_SESSION[email]'";
+    include "database.php";
+    $sql = "SELECT * FROM customeraccount WHERE email = '$_SESSION[email]'";
     $result = mysqli_query($conn, $sql);
     $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
 ?>

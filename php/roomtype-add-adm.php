@@ -165,6 +165,5 @@ if(isset($_POST["submit"])) {
       </div>
     </main>
 </body>
-</html>
 
-<html></html>
+</html>

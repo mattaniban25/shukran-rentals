@@ -1,5 +1,5 @@
 <?php
-    require "php/database.php";
+    require "/php/database.php";
     $promoSql = "SELECT * FROM promo";
     $promoResult = mysqli_query($conn, $promoSql);
     $promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
