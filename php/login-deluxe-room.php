@@ -23,9 +23,11 @@
     <!-- bootleg -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
 
     <!-- Icons -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+
     
     <!-- CSS FILE -->
     <link rel="stylesheet" href="../css/style.css">
@@ -36,7 +38,7 @@
 
   <body>
     
-    <?php include 'login-header.php'; ?> 
+    <?php include 'header.php'; ?> 
 
     <main>
       <div class="container">
@@ -48,29 +50,23 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
               </div>
 
               <div class="carousel-inner">
-
                 <div class="carousel-item active">
-                  <img src="../IMAGES/Rooms/Game Room/game_room1.jpeg" class="d-block w-100" alt="...">
+                  <img src="../IMAGES/Rooms/Deluxe Rooms/deluxe1.jpeg" class="d-block w-100" alt="...">
                 </div>
                 
                 <div class="carousel-item">
-                  <img src="../IMAGES/Rooms/Game Room/game_room2.jpeg" class="d-block w-100" alt="...">
+                  <img src="../IMAGES/Rooms/Deluxe Rooms/deluxe2.jpeg" class="d-block w-100" alt="...">
                 </div>
 
                 <div class="carousel-item">
-                  <img src="../IMAGES/Rooms/Game Room/game_room3.jpeg" class="d-block w-100" alt="...">
+                  <img src="../IMAGES/Rooms/Deluxe Rooms/deluxe3.jpeg" class="d-block w-100" alt="...">
                 </div>
 
                 <div class="carousel-item">
-                  <img src="../IMAGES/Rooms/Game Room/game_room5.jpeg" class="d-block w-100" alt="...">
-                </div>
-
-                <div class="carousel-item">
-                  <img src="../IMAGES/Rooms/Game Room/game_room6.jpeg" class="d-block w-100" alt="...">
+                  <img src="../IMAGES/Rooms/Deluxe Rooms/deluxe4.jpeg" class="d-block w-100" alt="...">
                 </div>
 
               </div>
@@ -87,20 +83,16 @@
             </div>
           </div>
           <div class="col-lg-4 col-sm-12">
-            <p class="fs-1">Game Room</p>
-            <p>Enjoy the ultimate fusion of leisure and entertainment in our game-themed room. Equipped with a gaming console system 
-                and a mini billiard table, this unique space is ideal for gamers and enthusiasts alike. Challenge your companions to 
-                thrilling virtual experiences or engage in a friendly game of billiards, all within the comfort of your own private 
-                retreat. Furnished with modern amenities, comfortable accommodations, and a space full of excitement, our game room 
-                will guarantee an unforgettable stay filled with fun and camaraderie.
+            <p class="fs-1">Deluxe Room</p>
+            <p>Stir up your stay with our Deluxe One-Bedroom suite, a space designed for ultimate relaxtion. Enjoy the spacious comfort of a separate bedroom, furnished with a king sized bed and tasteful decor. Unwind in our neutral and modern living area, complete with 
+              comfortable seating and modern amenities such as a smart fflat screen TV for entertainment. Enjoy the conevnience of having a simple furnish kitchenette, perfect for preparing light meals or enjoying a cup of coffee. Our Deluxe Room will surely make your stay execeptional.
             </p> 
             
             <p class="fs-3">Room features</p>
               <ol>
-                <li><i class="fi fi-rs-pool-8-ball pe-3"></i>Mini Billiards</li>
-                <li><i class="fi fi-rs-joystick pe-3"></i>Playstation 4</li>
-                <li><i class="fi fi-rs-puzzle-alt pe-3"></i>Board games</li>
                 <li><i class="fi fi-rs-bed-alt pe-3"></i>One queen-sized bed</li>
+                <li><i class="fi fi-rs-door-closed pe-3"></i>One bedroom</i></li>
+                <li><i class="fi fi-rs-couch pe-3"></i>Living room</li>
                 <li><i class="fi fi-rs-toilet pe-3"></i>Comfort Room</li>
                 <li><i class="fi fi-rs-faucet pe-3"></i>Sink</li>
                 <li><i class="fi fi-rs-sink pe-3"></i>Lavatory</li>
@@ -111,14 +103,13 @@
               <br>
               <p class="fs-6"><i>Note: Additional items such as pillows, mattresses, etc. are available upon request in the receptionist area or through the room service telephone.</i></p>
               
-
               <br>
 
               <div class="container">
                 <div class="row">
-
-                <div class="col-lg-6" > 
-                    <a class="btn btn-danger ps-4 pe-4 mt-3" href="login-booking-details.php" >Book Now</a>
+                  
+                  <div class="col-lg-6" > 
+                    <a class="btn btn-danger ps-4 pe-4 mt-3 rounded-1" href="login-booking-details.php">Book Now</a>
                   </div>
 
                   <div class="col-lg-6">
@@ -128,11 +119,11 @@
                 </div>
               </div>
 
-
           </div>
         </div>
       </div>
                 
+      
       <div align="center" class="text-secondary">
         <hr class="border opacity-100 w-75">
       </div>
@@ -140,4 +131,3 @@
 
     <?php include 'login-footer.php'; ?>
   </body>
-</html>
