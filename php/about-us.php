@@ -27,22 +27,24 @@
     <main>
       <div class="container pt-5 pb-5 mt-5 mb-5" >
         <div class="row" style="width:fit-content; background-color:#f5f8f7;">
-            <div class="col-lg-6 col-sm-12">
-                <div class="thumbnail">
-                    <img src="../IMAGES/lobby.jpg"  style="width:100%;" class="img-fluid">
-                </div>
+            <div class="col-lg-6 col-sm-12" >            
+              <img src="../IMAGES/lobby.jpg"  style="width:100%;" class="img-fluid mt-5" style="vertical-align: middle;">
             </div>
 
             <div class="col-lg-6 col-sm-12">
               <div class="container m-2">
               <p>About Us</p>
-                <h1 class="mb-5" style="color:#aa4200">The unfussy budget hotel</h1>
-                <h5 style="text-align:left;">Who we are</h5>
+                <h1 class="mb-3" style="color:#aa4200">The unfussy budget hotel</h1>
 
-                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="mb-3" align="justify">Marhaba! Welcome to Shukran Rentals, your home away from home located in Parañaque City, Barangay Tambo. 
+                  Established in 2013, we ensure to provide our guests comfort and convenience from all of our accommodations for business 
+                  and leisure travelers. We began with a goal to provide hospitality and commitment in delivering exceptional service. At 
+                  Shukran Rentals, we offer a range of well-appointed rooms and amenities to make your stay enjoyable and stress-free. Whether 
+                  visiting for a short getaway or an extended stay, Shukran Rentals has its dedicated team to provide and ensure that all guest 
+                  is comfortable and satisfied. Shukran Rentals location allows you to explore the various culture and attractions of Parañaque City, 
+                  and we ensure you’ll have an unforgettable experience. Choosing us, we honor your presence in our establishment and that you have chosen 
+                  us to be a part of your journey. We are glad that you have chosen Shukran Rentals OPC as your home in Parañaque City. 
+                  We are committed to making your stay truly memorable, SHUKRAN!</p>
 
                     <ul style="padding-left:0;">
                       <li><i class="fi fi-rs-check pe-3"></i>Accommodating customers since 2013</li>
