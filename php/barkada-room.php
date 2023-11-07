@@ -105,8 +105,22 @@
               <div class="container">
                 <div class="row">
 
-                  <div class="col-lg-6" > 
-                    <a class="btn btn-danger ps-4 pe-4 mt-3" href="mode-of-payment.php" >Book Now</a>
+                <div class="col-lg-6" > 
+                    <a class="btn btn-danger ps-4 pe-4 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" >Book Now</a>
+                  </div>
+
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p class="fw-semibold fs-5">You have to be logged in to book a reservation.</p>
+                          <p>Click <a href="login.php">Here</a> to Login.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="col-lg-6">
