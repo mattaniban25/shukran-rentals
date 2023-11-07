@@ -1,5 +1,5 @@
 <?php
-    require "/php/database.php";
+    include "php/database.php";
     $promoSql = "SELECT * FROM promo";
     $promoResult = mysqli_query($conn, $promoSql);
     $promos = mysqli_fetch_all($promoResult, MYSQLI_ASSOC);
@@ -89,16 +89,17 @@
                 </div>
             </nav>
     </div>
-        <nav class="navbar bg-light shukran-navbar">
-                <div class="container-fluid" id="shukran-navbar">
-                    <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
-                    <div class="d-flex">
-                    <a href="../index.php#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
-                    <a href="" class="nav-link me-4" style="cursor:alias">
-                    <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
-                    </div>
-                </div>
-        </nav>
+    
+    <nav class="navbar bg-light shukran-navbar">
+      <div class="container-fluid" id="shukran-navbar">
+          <a class="navbar-brand">SHUKRAN RENTALS OPC</a>
+          <div class="d-flex">
+          <a href="../index.php#location" class="nav-link me-4"><i class="fa-solid fa-location-dot fa-xl me-2 ms-2" style="color: #aa2400;"></i>Locate Us</a>
+          <a href="" class="nav-link me-4" style="cursor:alias">
+          <i class="fa-solid fa-phone fa-xl me-2 ms-2" style="color: #aa2400;"></i>099191919191</a>
+          </div>
+      </div>
+    </nav>
 
 
     <main>

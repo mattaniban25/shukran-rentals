@@ -75,7 +75,7 @@ if(isset($_POST["submit"])){
     <main class="staff-content">
       <div class="border border-4 border-success-subtle register-container rounded-3 p-4  bg-white">
         <br>
-          <p class="fs-5" align="center"><i class= "fi fi-rs-bed-alt align-middle pe-3"></i>Create Room Type</p>
+          <p class="fs-5" align="center"><i class= "fi fi-rs-bed-alt align-middle pe-3"></i>Create Room</p>
           <hr class="me-3 ms-3 pb-3">
           <?php
               if(!empty($errorMessage))
