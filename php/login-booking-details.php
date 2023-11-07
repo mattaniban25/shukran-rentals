@@ -1,6 +1,14 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["user"])){
+        header("Location: ../index.php");
+    }
 
-
-
+    include "database.php";
+    $sql = "SELECT * FROM customeraccount WHERE email = '$_SESSION[email]'";
+    $result = mysqli_query($conn, $sql);
+    $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,17 +36,19 @@
     <?php include 'login-header.php'; ?> 
 
     <main>
-    <br><br><br>
-    <div class="container" style="background-color:#ddd;  padding:30px;">
-        <div class="row">
-            <div class="col-lg-12" align="center">
-                <div class="indicator">
-                    <span class="line"><span></span></span>
-                    <p class="active">1</p>
-                    <p>2</p>
-                    <p>3</p>
+        <br><br><br>
+
+        <div class="container" style="background-color:#ddd;  padding:30px;">
+            <div class="row">
+                <div class="col-lg-12" align="center">
+                    <div class="indicator">
+                        <span class="line"><span></span></span>
+                        <p class="active">1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
                 </div>
-            </div>
+
 
                 <div class="container payment-container rounded-1 mt-4" style="width:fit-content; background-color:white">
                     <div class="row">
@@ -54,9 +64,11 @@
                                 <div class="mb-3 form">
                                     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Surname">
                                 </div>
+
                                 <div class="mb-3 form">
                                     <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email">
                                 </div>
+
                                 <div class="mb-3 form">
                                     <input type="telephone" class="form-control" id="formGroupExampleInput2" placeholder="Phone">
                                 </div>
@@ -123,9 +135,6 @@
                                 </div>
                             </div>
 
-
-
-
                             <div class="tab container">    
                                 <div class="row" align="center">
                                     <div class="col-lg-12">
@@ -152,187 +161,185 @@
                                             </ul>
 
                                                                 <!-- Tab panes -->
+                                            <div class="tab-content">
+                                                <div class="tab-pane container fade" id="banktransfer">
+
+                                                    <br><br>
+                                                    <h2>Available banks</h2>
+                                                    <br>
+
+
+                                                    <ul class="nav nav-tabs justify-content-center">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-bs-toggle="tab" href="#bdo">
+                                                                <img src="../IMAGES/bdo.png" alt="" style="width:60px"><p>BDO</p>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-bs-toggle="tab" href="#bpi">
+                                                                <img src="../IMAGES/bpi.png" alt="" style="width:60px"><p>BPI</p>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-bs-toggle="tab" href="#securitybank">  
+                                                                <img src="../IMAGES/securityBank.png" alt="" style="width:60px"><p>Security Bank</p>
+                                                            </a>
+                                                        </li>
+                                                     </ul>
+
                                                     <div class="tab-content">
-                                                        <div class="tab-pane container fade" id="banktransfer">
+                                                        <div class="tab-pane container fade" id="bdo">       
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
+                                                                    </div>
 
-                                                            <br><br>
-                                                            <h2>Available banks</h2>
-                                                            <br>
-
-
-                                                            <ul class="nav nav-tabs justify-content-center">
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" data-bs-toggle="tab" href="#bdo">
-                                                                        <img src="../IMAGES/bdo.png" alt="" style="width:60px"><p>BDO</p>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" data-bs-toggle="tab" href="#bpi">
-                                                                        <img src="../IMAGES/bpi.png" alt="" style="width:60px"><p>BPI</p>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" data-bs-toggle="tab" href="#securitybank">  
-                                                                        <img src="../IMAGES/securityBank.png" alt="" style="width:60px"><p>Security Bank</p>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-
-                                                            <div class="tab-content">
-                                                                <div class="tab-pane container fade" id="bdo">       
-                                                                    <div class="container">
-                                                                        <div class="row">
-                                                                            <div class="col-lg-4">
-                                                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
-                                                                            </div>
-
-                                                                            <div class="col-lg-8">
-                                                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                                                <p>Account Number: 09999999999</p>
-                                                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                                                <input type="button" value="Submit" class="btn btn-danger">
-                                                                            </div>
-                                                                        </div>
+                                                                    <div class="col-lg-8">
+                                                                        <p>Account Name: Shukran Rentals OPC</p>
+                                                                        <p>Account Number: 09999999999</p>
+                                                                        <input type="button" value="Attach File" class="btn btn-danger">
+                                                                        <input type="button" value="Submit" class="btn btn-danger">
                                                                     </div>
                                                                 </div>
-                                                                <div class="tab-pane container fade" id="bpi">
-                                                                    <div class="container">
-                                                                        <div class="row">
-                                                                            <div class="col-lg-4">
-                                                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
-                                                                            </div>
-
-                                                                            <div class="col-lg-8">
-                                                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                                                <p>Account Number: 09999999999</p>
-                                                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                                                <input type="button" value="Submit" class="btn btn-danger">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>                                    
-                                                                <div class="tab-pane container fade" id="securitybank">
-                                                                    <div class="container">
-                                                                        <div class="row">
-                                                                            <div class="col-lg-4">
-                                                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
-                                                                            </div>
-
-                                                                            <div class="col-lg-8">
-                                                                                <p>Account Name: Shukran Rentals OPC</p>
-                                                                                <p>Account Number: 09999999999</p>
-                                                                                <input type="button" value="Attach File" class="btn btn-danger">
-                                                                                <input type="button" value="Submit" class="btn btn-danger">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>  
-                                                            </div>      
+                                                            </div>
                                                         </div>
+                                                        <div class="tab-pane container fade" id="bpi">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
+                                                                    </div>
+
+                                                                    <div class="col-lg-8">
+                                                                        <p>Account Name: Shukran Rentals OPC</p>
+                                                                        <p>Account Number: 09999999999</p>
+                                                                        <input type="button" value="Attach File" class="btn btn-danger">
+                                                                        <input type="button" value="Submit" class="btn btn-danger">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>                                    
+                                                        <div class="tab-pane container fade" id="securitybank">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
+                                                                    </div>
+
+                                                                    <div class="col-lg-8">
+                                                                        <p>Account Name: Shukran Rentals OPC</p>
+                                                                        <p>Account Number: 09999999999</p>
+                                                                        <input type="button" value="Attach File" class="btn btn-danger">
+                                                                        <input type="button" value="Submit" class="btn btn-danger">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>  
+                                                    </div>      
+                                                </div>
                                                         
                                                                         
                                                                         
 
-                                                        <div class="tab-pane container fade" id="digitalwallet">
+                                                <div class="tab-pane container fade" id="digitalwallet">
 
-                                                            <br><br>
-                                                            <h2>Available banks</h2>
-                                                            <br>
+                                                    <br><br>
+                                                    <h2>Available banks</h2>
+                                                    <br>
                                                                             
-                                                            <ul class="nav nav-tabs justify-content-center">
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" data-bs-toggle="tab" href="#gcash">
-                                                                        <img src="../IMAGES/gCash.png" alt="" style="width:60px"><p>GCASH</p>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" data-bs-toggle="tab" href="#grabpay">
-                                                                        <img src="../IMAGES/grabPay.png" alt="" style="width:60px"><p>GRAB PAY</p>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" data-bs-toggle="tab" href="#shopeepay">  
-                                                                        <img src="../IMAGES/shopeePay.png" alt="" style="width:60px"><p>SHOPEE PAY</p>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                    <ul class="nav nav-tabs justify-content-center">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-bs-toggle="tab" href="#gcash">
+                                                                <img src="../IMAGES/gCash.png" alt="" style="width:60px"><p>GCASH</p>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-bs-toggle="tab" href="#grabpay">
+                                                                <img src="../IMAGES/grabPay.png" alt="" style="width:60px"><p>GRAB PAY</p>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-bs-toggle="tab" href="#shopeepay">  
+                                                                <img src="../IMAGES/shopeePay.png" alt="" style="width:60px"><p>SHOPEE PAY</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                                                                             
-                                                            <div class="tab-content">
-                                                                <div class="tab-pane container fade" id="gcash">
-                                                                    <div class="container-fluid">
-                                                                        <div class="row">
-                                                                            <div class="col-lg-4">
-                                                                            <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
-                                                                        </div>
-
-                                                                        <div class="col-lg-8">
-                                                                            <p>Account Name: Shukran Rentals OPC</p>
-                                                                            <p>Account Number: 09999999999</p>
-                                                                            <input type="button" value="Attach File" class="btn btn-danger">
-                                                                            <input type="button" value="Submit" class="btn btn-danger">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="tab-pane container fade" id="grabpay">
-                                                                <div class="container-fluid">
-                                                                        <div class="row">
-                                                                        <div class="col-lg-4">
-                                                                            <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
-                                                                        </div>
-
-                                                                        <div class="col-lg-8">
-                                                                            <p>Account Name: Shukran Rentals OPC</p>
-                                                                            <p>Account Number: 09999999999</p>
-                                                                            <input type="button" value="Attach File" class="btn btn-danger">
-                                                                            <input type="button" value="Submit" class="btn btn-danger">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="tab-pane container fade" id="shopeepay">
-                                                                <div class="container-fluid">
-                                                                    <div class="row">
-                                                                        <div class="col-lg-4">
-                                                                            <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
-                                                                        </div>
-
-                                                                        <div class="col-lg-8">
-                                                                            <p>Account Name: Shukran Rentals OPC</p>
-                                                                            <p>Account Number: 09999999999</p>
-                                                                            <input type="button" value="Attach File" class="btn btn-danger">
-                                                                            <input type="button" value="Submit" class="btn btn-danger">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                            
                                                     <div class="tab-content">
-                                                        <div class="tab-pane container fade" id="counter">THIS IS OVER THE COUNTER</div>
-                                                    </div>  
+                                                        <div class="tab-pane container fade" id="gcash">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
+                                                                    </div>
+
+                                                                    <div class="col-lg-8">
+                                                                        <p>Account Name: Shukran Rentals OPC</p>
+                                                                        <p>Account Number: 09999999999</p>
+                                                                        <input type="button" value="Attach File" class="btn btn-danger">
+                                                                        <input type="button" value="Submit" class="btn btn-danger">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="tab-pane container fade" id="grabpay">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
+                                                                    </div>
+
+                                                                    <div class="col-lg-8">
+                                                                        <p>Account Name: Shukran Rentals OPC</p>
+                                                                        <p>Account Number: 09999999999</p>
+                                                                        <input type="button" value="Attach File" class="btn btn-danger">
+                                                                        <input type="button" value="Submit" class="btn btn-danger">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="tab-pane container fade" id="shopeepay">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
+                                                                    </div>
+
+                                                                    <div class="col-lg-8">
+                                                                        <p>Account Name: Shukran Rentals OPC</p>
+                                                                        <p>Account Number: 09999999999</p>
+                                                                        <input type="button" value="Attach File" class="btn btn-danger">
+                                                                        <input type="button" value="Submit" class="btn btn-danger">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
-                                            </div> 
+                                                            
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container fade" id="counter">THIS IS OVER THE COUNTER</div>
+                                                </div>  
+                                            </div>
                                         </div> 
-                                    </div>       
-                                </div>  
-                                <div class="btn">
-                                    <button type="button" class="prev">Previous</button>
-                                    <button type="button" class="next">Next</button>
-                                </div>     
-                            </div>
+                                    </div> 
+                                </div>       
+                            </div>  
+
+                            <div class="btn">
+                                <button type="button" class="prev">Previous</button>
+                                <button type="button" class="next">Next</button>
+                            </div>     
                         </form>
                     </div> 
                 </div>
-                
             </div>
         </div>
-    </div>
-    <br><br><br>        
+        <br><br><br>        
     </main>
     <?php include 'login-footer.php'; ?>
 
