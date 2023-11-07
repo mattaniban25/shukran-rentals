@@ -8,6 +8,43 @@
     $sql = "SELECT * FROM customeraccount WHERE email = '$_SESSION[email]'";
     $result = mysqli_query($conn, $sql);
     $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+    //user
+    $id = "";
+    $firstName = "";
+    $lastName = "";
+    $email = "";
+    $contact = "";
+
+    //roomType
+    $roomType = "";
+    $roomPrice = "";
+
+
+    $checkIn = "";
+    $checkOut = "";
+    $numGuest = "";
+    $roomCapacity = "";
+    $roomMaxCapacity = "";
+
+
+
+    if (isset($_POST["submit"])){
+        
+
+
+    }
+
+    $userSql = "SELECT * FROM customeraccount WHERE email = '$_SESSION[email]'";
+    $userResult = mysqli_query($conn, $userSql);
+    $row = $userResult->fetch_assoc();
+    $firstNameCheck = $row["firstName"];
+    $lastNameCheck = $row["lastName"];
+    $emailCheck = $row["email"];
+    $contactCheck = $row["contact"];
+    
+
+
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +63,13 @@
 
     <!-- CSS FILE -->
     <link rel="stylesheet" href="..//css/style.css">
+
+    <link
+      href="http://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 
     <title>Shukran Rentals - Login</title>
 
@@ -52,29 +96,31 @@
 
                 <div class="container payment-container rounded-1 mt-4" style="width:fit-content; background-color:white">
                     <div class="row">
-                        <form action="#">
+                        <form method="POST">
+                            <!-- PROCESS 1 -->
                             <div class="tab container p-3 ">
 
-                                <h3 class="mb-3">STEP 1: Confirm contact details</h3>
+                                <h3 class="mb-3">STEP 1: CONFIRM CLIENT INFORMATION</h3>
 
                                 <div class="mb-3 form show">
-                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Firstname">
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Firstname" value="<?php echo "$firstNameCheck"?>" readonly>
                                 </div>
 
                                 <div class="mb-3 form">
-                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Surname">
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Surname" value="<?php echo "$lastNameCheck"?>" readonly>
                                 </div>
 
                                 <div class="mb-3 form">
-                                    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                                    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email" value="<?php echo "$emailCheck"?>" readonly>
                                 </div>
 
                                 <div class="mb-3 form">
-                                    <input type="telephone" class="form-control" id="formGroupExampleInput2" placeholder="Phone">
+                                    <input type="telephone" class="form-control" id="formGroupExampleInput2" placeholder="Phone" value="<?php echo "$contactCheck"?>" readonly>
                                 </div>
                                 
                             </div>
                         
+                            <!-- PROCESS 2 -->
                             <div class="tab container p-3">
 
                                 <div class="container">
@@ -92,14 +138,16 @@
 
                                 <div class="container justify-content-center mb-4">
                                     <div class="row">
+                                    
                                     <div class="col-lg-6 " align="left">
                                         <label for="startDate">Check In date</label>
-                                        <input id="startDate" class="form-control" type="date" />
+                                        <input type="text" id="checkIn" placeholder="Check-in Date" onclick=""/>
                                         
                                     </div>
+                                    
                                     <div class="col-lg-6" align="left">
                                         <label for="endDate">Check Out date</label>
-                                        <input id="endDate" class="form-control" type="date" />
+                                        <input type="text" id="checkOut" placeholder="Check-out Date" />
                                         
                                     </div>
                                     </div>
@@ -135,6 +183,7 @@
                                 </div>
                             </div>
 
+                            <!-- PROCESS 3s -->      
                             <div class="tab container">    
                                 <div class="row" align="center">
                                     <div class="col-lg-12">
@@ -344,6 +393,63 @@
     <?php include 'login-footer.php'; ?>
 
     <script src="..//javascript/app.js"></script>
+
+    <script type="text/javascript">
+            var current = new Date();
+            var followingDay = new Date(current.getTime() + 86400000);
+
+            $(function () {
+              $("#checkIn").datepicker({ minDate: current });
+              $("#checkOut").datepicker({ minDate: followingDay });
+            });
+
+            function code() {
+              var box1 = document.getElementById("box1");
+              var box2 = document.getElementById("box2");
+              var cost = document.getElementById("cost");
+              var adult = "";
+
+              if (box1.value != 1) {
+                adult = " Adults, ";
+              } else {
+                adult = " Adult, ";
+              }
+
+              var total = box1.value + adult + box2.value + " Children";
+              cost.value = total;
+            }
+
+            function submitValue() {
+              var checkIn = document.getElementById("checkIn");
+              var checkOut = document.getElementById("checkOut");
+
+              var valueCI = checkIn.value;
+              var valueCO = checkOut.value;
+
+              var box1 = document.getElementById("box1");
+              var box2 = document.getElementById("box2");
+              var cost = document.getElementById("cost");
+              var adult = "";
+
+              if (box1.value != 1) {
+                adult = " Adults, ";
+              } else {
+                adult = " Adult, ";
+              }
+
+              var total = box1.value + adult + box2.value + " Children";
+              cost.value = total;
+
+              var valueGuest = cost.value;
+
+              localStorage.setItem("customerValueCI", valueCI);
+              localStorage.setItem("customerValueCO", valueCO);
+              localStorage.setItem("customerValueGuest", valueGuest);
+
+              window.location.href = "HTML/roomResult.html";
+              window.location.href = "HTML/roomReservation.html";
+            }
+          </script>
   </body>
 
   

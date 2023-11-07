@@ -83,7 +83,7 @@
             <div class="shukran-experience">
               <h3 class="welcome-message h2">Want the Shukran experience?</h3>
               <p>Book a reservation to experience it now!</p>
-              <a class="btn btn-danger pe-5 ps-5 mb-5 rounded-1"href="#">BOOK</a>
+              <a class="btn btn-danger pe-5 ps-5 mb-5 rounded-1"href="login-booking-details.php">BOOK</a>
             </div>
           </div>
         </div>
