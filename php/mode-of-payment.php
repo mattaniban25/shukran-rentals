@@ -17,7 +17,7 @@
     
     
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="..//css/style.css">
 
     <title>Shukran Rentals - Login</title>
 
@@ -29,10 +29,111 @@
 
 
     <br><br><br>
-    <div class="container" >
+    <div class="container" style="background-color:#ddd;  padding:30px;">
+            <div class="row">
+                <div class="col-lg-12" align="center">
+                    <div class="indicator">
+                        <span class="line"><span></span></span>
+                        <p class="active">1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
+
+                    
+                </div>
+
+                <div class="container payment-container rounded-1 mt-4" style="width:fit-content; background-color:white">
+                    <div class="row">
+                    <form action="#">
+                        <div class="tab container p-3 ">
+
+                            <h3 class="mb-3">STEP 1: Confirm contact details</h3>
+
+                            <div class="mb-3 form show">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Firstname">
+                            </div>
+
+                            <div class="mb-3 form">
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Surname">
+                            </div>
+                            <div class="mb-3 form">
+                                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                            </div>
+                            <div class="mb-3 form">
+                                <input type="telephone" class="form-control" id="formGroupExampleInput2" placeholder="Phone">
+                            </div>
+                            
+
+                        </div>
+                        
+                        <div class="tab container p-3">
+
+                            <div class="container">
+                                <h3 class="mb-5">STEP 2: Confirm booking summary</h3>
+                            </div>
+
+                            <div class="container" align="left">
+                                <h5>Booking Summary</h5>
+                                <hr>
+                            </div>
+
+                            <div class="container mb-4" align="left">
+                                <h3>Standard Room</h3>
+                            </div>
+
+                            <div class="container justify-content-center mb-4">
+                                <div class="row">
+                                <div class="col-lg-6 " align="left">
+                                    <label for="startDate">Check In date</label>
+                                    <input id="startDate" class="form-control" type="date" />
+                                    
+                                </div>
+                                <div class="col-lg-6" align="left">
+                                    <label for="endDate">Check Out date</label>
+                                    <input id="endDate" class="form-control" type="date" />
+                                    
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="container" align="left">
+                                <h5>Guests</h5>
+                                <div class="row">
+                                    <div class="col-lg-3" align="left">
+                                        <label for="adults">Adults</label>
+                                        <input type="number" class="form-control" id="adults">
+                                    </div>
+
+                                    <div class="col-lg-3" align="left">
+                                        <label for="children">Children</label>
+                                        <input type="number" class="form-control" id="children">
+                                    </div>
+
+                                    <div class="col-lg-3" align="left">
+                                        <label for="additional">Additional Guest(s)</label>
+                                        <input type="number" class="form-control" id="additional">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <hr>
+                            </div>
+
+                            <div class="container" align="left">
+                                <h3>Total: ₱1,500.00</h3>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="tab container">
+                        <div class="" >
     <div class="row" align="center">
-        <div class="col-lg-8">
-            <div class="container w-75 payment-container rounded-1">
+        <div class="col-lg-12">
+            <div class="container payment-container rounded-1">
                 <h1>Choose Payment Method</h1>
                 <br><br>
 
@@ -81,10 +182,10 @@
                     
                         <div class="tab-content">
                             <div class="tab-pane container fade" id="bdo">
-                                <div class="container-fluid">
+                                <div class="container">
                                     <div class="row">
                                         <div class="col-lg-4">
-                                            <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
+                                            <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
                                         </div>
 
                                         <div class="col-lg-8">
@@ -97,10 +198,10 @@
                                 </div>
                             </div>    
                             <div class="tab-pane container fade" id="bpi">
-                                <div class="container-fluid">
+                                <div class="container">
                                     <div class="row">
                                         <div class="col-lg-4">
-                                            <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
+                                            <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
                                         </div>
 
                                         <div class="col-lg-8">
@@ -113,10 +214,10 @@
                                 </div>
                             </div>
                             <div class="tab-pane container fade" id="securitybank">
-                                <div class="container-fluid">
+                                <div class="container">
                                     <div class="row">
                                         <div class="col-lg-4">
-                                            <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
+                                            <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
                                         </div>
 
                                         <div class="col-lg-8">
@@ -160,7 +261,7 @@
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
+                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
                                             </div>
 
                                             <div class="col-lg-8">
@@ -176,7 +277,7 @@
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
+                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
                                             </div>
 
                                             <div class="col-lg-8">
@@ -192,7 +293,7 @@
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-lg-4">
-                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100%">
+                                                <img src="../IMAGES/sampleQR.png" alt="" style="width:100px">
                                             </div>
 
                                             <div class="col-lg-8">
@@ -215,26 +316,25 @@
                 </div>   
             </div>
         
-        <div class="col-lg-4 col-sm-12">
-            
-                <div class="container payment-container rounded-2" style="width:fit-content">
-                    <h1 class="fs-2">Booking details</h1>
-                    <hr>
-                    <h1 style="text-align:left;" class="fs-4"><b>Total: ₱2,700.00</b></h1>
-                    <h1 style="text-align:left;" class="fs-6">Mon, Sept 30, 2023 - Thu, Oct 03, 2023</h1>
-                    <hr>
-                    <h1 style="text-align:left;" class="fs-2">Standard Room</h1>
-                    <h1 style="text-align:left;" class="fs-6">3 guests (2 adults, 1 child)</h1>
-                    <h1 style="text-align:left;" class="fs-6">2 days, 3 nights</h1>
-                    <hr>
-                    <h1 style="text-align:left;" class="fs-6"><i>Note: Includes taxes & fees</i></h1>
-                </div>
-        </div>
     </div>
 </div>
+                        </div>
+                        <div class="btn">
+                            <button class="prev">Previous</button>
+                            <button class="next">Next</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 <br><br><br>
 
     <?php include 'footer.php'; ?>
+
+    <script src="..//javascript/app.js"></script>
   </body>
+
+  
 </html>
