@@ -45,10 +45,11 @@ if(!$employeeResult){
           <p class="fs-3">Employees</p>
           <a class = "btn btn-success" href="employee-add.php" role="button">Create a New Employee Account</a>
         </div>
+        <br>
         <div class="mt-4">
             <b class="fs-5">Active Employee Accounts</b>
                 <div class="container">
-                    <div class="table-responsive border border-2 border-danger">
+                    <div class="table-responsive border border-3 border-success shadow rounded-3">
                         <table class="table table-bordered">
                             <thead class="thead-dark">
                                 <div class="row">
@@ -65,18 +66,18 @@ if(!$employeeResult){
                             </thead>
 
                             <tbody>
-                                <?php $i = 0; foreach ($employees as $emp): $i++; $class = $i % 2 == 0 ? '' : 'table-secondary';?>
+                                <?php $i = 0; foreach ($employees as $emp): $i++; $class = $i % 2 == 0 ? '' : 'table-success';?>
                                     <?php echo "<tr class=". $class .">"; ?>
-                                        <td class="text-center"><?= $emp['id'] ?></td>
-                                        <td><?= $emp['username'] ?></td>
-                                        <td class="text-center"><?= $emp['firstName'] ?></td>
-                                        <td class="text-center"><?= $emp['lastName'] ?></td>
-                                        <td><?= $emp['email'] ?></td>
-                                        <td class="text-center"><?= $emp['contact'] ?></td>
+                                        <td class="text-center align-middle"><?= $i ?></td>
+                                        <td class="align-middle"><?= $emp['username'] ?></td>
+                                        <td class="text-center align-middle"><?= $emp['firstName'] ?></td>
+                                        <td class="text-center align-middle"><?= $emp['lastName'] ?></td>
+                                        <td class="align-middle"><?= $emp['email'] ?></td>
+                                        <td class="text-center align-middle"><?= $emp['contact'] ?></td>
                                         <td class="text-center align-middle">
                                         <div>
-                                            <div class="btn btn-primary m-1"><a class="nav-link" href="promo-edit.php?id=<?= $emp['id'] ?>">EDIT</a></div>
-                                            <div class="btn btn-danger m-1"><a class="nav-link" href="promo-delete.php?id=<?= $emp['id'] ?>">DELETE</a></div>
+                                            <div class="btn btn-primary m-1"><a class="nav-link" href="employee-edit.php?id=<?= $emp['id'] ?>">EDIT</a></div>
+                                            <div class="btn btn-danger m-1"><a class="nav-link" href="employee-delete.php?id=<?= $emp['id'] ?>">DELETE</a></div>
                                         </div>
                                         
                                     </td>

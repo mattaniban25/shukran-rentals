@@ -8,7 +8,6 @@ if(!isset($_SESSION["adminuser"])){
 include "database.php";
 $id = "";
 $promoName = "";
-$promoType = "";
 $promoDuration = "";
 $discount = "";
 $promoCode = "";
@@ -34,7 +33,6 @@ if( $_SERVER['REQUEST_METHOD'] == 'GET'){
     }
 
     $promoName = $row["promoName"];
-    $promoType = $row["promoType"];
     $promoDuration = $row["promoDuration"];
     $discount = $row["discount"];
     $promoCode = $row["promoCode"];
@@ -44,7 +42,6 @@ if( $_SERVER['REQUEST_METHOD'] == 'GET'){
 else{
     $id = $_GET["id"];
     $promoName = $_POST["promoName"];
-    $promoType = $_POST["promoType"];
     $promoDuration = $_POST["promoDuration"];
     $discount = $_POST["discount"];
     $promoCode = $_POST["promoCode"];
@@ -54,7 +51,7 @@ else{
     $folder = "../images/promos/".$promoImage;
 
     do{
-        if( empty($promoName) || empty($promoType) || empty($promoDuration) || empty($discount) || empty($promoCode) || empty($promoDescription) || empty($promoImage) )
+        if( empty($promoName) || empty($promoDuration) || empty($discount) || empty($promoCode) || empty($promoDescription) || empty($promoImage) )
         {
             $errorMessage = "All the fields are required";
             break;
@@ -78,13 +75,17 @@ else{
         $img_ex_lc = strtolower($img_ex);
 
         $allowed_exs = array("jpg", "jpeg", "png");
+
+        $value = $promoDescription;
+
+        $new_value = str_replace("'", "''", "$value");
         
         if (in_array($img_ex_lc, $allowed_exs)) {
             $folder = "../images/promos/".$promoImage;
             move_uploaded_file($tempfile, $folder);
 
             // Insert into Databas
-            $promoSql = "UPDATE promo SET promoName = '$promoName', promoType = '$promoType', promoDuration = '$promoDuration', discount = '$discount', promoCode = '$promoCode', promoDescription = '$promoDescription', promoImage = '$promoImage' WHERE id = $id";
+            $promoSql = "UPDATE promo SET promoName = '$promoName', promoDuration = '$promoDuration', discount = '$discount', promoCode = '$promoCode', promoDescription = '$new_value', promoImage = '$promoImage' WHERE id = $id";
             mysqli_query($conn, $promoSql);
             header("Location: promo.php");
         }else {
@@ -122,7 +123,7 @@ else{
         <div class="row">
             <div class="col-lg-3"></div>
             <div class="col-lg-6 col-sm-12 border-start border-end border-4 border-primary-subtle shadow-sm rounded-3 p-4  bg-white tablinks" style="">
-                    <b class="text-primary">EDIT PROMO</b>
+                    <b class="text-primary fs-5">EDIT PROMO</b>
                     <br><br>
 
                     <?php
@@ -139,34 +140,37 @@ else{
                         <input type="hidden" value="<?php echo $id; ?>">
                         <div class="row">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <b class = "fs-6">Promo Name</b>
                                 <input type="text" class="form-control" name="promoName" placeholder="Promo Name" value="<?php echo $promoName?>">
-                            </div>
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <input type="text" class="form-control" name="promoType" placeholder="Promo Type" value="<?php echo $promoType ?>">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <b class = "fs-6">Promo Duration</b>
                                 <input type="date" class="form-control" name="promoDuration" placeholder="Promo Duration" value="<?php echo $promoDuration ?>">
                             </div>
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <b class = "fs-6">Discount</b>
                                 <input type="text" class="form-control" name="discount" placeholder="Discount" value="<?php echo $discount ?>">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <b class = "fs-6">Promo Code</b>
                                 <input type="text" class="form-control" name="promoCode" placeholder="Promo Code" value="<?php echo $promoCode ?>">
                             </div>
+
                             <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <input type="text" class="form-control" name="promoDescription" placeholder="Description" value="<?php echo $promoDescription ?>">
-                            </div>
+                                <b class = "fs-6">Promo Image</b>
+                                <input type="file" class="form-control" name="promoImage" placeholder="Promo Image" value="<?php echo $promoImage ?>">
                         </div>
 
                         <div class="row">
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <input type="file" class="form-control" name="promoImage" placeholder="Promo Image" value="<?php echo $promoImage ?>">
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                <b class = "fs-6">Description</b>
+                                <textarea class="form-control border border-3 border-primary-subtle" placeholder="Description" name="promoDescription" ><?php echo $promoDescription ?></textarea>
                             </div>
                         </div>
 
