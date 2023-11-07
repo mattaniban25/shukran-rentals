@@ -40,19 +40,23 @@
 
         <div class="container" style="background-color:#ddd;  padding:30px;">
             <div class="row">
-                
+
+                <!-- Indicator -->
                 <div class="col-lg-12" align="center">
                     <div class="indicator">
                         <span class="line"><span></span></span>
-                            <p class="active">1</p>
-                            <p>2</p>
-                            <p>3</p>
+                        <p class="active">1</p>
+                        <p>2</p>
+                        <p>3</p>
                     </div>
                 </div>
 
+                <!-- Progress Bar -->
                 <div class="container payment-container rounded-1 mt-4" style="width:fit-content; background-color:white">
                     <div class="row">
-                        <form action="#">
+                        <form action="">
+
+                            <!-- STEP 1 -->
                             <div class="tab container p-3 ">
 
                                 <h3 class="mb-3">STEP 1: Confirm contact details</h3>
@@ -75,6 +79,7 @@
                                 
                             </div>
                         
+                            <!-- STEP 2 -->
                             <div class="tab container p-3">
                                 <div class="container">
                                     <h3 class="mb-5">STEP 2: Confirm booking summary</h3>
@@ -132,6 +137,7 @@
                                 </div>
                             </div>
 
+                            <!-- STEP 3 -->
                             <div class="tab container">    
                                 <div class="row" align="center">
                                     <div class="col-lg-12">
