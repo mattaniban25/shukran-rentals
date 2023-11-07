@@ -99,7 +99,7 @@
                 <div class="row">
 
                 <div class="col-lg-6" > 
-                    <a class="btn btn-danger ps-4 pe-4 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" >Book Now</a>
+                    <a class="btn btn-danger ps-4 pe-4 mt-3 rounded-1" data-bs-toggle="modal" data-bs-target="#exampleModal" >Book Now</a>
                   </div>
 
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
