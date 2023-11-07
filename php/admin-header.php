@@ -15,7 +15,7 @@
                 <div class="navbar-nav">
                     <a href="admin-index.php" class="nav-item nav-link text-light">Home</a>
                     <a href="#" class="nav-item nav-link text-light">Calendar</a>
-                    <a href="#" class="nav-item nav-link text-light">Rooms</a>
+                    <a href="room-list-adm.php" class="nav-item nav-link text-light">Rooms</a>
                     <a href="#" class="nav-item nav-link text-light">Payments</a>
                     <a href="employee-list.php" class="nav-item nav-link text-light">Employees</a>
                     <a href="promo.php" class="nav-item nav-link text-light">Promos</a>
@@ -60,7 +60,7 @@
                 </a>
 
                 
-                <a href="#" class="nav-item nav-link">
+                <a href="room-list-adm.php" class="nav-item nav-link">
                     <button>
                         <span>
                             <li><i class="fi fi-rs-bed-alt pe-3 fs-5 align-middle"></i>Rooms</li> 
@@ -91,7 +91,7 @@
                         </span>
                     </button>
                 </a>
-                <hr class = "p-1 me-3">
+                <hr class = "p-1">
                 
                 <button>
                     <span>

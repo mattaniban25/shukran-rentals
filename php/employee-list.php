@@ -68,12 +68,12 @@ if(!$employeeResult){
                             <tbody>
                                 <?php $i = 0; foreach ($employees as $emp): $i++; $class = $i % 2 == 0 ? '' : 'table-success';?>
                                     <?php echo "<tr class=". $class .">"; ?>
-                                        <td class="text-center"><?= $emp['id'] ?></td>
-                                        <td><?= $emp['username'] ?></td>
-                                        <td class="text-center"><?= $emp['firstName'] ?></td>
-                                        <td class="text-center"><?= $emp['lastName'] ?></td>
-                                        <td><?= $emp['email'] ?></td>
-                                        <td class="text-center"><?= $emp['contact'] ?></td>
+                                        <td class="text-center align-middle"><?= $i ?></td>
+                                        <td class="align-middle"><?= $emp['username'] ?></td>
+                                        <td class="text-center align-middle"><?= $emp['firstName'] ?></td>
+                                        <td class="text-center align-middle"><?= $emp['lastName'] ?></td>
+                                        <td class="align-middle"><?= $emp['email'] ?></td>
+                                        <td class="text-center align-middle"><?= $emp['contact'] ?></td>
                                         <td class="text-center align-middle">
                                         <div>
                                             <div class="btn btn-primary m-1"><a class="nav-link" href="employee-edit.php?id=<?= $emp['id'] ?>">EDIT</a></div>

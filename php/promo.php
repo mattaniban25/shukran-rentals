@@ -54,13 +54,12 @@ if(!$promoResult){
                                 <div class="row">
                                     <tr class="border text-center">
                                         <th class="border col-lg-1 align-middle">Promo ID</th>
-                                        <th class="border col-lg-1 align-middle">Promo Name</th>
-                                        <th class="border col-lg-1 align-middle">Promo Type</th>
+                                        <th class="border col-lg-2 align-middle">Promo Name</th>
                                         <th class="border col-lg-1 align-middle">Duration</th>
                                         <th class="border col-lg-1 align-middle">Discount</th>
                                         <th class="border col-lg-1 align-middle">Promo Code</th>
                                         <th class="border col-lg-2 align-middle">Description</th>
-                                        <th class="border col-lg-2 align-middle">Promo Image</th>
+                                        <th class="border col-lg-2 align-middle text-wrap">Promo Image</th>
                                         <th class="border col-lg-2 align-middle">Action</th>
                                     </tr>
                                 </div>
@@ -69,12 +68,11 @@ if(!$promoResult){
                             <tbody>
                                 <?php $i = 0; foreach ($promos as $promo): $i++; $class = $i % 2 == 0 ? '' : 'table-danger';?>
                                     <?php echo "<tr class=". $class .">"; ?>
-                                        <td class="text-center align-middle"><?= $promo['id'] ?></td>
+                                        <td class="text-center align-middle"><?= $i ?></td>
                                         <td class="align-middle"><?= $promo['promoName'] ?></td>
-                                        <td class="align-middle"><?= $promo['promoType'] ?></td>
                                         <td class="text-center align-middle"><?= $promo['promoDuration'] ?></td>
-                                        <td  class="align-middle"><?= $promo['discount'] ?></td>
-                                        <td  class="align-middle"><?= $promo['promoCode'] ?></td>
+                                        <td  class="text-center align-middle"><?= $promo['discount'] ?>%</td>
+                                        <td  class="text-center align-middle"><?= $promo['promoCode'] ?></td>
                                         <td class="text-justify align-middle"><?= $promo['promoDescription'] ?></td>
                                         <td class="text-center align-middle"><?= $promo['promoImage'] ?></td>
                                         <td class="text-center align-middle">

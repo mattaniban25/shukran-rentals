@@ -7,7 +7,6 @@ if(!isset($_SESSION["adminuser"])){
 include "database.php";
 // Handle form submissions
 $promoName = "";
-$promoType = "";
 $promoDuration = "";
 $discount = "";
 $promoCode = "";
@@ -20,7 +19,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['add']) && isset($_FILES['promoImage'])) {
         // Add record to database
         $promoName = $_POST['promoName'];
-        $promoType = $_POST['promoType'];
         $promoDuration = $_POST['promoDuration'];
         $discount = $_POST['discount'];
         $promoCode = $_POST['promoCode'];
@@ -30,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $folder = "../images/promos/".$promoImage;
 
         do{
-            if( empty($promoName) || empty($promoType) || empty($promoDuration) || empty($discount) || empty($promoCode) || empty($promoDescription) || empty($promoImage) )
+            if( empty($promoName) || empty($promoDuration) || empty($discount) || empty($promoCode) || empty($promoDescription) || empty($promoImage) )
             {
                 $errorMessage = "All the fields are required";
                 break;
@@ -55,13 +53,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $allowed_exs = array("jpg", "jpeg", "png"); 
 
+            $value = $promoDescription;
+
+            $new_value = str_replace("'", "''", "$value");
+
+
             if (in_array($img_ex_lc, $allowed_exs)) {
                 $folder = "../images/promos/".$promoImage;
                 move_uploaded_file($tempfile, $folder);
 
                 // Insert into Database
 
-                $promoSql = "INSERT INTO promo (promoName, promoType, promoDuration, discount, promoCode, promoDescription, promoImage) VALUES ('$promoName', '$promoType', '$promoDuration', '$discount', '$promoCode', '$promoDescription', '$promoImage')";
+                $promoSql = "INSERT INTO promo (promoName, promoDuration, discount, promoCode, promoDescription, promoImage) VALUES ('$promoName', '$promoDuration', '$discount', '$promoCode', '$new_value', '$promoImage')";
                 mysqli_query($conn, $promoSql);
                 header("Location: promo.php");
             }else {
@@ -114,11 +117,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     ?>
                     <form action="" method="post" enctype="multipart/form-data">
                         <div class="row">
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                 <input type="text" class="form-control" name="promoName" placeholder="Promo Name" value="<?php echo $promoName?>">
-                            </div>
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <input type="text" class="form-control" name="promoType" placeholder="Promo Type" value="<?php echo $promoType ?>">
                             </div>
                         </div>
 
@@ -141,9 +141,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
 
                         <div class="row">
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <textarea class="form-control" placeholder="Description" name="promoDescription" ><?php echo $promoDescription ?></textarea>
-                            </div>
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                <textarea class="form-control border border-3 border-success-subtle" placeholder="Description" name="promoDescription" ><?php echo $promoDescription ?></textarea>
+                           </div>
                         </div>
 
                         <?php
