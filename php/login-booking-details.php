@@ -1,14 +1,6 @@
-<?php
-    session_start();
-    if(!isset($_SESSION["user"])){
-        header("Location: ../index.php");
-    }
 
-    include "database.php";
-    $sql = "SELECT * FROM customeraccount WHERE email = '$_SESSION[email]'";
-    $result = mysqli_query($conn, $sql);
-    $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -331,8 +323,8 @@
                                     </div>       
                                 </div>  
                                 <div class="btn">
-                                    <button class="prev">Previous</button>
-                                    <button class="next">Next</button>
+                                    <button type="button" class="prev">Previous</button>
+                                    <button type="button" class="next">Next</button>
                                 </div>     
                             </div>
                         </form>
@@ -345,7 +337,7 @@
     <br><br><br>
     <?php include 'login-footer.php'; ?>
 
-    <script src="../javascript/app.js"></script>
+    <script src="..//javascript/app.js"></script>
   </body>
 
   

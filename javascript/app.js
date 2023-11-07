@@ -12,7 +12,7 @@ allTab[i].classList.add('show');
 indicator.style.width = `${i * 50}%`;
 indicatorItems[i].classList.add('active');
 
-if(i == 0)
+if(i === 0)
 {
   btnPrev.style.display = 'none';
 }
@@ -66,7 +66,7 @@ btnNext.addEventListener('click', function () {
     indicatorItems[i].classList.add('active');
   }
 
-  if(i == 0)
+  if(i === 0)
   {
     btnPrev.style.display = 'none';
   }
@@ -75,7 +75,7 @@ btnNext.addEventListener('click', function () {
     btnPrev.style.display = 'inline';
   }
 
-  if(i == allTab.length - 1)
+  if(i === allTab.length - 1)
   {
     btnNext.innerHTML = 'Submit';
   }
@@ -84,7 +84,7 @@ btnNext.addEventListener('click', function () {
     btnNext.innerHTML = 'Next';
   }
   
-})
+});
 
 btnPrev.addEventListener('click', function () {
   i -= 1;
@@ -104,7 +104,7 @@ btnPrev.addEventListener('click', function () {
     indicator.style.width = `${i * 50}%`;
     indicatorItems[i].classList.add('active');
 
-    if(i == 0)
+    if(i === 0)
     {
       btnPrev.style.display = 'none';
     }
@@ -113,7 +113,7 @@ btnPrev.addEventListener('click', function () {
       btnPrev.style.display = 'inline';
     }
 
-    if(i == allTab.length - 1)
+    if(i === allTab.length - 1)
     {
       btnNext.innerHTML = 'Submit';
     }
