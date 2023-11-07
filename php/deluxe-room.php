@@ -91,46 +91,27 @@
               <br>
               <p class="fs-6"><i>Note: Additional items such as pillows, mattresses, etc. are available upon request in the receptionist area or through the room service telephone.</i></p>
               
-              <?php include 'room-inclusions.php'; ?> 
+              <br>
+
+              <div class="container">
+                <div class="row">
+
+                  <div class="col-lg-6" > 
+                    <a class="btn btn-danger ps-4 pe-4 mt-3" href="mode-of-payment.php" >Book Now</a>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <?php include 'room-inclusions.php'; ?> 
+                  </div>
+
+                </div>
+              </div>
 
           </div>
         </div>
       </div>
                 
-      <div align="center" class="text-secondary">
-        <hr class="border opacity-50 w-75">
-      </div>
-
-      <div class="container">
-
-    <ul class="nav nav-tabs">
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Number of guests</a>
-        <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#sectionA" data-bs-toggle="tab">1-2 Pax</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-    </li>
-    </ul>
-
-    <div class="tab-content"> 
-        <div id="sectionA" class="tab-pane fade in active"> 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-2 col-sm-6" align="left">
-                        <br><br>
-                        <p class="fs-5">Price: ₱1,700.00</p>
-                        <p class="fs-5">Check In: 2 PM</p>
-                        <p class="fs-5">Check Out: 12 PM</p>
-                        <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
-                    </div> 
-                </div>
-            </div>
-        </div>  
-    </div>
-</div>
-
+      
       <div align="center" class="text-secondary">
         <hr class="border opacity-100 w-75">
       </div>

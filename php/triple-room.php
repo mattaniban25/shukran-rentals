@@ -64,26 +64,27 @@
               </ol>
               <br>
               <p class="fs-6"><i>Note: Additional items such as pillows, mattresses, etc. are available upon request in the receptionist area or through the room service telephone.</i></p>
-              <?php include 'room-inclusions.php'; ?> 
+              
+              <br>
+
+              <div class="container">
+                <div class="row">
+
+                  <div class="col-lg-6" > 
+                    <a class="btn btn-danger ps-4 pe-4 mt-3" href="mode-of-payment.php" >Book Now</a>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <?php include 'room-inclusions.php'; ?> 
+                  </div>
+
+                </div>
+              </div>
+
           </div>
         </div>
       </div>
                 
-      <div align="center" class="text-secondary">
-        <hr class="border opacity-50 w-75">
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <p class="fs-5">Price: ₱5,000</p>
-            <p class="fs-5">Check In: 2 PM</p>
-            <p class="fs-5">Check Out: 12 PM</p>
-            <a class="btn btn-danger ps-4 pe-4 mt-3"href="mode-of-payment.php">Book Now</a>
-          </div> 
-        </div>
-      </div>
-
       <div align="center" class="text-secondary">
         <hr class="border opacity-100 w-75">
       </div>
