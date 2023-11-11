@@ -133,7 +133,7 @@
       <!-- WELCOME CONTENT -->
                   
       <div class="container" align="center" style="width:90%;">
-        <p class="welcome-message h4 fs-4 mt-5 mb-3" >WELCOME TO SHUKRAN RENTALS OPC</p>
+        <p class="welcome-message h4 fs-4 mt-5 mb-3" >RAYE HAHA</p>
         <div class="mb-5 col-lg-6 col-md-6 col-sm-12">
           <p align="center" class="">Welcome to Shukran Rentals, your go-to destination for affordable staycations. Relax, unwind, 
             and enjoy a weekend or holiday getaway without breaking your budget. Find the perfect accommodation option and make the
